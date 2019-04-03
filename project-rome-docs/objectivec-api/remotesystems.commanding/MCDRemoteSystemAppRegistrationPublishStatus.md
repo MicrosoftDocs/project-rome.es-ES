@@ -1,0 +1,27 @@
+---
+title: MCDRemoteSystemAppRegistrationPublishStatus
+description: Contiene valores que describen el estado de un inicio de la aplicación remota mediante un identificador URI.
+keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
+ms.openlocfilehash: 32c3e473938925f12838bf6dc5ccc3e98a3394a6
+ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58907547"
+---
+# <a name="enum-mcdremotesystemappregistrationpublishstatus"></a><span data-ttu-id="0df0b-104">Enum `MCDRemoteSystemAppRegistrationPublishStatus`</span><span class="sxs-lookup"><span data-stu-id="0df0b-104">enum `MCDRemoteSystemAppRegistrationPublishStatus`</span></span>
+
+`typedef NS_ENUM(NSInteger, MCDRemoteSystemAppRegistrationPublishStatus)`
+
+<span data-ttu-id="0df0b-105">Enumeración que indica el estado de la operación de publicación.</span><span class="sxs-lookup"><span data-stu-id="0df0b-105">Enumeration indicating the status of the publish operation.</span></span>
+<span data-ttu-id="0df0b-106">Los Estados de error indican condiciones transitorias, donde el desarrollador puede querer vuelva a intentar publicarla.</span><span class="sxs-lookup"><span data-stu-id="0df0b-106">The error statuses indicate transient conditions where the app developer may want to retry publishing.</span></span>
+
+| <span data-ttu-id="0df0b-107">Nombre</span><span class="sxs-lookup"><span data-stu-id="0df0b-107">Name</span></span>    |<span data-ttu-id="0df0b-108">Valor</span><span class="sxs-lookup"><span data-stu-id="0df0b-108">Value</span></span>   |<span data-ttu-id="0df0b-109">Descripción</span><span class="sxs-lookup"><span data-stu-id="0df0b-109">Description</span></span>   |                  
+|------ |------- |--|
+|<span data-ttu-id="0df0b-110">MCDRemoteSystemAppRegistrationPublishStatusSuccess</span><span class="sxs-lookup"><span data-stu-id="0df0b-110">MCDRemoteSystemAppRegistrationPublishStatusSuccess</span></span> | <span data-ttu-id="0df0b-111">0</span><span class="sxs-lookup"><span data-stu-id="0df0b-111">0</span></span> | <span data-ttu-id="0df0b-112">Operación se completó correctamente.</span><span class="sxs-lookup"><span data-stu-id="0df0b-112">Operation completed successfully.</span></span>|
+|<span data-ttu-id="0df0b-113">MCDRemoteSystemAppRegistrationPublishStatusErrorNoNetwork</span><span class="sxs-lookup"><span data-stu-id="0df0b-113">MCDRemoteSystemAppRegistrationPublishStatusErrorNoNetwork</span></span> | <span data-ttu-id="0df0b-114">1</span><span class="sxs-lookup"><span data-stu-id="0df0b-114">1</span></span> | <span data-ttu-id="0df0b-115">Red no estaba disponible.</span><span class="sxs-lookup"><span data-stu-id="0df0b-115">Network was unavailable.</span></span> |
+|<span data-ttu-id="0df0b-116">MCDRemoteSystemAppRegistrationPublishStatusErrorWebFailure</span><span class="sxs-lookup"><span data-stu-id="0df0b-116">MCDRemoteSystemAppRegistrationPublishStatusErrorWebFailure</span></span> | <span data-ttu-id="0df0b-117">2</span><span class="sxs-lookup"><span data-stu-id="0df0b-117">2</span></span> | <span data-ttu-id="0df0b-118">Error en un servicio web.</span><span class="sxs-lookup"><span data-stu-id="0df0b-118">A web service failed.</span></span>|
+|<span data-ttu-id="0df0b-119">MCDRemoteSystemAppRegistrationPublishStatusErrorNoTokenRequestSubscriber</span><span class="sxs-lookup"><span data-stu-id="0df0b-119">MCDRemoteSystemAppRegistrationPublishStatusErrorNoTokenRequestSubscriber</span></span> | <span data-ttu-id="0df0b-120">3</span><span class="sxs-lookup"><span data-stu-id="0df0b-120">3</span></span> | <span data-ttu-id="0df0b-121">No hay ningún suscriptor de la solicitud de token respondió.</span><span class="sxs-lookup"><span data-stu-id="0df0b-121">No token request subscribers responded.</span></span>|
+|<span data-ttu-id="0df0b-122">MCDRemoteSystemAppRegistrationPublishStatusErrorTokenRequestFailed</span><span class="sxs-lookup"><span data-stu-id="0df0b-122">MCDRemoteSystemAppRegistrationPublishStatusErrorTokenRequestFailed</span></span> | <span data-ttu-id="0df0b-123">4</span><span class="sxs-lookup"><span data-stu-id="0df0b-123">4</span></span> | <span data-ttu-id="0df0b-124">Error en la solicitud de token.</span><span class="sxs-lookup"><span data-stu-id="0df0b-124">The token request failed.</span></span>|
+|<span data-ttu-id="0df0b-125">MCDRemoteSystemAppRegistrationPublishStatusErrorAccountNotFound</span><span class="sxs-lookup"><span data-stu-id="0df0b-125">MCDRemoteSystemAppRegistrationPublishStatusErrorAccountNotFound</span></span> | <span data-ttu-id="0df0b-126">5</span><span class="sxs-lookup"><span data-stu-id="0df0b-126">5</span></span> | <span data-ttu-id="0df0b-127">No se encontró la cuenta para publicar información de.</span><span class="sxs-lookup"><span data-stu-id="0df0b-127">Account to publish information for was not found.</span></span>|
+|<span data-ttu-id="0df0b-128">MCDRemoteSystemAppRegistrationPublishStatusErrorUnknown</span><span class="sxs-lookup"><span data-stu-id="0df0b-128">MCDRemoteSystemAppRegistrationPublishStatusErrorUnknown</span></span> | <span data-ttu-id="0df0b-129">6</span><span class="sxs-lookup"><span data-stu-id="0df0b-129">6</span></span> | <span data-ttu-id="0df0b-130">Operación encontró un error desconocido.</span><span class="sxs-lookup"><span data-stu-id="0df0b-130">Operation encountered an unknown error.</span></span>|

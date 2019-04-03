@@ -1,0 +1,28 @@
+---
+title: MCDRemoteLaunchUriStatus
+description: Contiene valores que describen el estado de un inicio de la aplicación remota mediante un identificador URI.
+keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
+ms.openlocfilehash: 1a0302cd570b8cb25476a8188e3bcb1667707461
+ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58907147"
+---
+# <a name="enum-mcdremotelaunchuristatus"></a><span data-ttu-id="8bdfe-104">Enum `MCDRemoteLaunchUriStatus`</span><span class="sxs-lookup"><span data-stu-id="8bdfe-104">enum `MCDRemoteLaunchUriStatus`</span></span>
+
+`typedef NS_ENUM(NSInteger, MCDRemoteLaunchUriStatus)`
+
+<span data-ttu-id="8bdfe-105">Contiene valores que describen el estado de un inicio de la aplicación remota mediante un identificador URI.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-105">Contains values that describe the status of a remote app launch using a URI.</span></span>
+
+
+| <span data-ttu-id="8bdfe-106">Nombre</span><span class="sxs-lookup"><span data-stu-id="8bdfe-106">Name</span></span>    |<span data-ttu-id="8bdfe-107">Valor</span><span class="sxs-lookup"><span data-stu-id="8bdfe-107">Value</span></span>   |<span data-ttu-id="8bdfe-108">Descripción</span><span class="sxs-lookup"><span data-stu-id="8bdfe-108">Description</span></span>   |                  
+|------ |------- |--|
+|<span data-ttu-id="8bdfe-109">MCDRemoteLaunchUriStatusUnknown</span><span class="sxs-lookup"><span data-stu-id="8bdfe-109">MCDRemoteLaunchUriStatusUnknown</span></span> | <span data-ttu-id="8bdfe-110">0</span><span class="sxs-lookup"><span data-stu-id="8bdfe-110">0</span></span>| <span data-ttu-id="8bdfe-111">El estado es desconocido.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-111">The status is unknown.</span></span>|
+|<span data-ttu-id="8bdfe-112">MCDRemoteLaunchUriStatusSuccess</span><span class="sxs-lookup"><span data-stu-id="8bdfe-112">MCDRemoteLaunchUriStatusSuccess</span></span> | <span data-ttu-id="8bdfe-113">1</span><span class="sxs-lookup"><span data-stu-id="8bdfe-113">1</span></span>| <span data-ttu-id="8bdfe-114">El inicio remoto fue correcto.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-114">The remote launch was successful.</span></span>|
+|<span data-ttu-id="8bdfe-115">MCDRemoteLaunchUriStatusAppUnavailable</span><span class="sxs-lookup"><span data-stu-id="8bdfe-115">MCDRemoteLaunchUriStatusAppUnavailable</span></span> | <span data-ttu-id="8bdfe-116">2</span><span class="sxs-lookup"><span data-stu-id="8bdfe-116">2</span></span> | <span data-ttu-id="8bdfe-117">La aplicación de destino no está disponible.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-117">The target app is unavailable.</span></span>|
+|<span data-ttu-id="8bdfe-118">MCDRemoteLaunchUriStatusProtocolUnavailable</span><span class="sxs-lookup"><span data-stu-id="8bdfe-118">MCDRemoteLaunchUriStatusProtocolUnavailable</span></span> | <span data-ttu-id="8bdfe-119">3</span><span class="sxs-lookup"><span data-stu-id="8bdfe-119">3</span></span> | <span data-ttu-id="8bdfe-120">La aplicación de destino no es compatible con este identificador URI.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-120">The target app does not support this URI.</span></span>|
+|<span data-ttu-id="8bdfe-121">MCDRemoteLaunchUriStatusRemoteSystemUnavailable</span><span class="sxs-lookup"><span data-stu-id="8bdfe-121">MCDRemoteLaunchUriStatusRemoteSystemUnavailable</span></span> | <span data-ttu-id="8bdfe-122">4</span><span class="sxs-lookup"><span data-stu-id="8bdfe-122">4</span></span> | <span data-ttu-id="8bdfe-123">El dispositivo al que se envió el mensaje no está disponible.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-123">The device to which the message was sent is unavailable.</span></span>|
+|<span data-ttu-id="8bdfe-124">MCDRemoteLaunchUriStatusValueSetTooLarge</span><span class="sxs-lookup"><span data-stu-id="8bdfe-124">MCDRemoteLaunchUriStatusValueSetTooLarge</span></span> | <span data-ttu-id="8bdfe-125">5</span><span class="sxs-lookup"><span data-stu-id="8bdfe-125">5</span></span> | <span data-ttu-id="8bdfe-126">El paquete de datos que se envían a la aplicación de destino era demasiado grande.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-126">The data bundle sent to the target app was too large.</span></span>|
+|<span data-ttu-id="8bdfe-127">MCDRemoteLaunchUriStatusDeniedByLocalSystem</span><span class="sxs-lookup"><span data-stu-id="8bdfe-127">MCDRemoteLaunchUriStatusDeniedByLocalSystem</span></span> | <span data-ttu-id="8bdfe-128">6</span><span class="sxs-lookup"><span data-stu-id="8bdfe-128">6</span></span> | <span data-ttu-id="8bdfe-129">El sistema cliente ha impedido que el uso de la plataforma de sistemas remotos.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-129">The client system has prevented use of the Remote Systems Platform.</span></span>|
+|<span data-ttu-id="8bdfe-130">MCDRemoteLaunchUriStatusDeniedByRemoteSystem</span><span class="sxs-lookup"><span data-stu-id="8bdfe-130">MCDRemoteLaunchUriStatusDeniedByRemoteSystem</span></span> | <span data-ttu-id="8bdfe-131">7</span><span class="sxs-lookup"><span data-stu-id="8bdfe-131">7</span></span> | <span data-ttu-id="8bdfe-132">El dispositivo de destino ha impedido que el uso de la plataforma de sistemas remotos.</span><span class="sxs-lookup"><span data-stu-id="8bdfe-132">The target device has prevented use of the Remote Systems Platform.</span></span>|

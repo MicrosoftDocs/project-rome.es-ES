@@ -1,0 +1,10 @@
+# <a name="android-user-notifications-api-reference"></a><span data-ttu-id="37212-101">Referencia de API de notificaciones de usuario de Android</span><span class="sxs-lookup"><span data-stu-id="37212-101">Android User Notifications API reference</span></span>
+
+<span data-ttu-id="37212-102">Los siguientes espacios de nombres contienen API que permiten que una aplicación recibir y administrar las notificaciones de usuario que el servidor de aplicaciones se publica a través de Microsoft Graph destinados a los usuarios.</span><span class="sxs-lookup"><span data-stu-id="37212-102">The following namespaces contain APIs that allow an app to receive and manage User Notifications that your app server publishes via Microsoft Graph targeted at users.</span></span> 
+
+## <a name="namespaces"></a><span data-ttu-id="37212-103">Espacios de nombres</span><span class="sxs-lookup"><span data-stu-id="37212-103">Namespaces</span></span>
+
+#### <a name="basehttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicesbase"></a>[<span data-ttu-id="37212-104">Base</span><span class="sxs-lookup"><span data-stu-id="37212-104">Base</span></span>](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base)
+#### <a name="corehttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicescore"></a>[<span data-ttu-id="37212-105">Core</span><span class="sxs-lookup"><span data-stu-id="37212-105">Core</span></span>](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core)
+#### <a name="usernotifications-httpsdocsmicrosoftcomen-usjavaapicommicrosoftconnecteddevicesusernotifications"></a>[<span data-ttu-id="37212-106">UserNotifications</span><span class="sxs-lookup"><span data-stu-id="37212-106">UserNotifications</span></span>]( https://docs.microsoft.com/en-us/java/api/com.microsoft.connecteddevices.usernotifications)
+#### <a name="userdatahttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicesuserdata"></a>[<span data-ttu-id="37212-107">UserData</span><span class="sxs-lookup"><span data-stu-id="37212-107">UserData</span></span>](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.userdata)

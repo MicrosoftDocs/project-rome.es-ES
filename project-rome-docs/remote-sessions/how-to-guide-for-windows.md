@@ -1,0 +1,7 @@
+# <a name="implementing-remote-sessions-for-windows"></a><span data-ttu-id="ec084-101">Implementación de las sesiones remotas de Windows</span><span class="sxs-lookup"><span data-stu-id="ec084-101">Implementing Remote Sessions for Windows</span></span>
+
+<span data-ttu-id="ec084-102">Las páginas de API para el proyecto Roma y procedimientos relacionados de Windows se incluyen en la sección UWP de sitio de documentación de Microsoft.</span><span class="sxs-lookup"><span data-stu-id="ec084-102">The Windows related how-to and API pages for Project Rome are included in the UWP section of the Microsoft docs site.</span></span> <span data-ttu-id="ec084-103">Consulte los artículos siguientes para obtener información sobre cómo implementar aplicaciones de las sesiones remotas de Windows:</span><span class="sxs-lookup"><span data-stu-id="ec084-103">Check out the following articles to learn how to implement Remote Sessions for Windows apps:</span></span>
+
+[<span data-ttu-id="ec084-104">Guía para Windows</span><span class="sxs-lookup"><span data-stu-id="ec084-104">How to guide for Windows</span></span>](https://docs.microsoft.com/windows/uwp/launch-resume/remote-sessions)
+
+[<span data-ttu-id="ec084-105">Referencia de API de Windows</span><span class="sxs-lookup"><span data-stu-id="ec084-105">API reference for Windows</span></span>](https://docs.microsoft.com/uwp/api/windows.system.remotesystems.remotesystemsession)
