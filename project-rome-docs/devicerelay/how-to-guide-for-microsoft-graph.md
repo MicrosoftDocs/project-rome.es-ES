@@ -1,0 +1,5 @@
+# <a name="using-microsoft-graphs-device-relay-rest-apis"></a>Con la retransmisión de dispositivo de Microsoft Graph API de REST
+
+Características de retransmisión de dispositivo pueden implementarse a través de llamadas de API de REST con Microsoft Graph. Puede encontrar más información y documentación de referencia de API en el [sección Roma de proyecto de los documentos de Microsoft Graph](https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview#devices).
+
+Implementación con Microsoft Graph permite detectar los dispositivos, iniciar aplicaciones e interactuar con servicios de aplicaciones desde cualquier dispositivo capaz de realizar solicitudes HTTP. Microsoft Graph hace más fácil de implementar que en el SDK de plataforma nativo estos escenarios, pero no admite todas las características de las características de proyecto Roma ni ofrece un modelo de objeto nativo.

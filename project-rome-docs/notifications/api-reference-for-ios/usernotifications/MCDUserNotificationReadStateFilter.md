@@ -1,0 +1,24 @@
+---
+title: MCDUserNotificationReadStateFilter
+description: Contiene valores que clasifican las notificaciones de estado de lectura (para la recuperación de notificación filtrada).
+keywords: Microsoft, windows, las notificaciones de Graph, iOS procedimientos, procedimientos iPhone
+ms.openlocfilehash: 19da2f22e88dba5617ee60169c06552191aebe7d
+ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/02/2019
+ms.locfileid: "58907697"
+---
+# <a name="enum-mcdusernotificationreadstatefilter"></a>Enum `MCDUserNotificationReadStateFilter`
+
+```
+typedef NS_ENUM(NSInteger, MCDUserNotificationReadStateFilter)
+```
+
+Contiene valores que clasifican las notificaciones de estado de lectura (para la recuperación de notificación filtrada).
+
+|Nombre | Valor | Descripción |
+|:-- |:-- |:-- |
+|   MCDUserNotificationReadStateFilterAny | 0 | Incluir notificaciones independientemente del estado de lectura.|
+|   MCDUserNotificationReadStateFilterUnread | 1 | Incluyen las notificaciones que no los ha leído.|
+|   MCDUserNotificationReadStateFilterRead | 2 | Incluyen las notificaciones que se han leído. |
