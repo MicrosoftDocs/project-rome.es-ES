@@ -1,0 +1,12 @@
+# <a name="usernotifications-namespace"></a><span data-ttu-id="e4716-101">Espacio de nombres UserNotifications</span><span class="sxs-lookup"><span data-stu-id="e4716-101">UserNotifications namespace</span></span>
+<span data-ttu-id="e4716-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span><span class="sxs-lookup"><span data-stu-id="e4716-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span></span>
+
+<span data-ttu-id="e4716-103">El espacio de nombres UserNotifications contiene API que permiten que una aplicación pueda recibir y administrar notificaciones dirigidas a usuarios publicadas por el servidor de aplicaciones mediante notificaciones de Microsoft Graph, para habilitar experiencias de notificación entre dispositivos centrada en el usuario.</span><span class="sxs-lookup"><span data-stu-id="e4716-103">The UserNotifications namespace contains APIs that allow an app to receive and manage user-targeted notifications published by your app server via Microsoft Graph Notifications to enable human-centric, cross-device notification experiences.</span></span> 
+
+## <a name="graph-notifications-apis"></a><span data-ttu-id="e4716-104">API de notificación de Graph</span><span class="sxs-lookup"><span data-stu-id="e4716-104">Graph Notifications APIs</span></span>
+
+### <a name="usernotificationusernotificationmd"></a>[<span data-ttu-id="e4716-105">UserNotification</span><span class="sxs-lookup"><span data-stu-id="e4716-105">UserNotification</span></span>](userNotification.md)
+### <a name="usernotificationchannelusernotificationchannelmd"></a>[<span data-ttu-id="e4716-106">UserNotificationChannel</span><span class="sxs-lookup"><span data-stu-id="e4716-106">UserNotificationChannel</span></span>](userNotificationChannel.md)
+### <a name="usernotificationreaderusernotificationreadermd"></a>[<span data-ttu-id="e4716-107">UserNotificationReader</span><span class="sxs-lookup"><span data-stu-id="e4716-107">UserNotificationReader</span></span>](userNotificationReader.md)
+### <a name="usernotificationreaderoptionsusernotificationreaderoptionsmd"></a>[<span data-ttu-id="e4716-108">UserNotificationReaderOptions</span><span class="sxs-lookup"><span data-stu-id="e4716-108">UserNotificationReaderOptions</span></span>](userNotificationReaderOptions.md)
+### <a name="usernotificationupdateresultsusernotificationupdateresultsmd"></a>[<span data-ttu-id="e4716-109">UserNotificationUpdateResults</span><span class="sxs-lookup"><span data-stu-id="e4716-109">UserNotificationUpdateResults</span></span>](userNotificationUpdateResults.md)
