@@ -3,11 +3,11 @@ title: UserNotification
 description: Esta clase representa una notificación de usuario publicado por el servidor de aplicaciones a través de las notificaciones de Graph y recibidos por el cliente de aplicación.
 keywords: Microsoft, windows, las notificaciones de graph, procedimientos de windows
 ms.openlocfilehash: 5f0489b9db0e644cd0dedd14b07bf2357615419f
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907967"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801597"
 ---
 # <a name="class-usernotification"></a>Clase `UserNotification`
 

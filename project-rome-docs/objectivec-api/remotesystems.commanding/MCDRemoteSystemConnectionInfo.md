@@ -3,11 +3,11 @@ title: MCDRemoteSystemConnectionInfo
 description: Una clase que proporciona más información acerca de una instancia de MCDAppServiceConnection especificada.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: cdfe9dec49e90013f8c967223803144ad655378e
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907057"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801407"
 ---
 # <a name="class-mcdremotesystemconnectioninfo"></a>Clase `MCDRemoteSystemConnectionInfo` 
 

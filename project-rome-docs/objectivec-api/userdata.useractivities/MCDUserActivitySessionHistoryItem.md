@@ -3,11 +3,11 @@ title: MCDUserActivitySessionHistoryItem
 description: Esta clase proporciona la hora de inicio y finalización que un usuario estaba implicado en una actividad concreta.
 keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 3a480d9d0d028973554c13ee162b359502c8a772
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907407"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801637"
 ---
 # <a name="class-mcduseractivitysessionhistoryitem"></a>Clase `MCDUserActivitySessionHistoryItem`
 

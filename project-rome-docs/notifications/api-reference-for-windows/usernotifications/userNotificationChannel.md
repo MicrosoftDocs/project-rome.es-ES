@@ -3,11 +3,11 @@ title: UserNotificationChannel
 description: Esta clase administra el ciclo de vida de las notificaciones de usuario.
 keywords: Microsoft, windows, las notificaciones de Graph, Windows procedimientos
 ms.openlocfilehash: ee30f0eab2bb212dddf1de401a91f0487c512705
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907487"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801447"
 ---
 # <a name="class-usernotificationchannel"></a>Clase `UserNotificationChannel`
 

@@ -3,11 +3,11 @@ title: MCDUserNotificationUserActionStateFilter
 description: Contiene valores que clasifican las notificaciones de estado de acción del usuario (para la recuperación de notificación filtrada).
 keywords: Microsoft, windows, las notificaciones de Graph, iOS procedimientos, procedimientos iPhone
 ms.openlocfilehash: 41719d76e03fd6def57c8f77f9ab6956811e8803
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907277"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800567"
 ---
 # <a name="enum-mcdusernotificationuseractionstatefilter"></a>Enum `MCDUserNotificationUserActionStateFilter`
 

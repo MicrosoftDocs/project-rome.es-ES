@@ -3,11 +3,11 @@ title: MCDUserNotificationReaderStartPosition
 description: Contiene valores que determina la posición donde comienza a cualquier cambio nuevo en el lector – nueva notificación de usuario entrantes o nuevas actualizaciones de estado entrante.
 keywords: Microsoft, windows, las notificaciones de Graph, iOS procedimientos, procedimientos iPhone
 ms.openlocfilehash: c1fdf113614d496a2da49072f089f7e6a9f0ca68
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58908987"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800347"
 ---
 # <a name="enum-mcdusernotificationreaderstartposition"></a>Enum `MCDUserNotificationReaderStartPosition`
 

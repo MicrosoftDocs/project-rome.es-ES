@@ -3,10 +3,10 @@ title: MCDUserDataFeed
 description: Esta clase es responsable de sincronizar los datos específicos del usuario con la plataforma de dispositivos conectados de back-end.
 keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 66898563bdad8adb2f1ebfe75f010cd5ef1d9ca2
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58908997"
 ---
 # <a name="class-mcduserdatafeed"></a>Clase `MCDUserDataFeed`

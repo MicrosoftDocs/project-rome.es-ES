@@ -3,10 +3,10 @@ title: MCDUserNotificationReaderOptions
 description: Esta clase permite que la aplicación proporcionar opciones en el lector de notificación, como recibir solo notificaciones de usuario nuevas y actualizaciones de notificación no existente.
 keywords: Microsoft, windows, las notificaciones de Graph, iOS procedimientos, procedimientos iPhone
 ms.openlocfilehash: d5ea9072af0f35f614557192ef782754c4054b22
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907987"
 ---
 # <a name="class-mcdusernotificationreaderoptions"></a>Clase `MCDUserNotificationReaderOptions`

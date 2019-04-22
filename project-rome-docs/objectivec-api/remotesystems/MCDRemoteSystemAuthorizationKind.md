@@ -3,11 +3,11 @@ title: MCDRemoteSystemAuthorizationKind
 description: Contiene valores que describen los posibles tipos de autorización (ámbitos de autorización basada en la cuenta de usuario) para la detección de sistema remoto.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 4f54d187282e946dd2912d1d72eacc02c7ee4077
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907637"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801327"
 ---
 # <a name="enum-mcdremotesystemauthorizationkind"></a>Enum `MCDRemoteSystemAuthorizationKind` 
 

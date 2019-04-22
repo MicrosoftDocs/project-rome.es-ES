@@ -3,11 +3,11 @@ title: MCDUserDataFeedPlatforms
 description: Proporciona la plataforma válida para el MCDUserDataFeedSyncScope.
 keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 7474c5896fec97a94799423ba0748bd2814d2c7a
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907197"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801223"
 ---
 # <a name="class-mcduserdatafeedplatforms"></a>Clase `MCDUserDataFeedPlatforms`
 

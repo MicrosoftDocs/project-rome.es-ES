@@ -3,11 +3,11 @@ title: MCDAppServiceConnectionStatus
 description: Contiene valores que describen el estado de una conexión a un servicio de aplicación remota.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 5beba7ae30d8ffd9149c5e8a599eacc38213b6d2
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907347"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801457"
 ---
 # <a name="enum-mcdappserviceconnectionstatus"></a>Enum `MCDAppServiceConnectionStatus`
 

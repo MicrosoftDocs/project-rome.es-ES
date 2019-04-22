@@ -3,11 +3,11 @@ title: MCDUserNotificationReader
 description: Esta clase proporciona nuevas notificaciones entrantes de usuario y la notificación al usuario las actualizaciones. También proporciona acceso a la colección del usuario, las notificaciones se conservan en la plataforma de dispositivos conectados.
 keywords: Microsoft, windows, retransmisión de dispositivo, iOS procedimientos, procedimientos iPhone
 ms.openlocfilehash: 486e98c30c82a7607569d252c84e4314738df6c9
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909027"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800737"
 ---
 # <a name="class-mcdusernotificationreader"></a>Clase `MCDUserNotificationReader`
 

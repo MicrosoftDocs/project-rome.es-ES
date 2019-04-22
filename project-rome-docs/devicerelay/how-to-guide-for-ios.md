@@ -6,10 +6,10 @@ keywords: Microsoft, windows, proyecto Roma, comandos, ios
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
 ms.openlocfilehash: 11596720d9363f0ef29fd9c7bf0ccc5b4db62fae
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907737"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implementación de retransmisión de dispositivo para iOS

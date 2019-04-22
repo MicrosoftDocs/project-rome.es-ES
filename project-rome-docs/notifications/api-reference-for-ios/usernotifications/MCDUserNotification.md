@@ -3,10 +3,10 @@ title: MCDUserNotification
 description: Esta clase representa una notificación de usuario publicado por el servidor de aplicaciones a través de las notificaciones de Graph y recibidos por el cliente de aplicación.
 keywords: Microsoft, ios, notificaciones de graph, ios procedimientos, procedimientos iphone
 ms.openlocfilehash: 5ca1360c34e2bf9aa5d9847b8df2c462e2956b31
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58907897"
 ---
 # <a name="class-mcdusernotification"></a>Clase `MCDUserNotification`

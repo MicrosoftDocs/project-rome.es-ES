@@ -3,11 +3,11 @@ title: UserNotificationReaderOptions
 description: Esta clase permite que la aplicación proporcionar opciones en el lector de notificación, como recibir solo notificaciones de usuario nuevas y actualizaciones de notificación no existente.
 keywords: Microsoft, windows, las notificaciones de Graph, Windows procedimientos
 ms.openlocfilehash: dda9187dccd013f719d564f62b51fd9ac7be8444
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909687"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801387"
 ---
 # <a name="class-usernotificationreaderoptions"></a>Clase `UserNotificationReaderOptions`
 
@@ -35,7 +35,7 @@ public UserNotificationReaderOptions(UserNotificationReaderStartPosition startPo
 
 ## <a name="properties"></a>Propiedades
 
-|Nombre | Descripción |
+|Name | Descripción |
 |:-- |:-- |
 |StartPosition |Obtiene o establece la posición inicial de esta instancia de UserNotificationReaderOptions.|
 |   StatusFilter |Obtiene o establece el filtro de estado para este lector de notificación de usuario que desee crear.| 

@@ -3,11 +3,11 @@ title: MCDConnectedDevicesNotificationRegistrationState
 description: Valores que se usa para comunicar el estado de registro en la nube.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: be390f4f8e5d3c026d35bb8998e2818b9db05e86
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58909237"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800717"
 ---
 # <a name="class-mcdconnecteddevicesnotificationregistrationstate"></a>Clase `MCDConnectedDevicesNotificationRegistrationState` 
 

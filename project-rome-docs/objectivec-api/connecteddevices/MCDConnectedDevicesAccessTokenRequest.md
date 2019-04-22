@@ -3,11 +3,11 @@ title: MCDConnectedDevicesAccessTokenRequest
 description: Solicitud de un token de acceso para el MCDConnectedDevicesAccount independiente que satisface los ámbitos contenidos.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: b1cd9b747e98d5e9ccf4885b33897e8c240d7673
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907617"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800837"
 ---
 # <a name="class-mcdconnecteddevicesaccesstokenrequest"></a>Clase `MCDConnectedDevicesAccessTokenRequest` 
 

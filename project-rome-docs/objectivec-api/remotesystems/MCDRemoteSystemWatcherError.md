@@ -3,11 +3,11 @@ title: MCDRemoteSystemWatcherError
 description: Contiene valores que la describe un error encontrado por un objeto de Monitor de sistema remoto durante el proceso de detección.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 3f65614396377b154b2a37493b8271ac54afb6fd
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58907707"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801727"
 ---
 # <a name="enum-mcdremotesystemwatchererror"></a>Enum `MCDRemoteSystemWatcherError` 
 

@@ -3,11 +3,11 @@ title: MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs
 description: Clase de argumentos de evento para el evento de cambio de estado de MCDConnectedDevicesNotificationRegistration.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: 83b59cc884cc0e8d59387b95388b4b7b2b5fa273
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58908447"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800697"
 ---
 # <a name="class-mcdconnecteddevicesnotificationregistrationstatechangedeventargs"></a>Clase `MCDConnectedDevicesNotificationRegistrationStateChangedEventArgs` 
 

@@ -3,11 +3,11 @@ title: MCDAppServiceProvider
 description: Este protocolo contiene métodos para hacer que un servicio de aplicación local puede tener acceso a los dispositivos remotos.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
 ms.openlocfilehash: f5af56a2c87e3b4335a2a59a0130ef3622af6c26
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58908667"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800457"
 ---
 # <a name="protocol-mcdappserviceprovider"></a>Protocolo `MCDAppServiceProvider`
 
