@@ -4,7 +4,6 @@ Los siguientes espacios de nombres contienen API que permiten que una aplicació
 
 ## <a name="namespaces"></a>Espacios de nombres
 
-#### <a name="basehttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicesbase"></a>[Base](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.base)
-#### <a name="corehttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicescore"></a>[Core](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core)
+#### <a name="connecteddeviceshttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevices"></a>[ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
 #### <a name="usernotifications-httpsdocsmicrosoftcomen-usjavaapicommicrosoftconnecteddevicesusernotifications"></a>[UserNotifications]( https://docs.microsoft.com/en-us/java/api/com.microsoft.connecteddevices.usernotifications)
 #### <a name="userdatahttpsdocsmicrosoftcomjavaapicommicrosoftconnecteddevicesuserdata"></a>[UserData](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.userdata)

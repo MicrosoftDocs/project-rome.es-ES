@@ -4,10 +4,10 @@ description: Obtenga información sobre las características multiplataforma y m
 ms.topic: overview
 ms.custom: seodec2018, RS5
 ms.openlocfilehash: 57f6ce29730bd296ee623251d8ef619b114f944b
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
+ms.lasthandoff: 04/18/2019
 ms.locfileid: "58906747"
 ---
 # <a name="project-rome"></a>Project Rome

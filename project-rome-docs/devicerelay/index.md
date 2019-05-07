@@ -4,11 +4,11 @@ description: Use un dispositivo local para iniciar una acción en un dispositivo
 ms.topic: overview
 ms.custom: seodec2018
 ms.openlocfilehash: ac8df447549b643207f796e0eeca05012c210897
-ms.sourcegitcommit: 75680b384946e11257bb2a33044a3172dec5220e
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/02/2019
-ms.locfileid: "58906917"
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59801467"
 ---
 # <a name="device-relay"></a>Retransmisión de dispositivo
 
