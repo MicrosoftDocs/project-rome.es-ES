@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: f81fbbffb2ec54f8d9a252a00fc3822f1f3f9582
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "59800857"
+---
 ### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-platform"></a>Asociar la plataforma de dispositivos conectados a la notificación de inserción nativa para cada plataforma. 
 
 Como se mencionó anteriormente, los clientes de la aplicación deben proporcionar el conocimiento acerca de la canalización de notificaciones de inserción nativa que se va a usar para cada plataforma para el SDK de cliente y la plataforma de dispositivos conectados durante el proceso de registro para permitir que el gráfico servicio de notificación para enviar notificaciones cargabilidad de salida a cada punto de conexión del cliente de aplicación cuando el servidor de la aplicación publica una notificación de destinatarios de usuario a través de MS Graph API.

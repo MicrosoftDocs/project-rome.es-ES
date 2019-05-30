@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 6c87f1a68699de7852af56d7536f08b1a5f9bc14
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907567"
+---
 ### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Registrar la aplicación en Microsoft Windows Dev Center para experiencias multidispositivo
 A continuación, deberá registrar la aplicación para la [experiencias multidispositivo característica del panel del desarrollador de Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Se trata de un procedimiento diferente desde el registro de aplicación AAD y MSA, que se trata en los pasos anteriores. El objetivo principal de este proceso consiste en asignar las identidades de aplicación específico de plataforma con una identidad de aplicación multiplataforma que es reconocido por la plataforma de dispositivos conectados y, al mismo tiempo, autoriza a Microsoft Graph notificaciones para enviar notificaciones con nativo Servicios de notificación de inserción correspondiente a cada plataforma de sistema operativo. En este caso, habilita las notificaciones de Graph enviar notificaciones a los extremos de la aplicación para UWP de Windows a través de WNS: servicio de notificación de Windows. Ir al panel del centro de desarrollo, vaya a experiencias multidispositivo desde el panel de navegación del lado izquierdo y seleccione Configurar una nueva aplicación entre dispositivos, que se muestra a continuación.
 ![Panel del centro de desarrollo: experiencias multidispositivo](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)

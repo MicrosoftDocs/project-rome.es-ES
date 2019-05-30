@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 8e259cf4bd303a51165868fe0aa6d2a062f52c76
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907397"
+---
 ### <a name="msa-and-aad-authentication-registration"></a>MSA y registro de la autenticación de AAD
 
 Registro de autenticación de cuenta de Microsoft (MSA) o Azure Active Directory (AAD) es necesario para todas las características del SDK que incluya las notificaciones, excepto para el uso compartido de Nearby API. 

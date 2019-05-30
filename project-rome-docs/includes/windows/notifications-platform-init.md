@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: dfe29b92cbab51382f4440b4929c2082cfb9b062
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58909697"
+---
 ### <a name="add-the-sdk"></a>Agregue el SDK
 
 Para Windows, SDK de notificación de Graph está disponible a los desarrolladores a través de un paquete de NuGet en lugar del SDK de Windows del sistema operativo integrado con el fin de ha mejor y bajo nivel compatibilidad con programación de lanzamiento más flexible. El paquete NuGet publicado por msgraphsdkteam en nuget.org y puede encontrarse [aquí](https://www.nuget.org/profiles/msgraphsdkteam). 
