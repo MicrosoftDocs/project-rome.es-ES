@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 5cd99bbc88f1d18edcdd78dfc7e36fa8f324e7da
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907457"
+---
 # <a name="ios-user-activities-api-reference"></a><span data-ttu-id="c41c7-101">referencia de API de las actividades de usuario de iOS</span><span class="sxs-lookup"><span data-stu-id="c41c7-101">iOS User Activities API reference</span></span>
 
 <span data-ttu-id="c41c7-102">Las API siguientes permiten una aplicación crear y publicar las actividades de usuario de Windows de estilo.</span><span class="sxs-lookup"><span data-stu-id="c41c7-102">The following APIs allow an app to create and publish Windows-style User Activities.</span></span>

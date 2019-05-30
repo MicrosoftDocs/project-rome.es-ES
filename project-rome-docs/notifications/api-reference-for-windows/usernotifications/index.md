@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: b5793b84c9a3927e15f11da4d99c653b0e7c7c34
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58906757"
+---
 # <a name="usernotifications-namespace"></a><span data-ttu-id="de8c9-101">Espacio de nombres UserNotifications</span><span class="sxs-lookup"><span data-stu-id="de8c9-101">UserNotifications namespace</span></span>
 <span data-ttu-id="de8c9-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span><span class="sxs-lookup"><span data-stu-id="de8c9-102">winrt.Microsoft.ConnectedDevices.UserNotifications</span></span>
 

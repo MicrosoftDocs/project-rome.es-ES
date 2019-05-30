@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 801fbe58296bece5a374ca05c11ddb2d914914d1
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: HT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58906927"
+---
 # <a name="usernotifications-namespace"></a><span data-ttu-id="75bd3-101">Espacio de nombres UserNotifications</span><span class="sxs-lookup"><span data-stu-id="75bd3-101">UserNotifications namespace</span></span>
 ```
 ConnectedDevicesUserDataUserNotifications.h

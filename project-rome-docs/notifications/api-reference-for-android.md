@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: e9e4cdeee1645bff059c680b16e348c8a1389685
+ms.sourcegitcommit: b0e8013c526b04f4a5667fc7fc744475b7706e12
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 05/01/2019
+ms.locfileid: "64982024"
+---
 # <a name="android-user-notifications-api-reference"></a><span data-ttu-id="9ca79-101">Referencia de API de notificaciones de usuario de Android</span><span class="sxs-lookup"><span data-stu-id="9ca79-101">Android User Notifications API reference</span></span>
 
 <span data-ttu-id="9ca79-102">Los siguientes espacios de nombres contienen API que permiten que una aplicación recibir y administrar las notificaciones de usuario que el servidor de aplicaciones se publica a través de Microsoft Graph destinados a los usuarios.</span><span class="sxs-lookup"><span data-stu-id="9ca79-102">The following namespaces contain APIs that allow an app to receive and manage User Notifications that your app server publishes via Microsoft Graph targeted at users.</span></span> 

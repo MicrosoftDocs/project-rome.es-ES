@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: 3f5ac416eb651ed6d79d53cb864d201dd2f73db7
+ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.translationtype: MT
+ms.contentlocale: es-ES
+ms.lasthandoff: 04/18/2019
+ms.locfileid: "58907597"
+---
 # <a name="receiving-notifications-using-the-project-rome-sdk"></a><span data-ttu-id="a350a-101">Recibir notificaciones mediante el SDK de proyecto Roma</span><span class="sxs-lookup"><span data-stu-id="a350a-101">Receiving notifications using the Project Rome SDK</span></span>
 
 <span data-ttu-id="a350a-102">El proceso de recepción de notificaciones MSGraph está alineado en las plataformas de desarrollo diferentes.</span><span class="sxs-lookup"><span data-stu-id="a350a-102">The process of receiving MSGraph notifications is aligned across different development platforms.</span></span> <span data-ttu-id="a350a-103">Según las diferencias de lenguaje SDK, contamos con instrucciones independientes.</span><span class="sxs-lookup"><span data-stu-id="a350a-103">Based on the SDK language difference, we have separate guidelines.</span></span> <span data-ttu-id="a350a-104">Seleccione una plataforma que se indican a continuación para obtener información sobre cómo habilitar la recuperación de notificación en la aplicación.</span><span class="sxs-lookup"><span data-stu-id="a350a-104">Select a platform below to learn how to enable notification retrieval in your app.</span></span>
