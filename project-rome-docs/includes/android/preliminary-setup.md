@@ -4,12 +4,12 @@ description: Archivo de inclusión
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: e2a3dcbff4594a7886a14f90058bb814e85ff39d
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b2d1d764c4aae562a1fcafdb490db5a14522cda6
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59805177"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755805"
 ---
 ## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Instalación preliminar para la plataforma de dispositivos conectados y notificaciones
 
@@ -18,6 +18,9 @@ Antes de implementar conectividad remota, hay unos pasos que deberá tomar para 
 ### <a name="register-your-app"></a>Registrar la aplicación
 
 Cuenta de Microsoft (MSA) o Azure Active Directory (AAD) se requiere autenticación para casi todas las características del SDK de Roma proyecto (la excepción que se va a las API de uso compartidas cercanas). Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Mediante el método de autenticación seleccionado, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/). Si no tiene una cuenta de desarrollador de Microsoft, deberá crear uno.
 

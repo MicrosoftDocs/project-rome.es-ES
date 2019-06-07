@@ -3,12 +3,12 @@ title: Archivo de inclusión
 description: Archivo de inclusión
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: d94808ae1e97d12649f24ed89ad17a7962665d5e
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: a6e92df6114443827b22dc85cf877d631e5fcfdf
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59805179"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755775"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configurar la autenticación y la cuenta de administración
 
@@ -19,6 +19,9 @@ Si desea implementar la **[ConnectedDevicesAccountManager](https://docs.microsof
 Si usa una MSA, deberá incluir los siguientes ámbitos en la solicitud de inicio de sesión: `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"`, y `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`. 
 
 Si usa una cuenta de AAD, deberá solicitar los siguientes destinatarios: `"https://cdpcs.access.microsoft.com"`, `"https://cs.dds.microsoft.com"`, `"https://wns.windows.com/"`, y `"https://activity.microsoft.com"`.
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Si usas proporcionado **ConnectedDevicesAccountManager** implementación o no, si usas AAD deberá especificar los siguientes permisos en el registro de la aplicación en Azure portal (portal.azure.com > Azure Active Directory > registros de aplicaciones): 
 * Servicio de la fuente de actividades de Microsoft 

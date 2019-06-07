@@ -4,16 +4,19 @@ description: Archivo de inclusión
 ms.topic: include
 ms.assetid: bbef84bf-a6b7-44be-879d-0fa6065e37b1
 ms.localizationpriority: medium
-ms.openlocfilehash: 598807ac37079456ac28948a9f5bc419e65095a3
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: ea97fbf5fad21b342300a283136a642c5a16672e
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907517"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755723"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>MSA y registro de la autenticación de AAD
 
 Registro de autenticación de cuenta de Microsoft (MSA) o Azure Active Directory (AAD) es necesario para todas las características del SDK que incluya las notificaciones, excepto para el uso compartido de Nearby API. 
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
 

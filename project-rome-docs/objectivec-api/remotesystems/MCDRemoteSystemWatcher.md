@@ -2,12 +2,12 @@
 title: MCDRemoteSystemWatcher
 description: Una clase utilizada para descubrir los sistemas remotos.
 keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 88bb52465de165224c62270e0630dfb72f47b31f
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 8fcb0c01fd8f8c3ef1eb2d959dc9ef8af758562d
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801097"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755739"
 ---
 # <a name="class-mcdremotesystemwatcher"></a>Clase `MCDRemoteSystemWatcher`
 
@@ -20,77 +20,90 @@ Una clase utilizada para descubrir los sistemas remotos.
 ## <a name="properties"></a>Propiedades
 
 ### <a name="remotesystemadded"></a>remoteSystemAdded
-`@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemAddedEventArgs*>* remoteSystemAdded;`
+```
+@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemAddedEventArgs*>* remoteSystemAdded;
+```
 
 Evento para cuando se detecta un nuevo sistema remoto.
 
 ### <a name="remotesystemupdated"></a>remoteSystemUpdated
-`@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemUpdatedEventArgs*>* remoteSystemUpdated;`
+```
+@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemUpdatedEventArgs*>* remoteSystemUpdated;
+```
 
 Evento para cuando se cambia un sistema remoto que se ha detectado anteriormente en esta sesión de detección desde proximally conectado a conectado a la nube o viceversa. 
 
 ### <a name="remotesystemremoved"></a>remoteSystemRemoved
-`@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemRemovedEventArgs*>* remoteSystemRemoved;`
+```
+@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemRemovedEventArgs*>* remoteSystemRemoved;
+```
 
 Evento para cuando se quita un sistema remoto. 
 
 ### <a name="enumerationcompleted"></a>enumerationCompleted
-```@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher *, MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;
+```
+@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*,  MCDRemoteSystemEnumerationCompletedEventArgs*>* enumerationCompleted;
 ```
 
-Event for when the initial discovery of currently-discoverable devices has finished.  The discovery process will continue to run and will raise additional events if the set of existing remote systems changes.
+Evento de cuándo ha finalizado la detección inicial de los dispositivos actualmente reconocible.  Continuará el proceso de detección para ejecutarse y provocar eventos adicionales si cambia el conjunto de sistemas remotos existentes.
 
-### errorOccurred
-`@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*, MCDRemoteSystemWatcherErrorOccurredEventArgs*>* errorOccurred;`
+### <a name="erroroccurred"></a>errorOccurred
+```
+@property(nonatomic, readonly, nonnull) MCDEvent<MCDRemoteSystemWatcher*,  MCDRemoteSystemWatcherErrorOccurredEventArgs*>* errorOccurred;
+```
 
-Event for when an error occurs during discovery. The discovery process will continue if possible. For example, if the error
-occurs with a value of **MCDRemoteSystemWatcherError.MCDRemoteSystemWatcherErrorInternetNotAvailable**, proximal discovery
-may continue because the error applies only to cloud discovery (see **MCDRemoteSystemDiscoveryType**).
+Evento para cuando se produce un error durante la detección. El proceso de detección seguirá si es posible. Por ejemplo, si se produce el error con un valor de **MCDRemoteSystemWatcherError.MCDRemoteSystemWatcherErrorInternetNotAvailable**, detección articulaciones próximas puede continuar porque el error se aplica solo a cloud discovery (consulte  **MCDRemoteSystemDiscoveryType**).
 
-## Constructors
+## <a name="constructors"></a>Constructores
 
-### watcher
-`+ (nullable instancetype)watcher;`
+### <a name="watcher"></a>watcher
+```
++ (nullable instancetype)watcher;
+```
 
-Creates and initializes a new instance of this class.
+Crea e inicializa una nueva instancia de esta clase.
 
-#### Returns 
-Returns a new instance of this class.
+#### <a name="returns"></a>Devuelve 
+Devuelve una nueva instancia de esta clase.
 
-### watcherWithFilters
-`+ (nullable instancetype)watcherWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
+### <a name="watcherwithfilters"></a>watcherWithFilters
+```
++ (nullable instancetype)watcherWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;
+```
 
-Creates and initializes a new instance of this class with filters.
+Crea e inicializa una nueva instancia de esta clase con filtros.
 
-#### Parameters 
+#### <a name="parameters"></a>Parámetros 
 * `filters` 
 
-An array of filters to use in the device discovery process.
+Una matriz de filtros que desea usar en el proceso de detección de dispositivos.
 
-#### Returns 
-Returns an MCDRemoteSystemWatcher object with filters.
+#### <a name="returns"></a>Devuelve 
+Devuelve un objeto MCDRemoteSystemWatcher con filtros.
 
-### initWithFilters
-`- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;`
+### <a name="initwithfilters"></a>initWithFilters
+```
+- (nullable instancetype)initWithFilters:(nonnull NSArray<NSObject<MCDRemoteSystemFilter>*>*)filters;
+```
 
-Creates and initializes a new instance of this class with filters.
+Crea e inicializa una nueva instancia de esta clase con filtros.
 
-#### Parameters 
+#### <a name="parameters"></a>Parámetros 
 * `filters` 
 
-An array of filters to use in the device discovery process.
+Una matriz de filtros que desea usar en el proceso de detección de dispositivos.
 
-#### Returns 
-Returns an MCDRemoteSystemWatcher object initialized with filters.
+#### <a name="returns"></a>Devuelve 
+Devuelve un objeto MCDRemoteSystemWatcher inicializado con los filtros.
 
-## Methods
+## <a name="methods"></a>Métodos
 
-### start
+### <a name="start"></a>start
 `- (void)start;`
 
-Begins discovering remote systems.
+Empieza la detección de sistemas remotos.
 
-### stop
+### <a name="stop"></a>stop
 `- (void)stop;` 
 
-Stops the active discovery.
+Detiene la detección de activa.

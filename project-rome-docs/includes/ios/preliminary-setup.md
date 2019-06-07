@@ -4,16 +4,19 @@ description: Archivo de inclusión
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: 53cbe2ec68785c257341caf110439d535b8f83be
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b979c0b7891aaa6ce5c422d8349809b429a47201
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59805180"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755764"
 ---
 ### <a name="register-your-app"></a>Registrar la aplicación
 
 Cuenta de Microsoft (MSA) o Azure Active Directory (AAD) se requiere autenticación para casi todas las características del SDK de Roma proyecto (la excepción que se va a las API de uso compartidas cercanas). Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Mediante el método de autenticación seleccionado, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/). Si no tiene una cuenta de desarrollador de Microsoft, deberá crear uno.
 

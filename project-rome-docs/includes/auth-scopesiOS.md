@@ -3,12 +3,12 @@ title: Archivo de inclusión
 description: Archivo de inclusión
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: 1aa6b0d971feb7d2f9f8d31708fda31d05b5aca9
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: b8a0de450431adce084919290d49f6326d23d51b
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59805183"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755794"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configurar la autenticación y la cuenta de administración
 
@@ -17,6 +17,9 @@ La plataforma de dispositivos conectados requiere un token de OAuth válido para
 Si no usa el código proporcionado, deberá implementar la **[MCDConnectedDevicesAccountManager](../objectivec-api/connecteddevices/MCDConnectedDevicesAccountManager.md)** interfaz usted mismo.
 
 Si usa una MSA, incluyen los siguientes ámbitos en la solicitud de inicio de sesión: `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"`, y `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`.
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Si usa una cuenta de AAD, deberá solicitar los siguientes destinatarios: `"https://cdpcs.access.microsoft.com"`, `"https://cs.dds.microsoft.com"`, `"https://wns.windows.com/"`, y `"https://activity.microsoft.com"`.
 

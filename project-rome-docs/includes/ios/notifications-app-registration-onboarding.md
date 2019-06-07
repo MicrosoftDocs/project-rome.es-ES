@@ -4,14 +4,17 @@ description: Archivo de inclusión
 ms.topic: include
 ms.assetid: 771ceeb1-638f-4fba-8c34-953870b5d855
 ms.localizationpriority: medium
-ms.openlocfilehash: 49538cfee916d048160bdd8cd1e82a7490b979d6
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 57a5f2a1e7c40ace95656f9b08994f861b8cc9af
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58908937"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755710"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>MSA y registro de la autenticación de AAD
+
+> [!NOTE]
+> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
 
 Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
 
