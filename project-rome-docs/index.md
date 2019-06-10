@@ -3,12 +3,12 @@ title: Creación de aplicaciones multidispositivo
 description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 57f6ce29730bd296ee623251d8ef619b114f944b
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 28e76debcb8d3d74333827062e2345e078374b46
+ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58906747"
+ms.lasthandoff: 06/07/2019
+ms.locfileid: "66755729"
 ---
 # <a name="project-rome"></a>Project Rome
 
@@ -47,7 +47,7 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 [winredist-sdk]:           https://www.nuget.org/packages/Microsoft.ConnectedDevices.UserNotifications
 [winredist-sdk-badge]:     https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.UserNotifications.svg
-[winredist-sample]:        https://github.com/Microsoft/project-rome/tree/release/1.0.0/Windows/samples
+[winredist-sample]:        https://github.com/microsoft/project-rome/tree/master/Windows/samples
 
 [xamarin-sdk]:             https://www.nuget.org/packages/Microsoft.ConnectedDevices.Xamarin.Droid
 [xamarin-sdk-badge]:       https://img.shields.io/nuget/v/Microsoft.ConnectedDevices.Xamarin.Droid.svg
@@ -55,11 +55,11 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 [ios-sdk]:                 https://cocoapods.org/pods/ProjectRomeSdk
 [ios-sdk-badge]:           https://img.shields.io/cocoapods/v/ProjectRomeSdk.svg
-[ios-sample]:              https://github.com/Microsoft/project-rome/tree/release/1.0.0/iOS/samples
+[ios-sample]:              https://github.com/microsoft/project-rome/tree/master/iOS/samples
 
-[android-sdk]:             https://bintray.com/connecteddevices/maven/com.microsoft.connecteddevices:connecteddevices-sdk?version=1.1.0
-[android-sdk-badge]:       https://img.shields.io/bintray/v/connecteddevices/maven/com.microsoft.connecteddevices:connecteddevices-sdk.svg
-[android-sample]:          https://github.com/Microsoft/project-rome/tree/release/1.0.0/Android/samples
+[android-sdk]:             https://bintray.com/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/_latestVersion
+[android-sdk-badge]:       https://api.bintray.com/packages/connecteddevices/maven/com.microsoft.connecteddevices%3Aconnecteddevices-sdk/images/download.svg
+[android-sample]:          https://github.com/microsoft/project-rome/tree/master/Android/samples
 
 [graph-relay]:             https://developer.microsoft.com/graph/docs/api-reference/beta/resources/project_rome_overview
 [graph-activities]:        https://developer.microsoft.com/graph/docs/api-reference/v1.0/resources/activity-feed-api-overview
@@ -79,8 +79,8 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **Windows SDK**                   | Retransmisión de dispositivo, Actividades/Línea de tiempo                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Ejemplo de retransmisión de dispositivo con Project Rome para Windows][windows-drsample] <br> [Ejemplo de actividades con Project Rome para Windows][windows-afsample]
 | **Windows (versión preliminar)**             |                                    Notificaciones de Microsoft Graph | [![NuGet][winredist-sdk-badge]][winredist-sdk] | [Ejemplos de notificaciones de Graph para Windows][winredist-sample] 
-| **Android**             | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph | [![Maven][android-sdk-badge]][android-sdk]     | [Ejemplo de Project Rome para Android][android-sample]
-| **iOS**                 | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Ejemplo de Project Rome para iOS][ios-sample]
+| **Android**             | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph (versión preliminar) | [![Maven][android-sdk-badge]][android-sdk]     | [Ejemplo de Project Rome para Android][android-sample]
+| **iOS**                 | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph (versión preliminar) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Ejemplo de Project Rome para iOS][ios-sample]
 | **Xamarin para Android (versión preliminar)** | Retransmisión de dispositivo                                                     | [![NuGet][xamarin-sdk-badge]][xamarin-sdk]     | [Ejemplo de Xamarin para Android][xamarin-sample]
 | **MSGraph**                       | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Retransmisión de dispositivo][graph-relay-sample]<br>[Actividades/Línea de tiempo][graph-activities-sample]<br>[Notificaciones de Graph][graph-notification-sample]
 
