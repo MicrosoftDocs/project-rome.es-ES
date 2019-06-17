@@ -2,12 +2,12 @@
 title: MCDUserDataFeed
 description: Esta clase es responsable de sincronizar los datos específicos del usuario con la plataforma de dispositivos conectados de back-end.
 keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 66898563bdad8adb2f1ebfe75f010cd5ef1d9ca2
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: cd90c266c3c0293996a4f23059719224579404ff
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58908997"
+ms.lasthandoff: 06/13/2019
+ms.locfileid: "67132240"
 ---
 # <a name="class-mcduserdatafeed"></a>Clase `MCDUserDataFeed`
 
@@ -61,8 +61,11 @@ Devuelve una instancia de esta clase.
 
 ## <a name="methods"></a>Métodos
 
+> [!WARNING]
+> Esta función está en desuso, 'subscribeToSyncScopesWithResultAsync' en su lugar.
+
 ### <a name="subscribetosyncscopesasync"></a>subscribeToSyncScopesAsync
-`- (void)subscribeToSyncScopesAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback;`
+`- (void)subscribeToSyncScopesAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(BOOL, NSError* _Nullable)) callback  __attribute__((deprecated("Use subscribeToSyncScopesWithResultAsync instead")));`
 
 Agrega **MCDUserDataFeedSyncScope** instancias para este MCDUserDataFeed.  Este MCDUserDataFeed está sincronizado según la **MCDUserDataFeedSyncScope** instancias especificadas.
 
@@ -72,7 +75,20 @@ Agrega **MCDUserDataFeedSyncScope** instancias para este MCDUserDataFeed.  Este 
 
 * `callback`
 
-El resultado de la devolución de llamada indica si la suscripción es correcta, o no. 
+El resultado de la devolución de llamada indica si la suscripción es correcta, o no.
+
+### <a name="subscribetosyncscopeswithresultasync"></a>subscribeToSyncScopesWithResultAsync
+`- (void)subscribeToSyncScopesWithResultAsync:(NSArray<MCDUserDataFeedSyncScope*>* _Nonnull) syncScopes callback:(nonnull void (^)(MCDUserDataFeedSubscribeResult* _Nullable, NSError* _Nullable)) callback;`
+
+Agrega **MCDUserDataFeedSyncScope** instancias para este MCDUserDataFeed.  Este MCDUserDataFeed está sincronizado según la **MCDUserDataFeedSyncScope** instancias especificadas.
+
+#### <a name="parameters"></a>Parámetros
+
+* `syncScopes` Una matriz de **MCDSyncScope** instancias.
+
+* `callback`
+
+El resultado de la devolución de llamada indica si la suscripción es correcta, o no.
 
 ### <a name="startsync"></a>startSync
 `- (void)startSync;`
