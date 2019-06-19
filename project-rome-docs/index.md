@@ -1,6 +1,6 @@
 ---
 title: Creación de aplicaciones multidispositivo
-description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
+description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
 ms.openlocfilehash: 28e76debcb8d3d74333827062e2345e078374b46
