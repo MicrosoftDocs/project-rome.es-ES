@@ -1,30 +1,30 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: b979c0b7891aaa6ce5c422d8349809b429a47201
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755764"
 ---
-### <a name="register-your-app"></a>Registrar la aplicación
+### <a name="register-your-app"></a>Registro de la aplicación
 
-Cuenta de Microsoft (MSA) o Azure Active Directory (AAD) se requiere autenticación para casi todas las características del SDK de Roma proyecto (la excepción que se va a las API de uso compartidas cercanas). Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+La mayoría de las características del SDK de Project Rome (a excepción de las API de Uso compartido en proximidad) necesitan la autenticación de la cuenta de Microsoft (MSA) o Azure Active Directory (AAD). Si aún no tienes una cuenta MSA y deseas usarla, regístrate en [account.microsoft.com](https://account.microsoft.com/account).
 
 > [!NOTE]
-> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
+> No se admiten cuentas de Azure Active Directory (AAD) con las API de Retransmisión de dispositivo.
 
-Mediante el método de autenticación seleccionado, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/). Si no tiene una cuenta de desarrollador de Microsoft, deberá crear uno.
+A partir del método de autenticación elegido, debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/). Si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla.
 
-Al registrar una aplicación con una MSA, debería recibir una cadena de identificador de cliente. Guardar esto para su uso posterior. Esto permitirá que la aplicación tener acceso a los recursos de plataforma de dispositivos conectados de Microsoft. Si usa AAD, consulte [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) para obtener instrucciones sobre cómo obtener el cliente de cadena del identificador.
+Al registrar una aplicación con MSA, deberías recibir una cadena de id. de cliente. Guárdala para más adelante. Este dato permitirá que la aplicación acceda a los recursos de la plataforma de dispositivos conectados de Microsoft. Si usas AAD, consulta en [Bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) las instrucciones sobre cómo obtener la cadena de id. de cliente.
 
-### <a name="add-the-sdk"></a>Agregue el SDK
+### <a name="add-the-sdk"></a>Incorporación del SDK
 
-Es la manera más sencilla de agregar la plataforma de dispositivos conectados a la aplicación iOS mediante el [CocoaPods](https://cocoapods.org/) Administrador de dependencias. Vaya a su proyecto de iOS *Podfile* e inserte la siguiente entrada:
+La manera más sencilla de agregar la plataforma de dispositivos conectados a la aplicación iOS es hacerlo a través del administrador de dependencias [CocoaPods](https://cocoapods.org/). Ve al archivo *Podfile* del proyecto de iOS e inserta la siguiente entrada:
 
 ```ObjectiveC
 platform :ios, "10.0"
@@ -40,4 +40,4 @@ target 'iOSSample' do
 ```
 
 > [!NOTE]
-> Para consumir CocoaPod, debe usar el _xcworkspace_ archivo del proyecto.
+> Para utilizar CocoaPod, debes usar el archivo _xcworkspace_ en el proyecto.

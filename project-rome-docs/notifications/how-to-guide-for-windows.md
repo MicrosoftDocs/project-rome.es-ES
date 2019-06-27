@@ -1,45 +1,45 @@
 ---
-title: La integración de aplicaciones para UWP con las notificaciones de Graph
-description: Cómo realizar los pasos de registro necesarias para convertirse en un punto de conexión receptor para las notificaciones se publica desde el servidor de aplicaciones.
+title: Integración de aplicaciones para UWP con las notificaciones de Graph
+description: Procedimiento para realizar los pasos de registro necesarios para convertirte en un punto de conexión de recepción de notificaciones publicadas desde tu servidor de aplicaciones.
 ms.assetid: c973d534-08e9-4f6e-8b54-bcae97067961
 ms.localizationpriority: medium
 ms.custom: seodec18
 ms.openlocfilehash: 09f32a9869343778712449db04f74e9341fbc5a6
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801307"
 ---
-# <a name="how-to-guide-integrating-with-ms-graph-notifications-windows-uwp"></a>Guía de procedimientos: La integración con las notificaciones de MS Graph (Windows UWP)
+# <a name="how-to-guide-integrating-with-ms-graph-notifications-windows-uwp"></a>Guía de procedimientos: Integración con las notificaciones de MS Graph (Windows UWP)
 
-Con el SDK de cliente de Graph notificaciones en Windows, la aplicación de UWP de Windows puede realizar los pasos de registro necesarias para convertirse en un extremo de recepción que recibe notificaciones publicadas desde el servidor de aplicaciones dirigido a un usuario. El SDK, a continuación, se usa para administrar las notificaciones en el lado cliente incluidos recibir una notificación nueva cargas ha llegado a este cliente, administrar el estado de las notificaciones y recuperar el historial de notificaciones. Para obtener más información acerca de las notificaciones de MS Graph y cómo permite la entrega de notificaciones humanos-centric, consulte [información general de las notificaciones de Microsoft Graph](index.md)
+Con el SDK del cliente de notificaciones de Graph en Windows, tu aplicación para Windows UWP puede realizar los pasos de registro necesarios para convertirse en un punto de conexión receptor que reciba notificaciones publicadas desde tu servidor de aplicaciones destinadas a un usuario. A continuación, el SDK se utiliza para administrar las notificaciones en el lado cliente, incluidas la recepción de nuevas cargas útiles de la notificación llegadas a este cliente, la administración del estado de las notificaciones y la recuperación del historial de notificaciones. Para obtener más información acerca de las notificaciones de MS Graph y cómo permiten la entrega de notificaciones centradas en las personas, consulta [Notificaciones de Microsoft Graph](index.md).
 
-Consulte la [referencia de API](api-reference-for-windows/index.md) página para obtener vínculos a los documentos de referencia relevantes para escenarios de notificación.
+Consulta en la página de [referencia de API](api-reference-for-windows/index.md) los vínculos a los documentos de referencia pertinentes para escenarios de notificación.
 
-## <a name="preliminary-setup-for-accessing-the-connected-devices-platform-in-order-to-use-graph-notifications"></a>Instalación preliminar para tener acceso a la plataforma de dispositivos conectados para poder usar las notificaciones de Graph 
-Hay unos pocos pasos que debe seguir para integrarse con las notificaciones de Graph
-* MSA o registro de aplicación AAD
-* Incorporación del centro de desarrollo para proporcionar la identidad de aplicación multiplataforma y las credenciales de la notificación de inserción
-* Agregar el SDK e inicializar la plataforma de dispositivos conectados
-* Asociar el servicio de notificación de plataforma de dispositivos conectados
+## <a name="preliminary-setup-for-accessing-the-connected-devices-platform-in-order-to-use-graph-notifications"></a>Configuración preliminar para acceder a la plataforma de dispositivos conectados con el fin de utilizar las notificaciones de Graph 
+Hay unos pocos pasos que debes seguir para la integración con las notificaciones de Graph
+* Registro de la aplicación con MSA o AAD
+* Incorporación del Centro de desarrollo para proporcionar la identidad de aplicación multiplataforma y las credenciales para las notificaciones push
+* Incorporación del SDK e inicialización de la plataforma de dispositivos conectados
+* Asociación del servicio de notificación a la plataforma de dispositivos conectados
 
-En primer lugar, debe completar la MSA y/o el registro de aplicación de AAD. Si lo ha hecho ya, vaya a la sección siguiente.
+En primer lugar, debes completar el registro de la aplicación con MSA o AAD. Si lo has hecho ya, ve a la sección siguiente.
 [!INCLUDE [windows/platform-init](../includes/windows/notifications-app-registration-onboarding.md)]
-A continuación, debe incorporar con Microsoft Windows Dev Center para obtener acceso a la plataforma de dispositivos conectados con el fin de integrar con experiencias multidispositivo incluido el uso de notificaciones de gráfico. Si lo ha hecho ya, vaya a la sección siguiente.
+A continuación, debes incorporar el Centro de desarrollo de Microsoft Windows para obtener acceso a la plataforma de dispositivos conectados con el fin de integrar experiencias multidispositivo, incluido el uso de notificaciones de Graph. Si lo has hecho ya, ve a la sección siguiente.
 [!INCLUDE [windows/notification-init](../includes/windows/notifications-dev-center-onboarding.md)]
-A continuación, debe agregar el SDK de Roma del proyecto al proyecto e inicializar la plataforma de dispositivos conectados. Si lo ha hecho ya, vaya a la sección siguiente.
+A continuación, debes agregar el SDK de Project Rome al proyecto e inicializar la plataforma de dispositivos conectados. Si lo has hecho ya, ve a la sección siguiente.
 [!INCLUDE [android/notification-init](../includes/android/notifications-platfrom-init.md)]
-Por último, debe habilitar la aplicación para recibir notificaciones de inserción. Si lo ha hecho ya, vaya a la sección siguiente.
+Por último, debes habilitar la aplicación para que reciba notificaciones push. Si lo has hecho ya, ve a la sección siguiente.
 [!INCLUDE [android/notification-init](../includes/android/notifications-notification-init.md)]
 
-## <a name="initialize-a-graph-notification-channel"></a>Inicializar un canal de notificación de Graph
-En un nivel alto, el SDK permite la aplicación para suscribirse a distintos canales para recibir y administrar distintos tipos de datos de usuario: incluida las notificaciones de gráfico, las actividades del usuario y mucho más. Estos son almacenados y sincronizados en **UserDataFeed**. **UserNotification** es el tipo de clase y los datos correspondientes a dirigida al usuario enviada una notificación a través de las notificaciones del gráfico. Para integrar con notificación de Graph y comience a recibir UserNotification publicado por el servidor de aplicaciones, primero debe inicializar los datos de usuario fuente mediante la creación de un **UserNotificationChannel**. Debe tratar como el paso de inicialización de la plataforma anterior: debe ser activada y, posiblemente, puestos al día siempre que la aplicación se pone en primer plano (pero no antes de la inicialización de plataforma). 
+## <a name="initialize-a-graph-notification-channel"></a>Inicialización de un canal de notificaciones de Graph
+En un nivel alto, el SDK permite que la aplicación se suscriba a diferentes canales para recibir y administrar diferentes tipos de datos de usuario, incluidas las notificaciones de Graph y las actividades de usuario entre otras. Todos ellos se almacenan y sincronizan en **UserDataFeed**. **UserNotification** es la clase y el tipo de datos correspondiente a una notificación destinada al usuario enviada mediante las notificaciones de Graph. Para la integración con las notificaciones de Graph y comenzar a recibir la UserNotification publicada por tu servidor de aplicaciones, primero es necesario inicializar la fuente de datos de usuario mediante la creación de una clase **UserNotificationChannel**. Debes tratar este paso como el paso anterior de inicialización de la plataforma: debe comprobarse y, posiblemente, rehacerse siempre que la aplicación pasa al primer plano (pero no antes de la inicialización de la plataforma). 
 
-## <a name="create-a-usernotificationreader-to-receive-incoming-usernotifications-and-access-usernotification-history"></a>Crear un UserNotificationReader para recibir UserNotifications entrantes y acceder al historial de UserNotification
-Una vez que tenga un **UserNotificationChannel** referencia, necesita un **UserNotificationReader** con el fin de permitir que el SDK capturar el contenido de la notificación real del servidor. Un UserNotificationReader en este caso permite el acceso de la aplicación cliente a esta fuente de datos: para recibir la carga de la notificación más reciente mediante el agente de escucha de eventos o tener acceso a la colección UserNotification completa que se puede utilizar como modelo de vista del historial de notificaciones del usuario.  
+## <a name="create-a-usernotificationreader-to-receive-incoming-usernotifications-and-access-usernotification-history"></a>Creación de una clase UserNotificationReader para recibir UserNotifications entrantes y acceder al historial de UserNotification.
+Una vez que tengas una referencia a **UserNotificationChannel**, necesitarás una clase **UserNotificationReader** para que el SDK pueda obtener del servidor el contenido real de la notificación. En este caso, una clase UserNotificationReader permite al cliente de la aplicación acceder a esta fuente de datos para recibir la última carga útil de la notificación a través de la escucha de eventos; o bien para acceder a la colección completa de UserNotification que puede utilizarse como modelo de visualización del historial de notificaciones del usuario.  
 
-El código siguiente muestra los pasos necesarios para crear una instancia de un canal de notificación de usuario, crear un lector de notificación de usuario y agregar un controlador de eventos en el lector de notificación de usuario que se desencadena cuando la plataforma de dispositivos conectados se completa cada sincronización y tiene nuevos cambios a notificará. 
+El siguiente código muestra los pasos para crear una instancia de un canal de notificaciones de usuario, crear un lector de notificaciones de usuario y agregar un controlador de eventos en el lector de notificaciones de usuario que se activa cuando la plataforma de dispositivos conectados completa cada sincronización y tiene nuevos cambios que notificarte. 
 
 ```C#
 
@@ -78,12 +78,12 @@ public async Task SetupChannel()
 
 ### <a name="receiving-usernotifications"></a>Recepción de UserNotifications
 
-En la sección anterior se ve que se agrega un agente de escucha de eventos para el lector de notificación de usuario. Debe implementar este agente de escucha de eventos para leer todas las nuevas notificaciones y las actualizaciones de notificación desde el lector e implementar su propia lógica de negocios para controlar cada uno de estos nuevos cambios. 
+En la sección anterior se ve que se agrega una escucha de eventos al lector de notificaciones de usuario. Debes implementar esta escucha de eventos para leer todas las notificaciones nuevas y las actualizaciones de notificaciones del lector, e implementar tu propia lógica de negocio para controlar cada uno de estos nuevos cambios. 
 
 > [!TIP] 
-> Este agente de escucha de eventos es donde se controle la lógica de negocios principal y "usar" el contenido de la carga de la notificación basándose en sus escenarios. Si actualmente usa notificación sin procesar del WNS para construir una notificación local en el centro de actividades de nivel de sistema operativo, o si usa el contenido en la notificación para actualizar alguna IU en la aplicación, esto es el lugar para hacerlo. 
+> En esta escucha de eventos es donde se controla la lógica principal del negocio y "consume" el contenido de la carga útil de la notificación en función en tus escenarios. Si utilizas la notificación sin procesar de WNS para crear una notificación del sistema local en el centro de actividades a nivel de sistema operativo o si utilizas el contenido de la notificación para actualizar una interfaz de usuario en la aplicación, este es el lugar para hacerlo. 
 
-El código siguiente muestra cómo se elige la aplicación de ejemplo generar una notificación del sistema local para todos los UserNotification entrante que están activos y quitar de la interfaz de usuario de notificación correspondiente en la vista de la aplicación si se elimina una notificación. 
+El código siguiente muestra cómo la aplicación de ejemplo elige generar una notificación del sistema local para todas las notificaciones de usuario (UserNotification) entrantes que están activas y quitar la interfaz de usuario de notificaciones correspondiente en la vista de la aplicación si se elimina una notificación. 
 
 ```C#
 
@@ -126,11 +126,11 @@ private async void ReadNotifications(UserNotificationReader reader, bool showToa
 }
 
 ```
-## <a name="update-the-state-of-an-existing-usernotification"></a>Actualizar el estado de un UserNotification existente
-En la sección anterior, hemos mencionado que a veces un cambio UserNotification recibido a través el lector podría ser una actualización de estado en una existente UserNotification – si se está marcando como descartado o se marca como leído. En este caso, el cliente de la aplicación puede elegir qué hacer, como la habilitación de universal descartar mediante la eliminación de la notificación visual correspondiente en este dispositivo concreto. Dar un paso atrás, el cliente de aplicación es a menudo la que inició esta actualización de cambio UserNotification para comenzar: desde un dispositivo diferente. Puede elegir el momento para actualizar el estado de su UserNotifications, pero normalmente se actualizan cuando la notificación visual correspondiente se controla por el usuario en ese dispositivo o la notificación se controla aún más por el usuario en cierta experiencia en la aplicación que habilitar . Este es un ejemplo del aspecto que podría tener el flujo: El servidor de la aplicación publica una notificación dirigida a los usuarios a. usuario A recibe esta notificación en su PC y su teléfono donde están instalados los clientes de la aplicación. El usuario hace clic en la notificación en PC y realiza un seguimiento en la aplicación a los controladores de la tarea correspondiente. El cliente de aplicación en este equipo, a continuación, llamará a conectado de Platform SDK de dispositivos para actualizar el estado de la UserNotification correspondiente para disponer de esta actualización sincronizar en todos los dispositivos de este usuario. Los demás clientes de aplicación, al recibir este estado de actualización en tiempo real, se, a continuación, quitará la alerta correspondiente visual /Message / notificación desde el centro de notificaciones del dispositivo del sistema / bandeja notificación / acción Center. Se trata cómo notificaciones obtengan descartar universalmente en todos los dispositivos del usuario. 
+## <a name="update-the-state-of-an-existing-usernotification"></a>Actualización del estado de una clase UserNotification existente
+En la sección anterior se mencionó que a veces un cambio en UserNotification recibido a través de la escucha puede ser una actualización de estado de una UserNotification existente, independientemente de si está marcada como descartada o como leída. En este caso, el cliente de la aplicación puede elegir qué hacer; por ejemplo, habilitar el descarte universal al eliminar la notificación visual correspondiente en este dispositivo concreto. Dando un paso atrás, el cliente de la aplicación es a menudo el que inició esta actualización de cambio de UserNotification desde otro dispositivo. Puedes elegir la hora para actualizar el estado de tus UserNotifications, pero normalmente se actualizan cuando el usuario controla la notificación visual correspondiente en ese dispositivo o en alguna experiencia en la aplicación que habilites. Aquí te mostramos un ejemplo del flujo que verás: El servidor de aplicaciones publica una notificación destinada al usuario A. El usuario A recibe esta notificación tanto en su PC como en el teléfono donde están instalados los clientes de la aplicación. El usuario hace clic en la notificación en su PC y se dirige a la aplicación para controlar la tarea correspondiente. El cliente de la aplicación en su PC llamará al SDK de la plataforma de dispositivos conectados para actualizar el estado de la UserNotification correspondiente con el fin de sincronizar esta actualización en todos los dispositivos de este usuario. Los demás clientes de la aplicación, al recibir esta actualización de estado en tiempo real, eliminarán la alerta visual, mensaje o notificación del sistema correspondiente del centro de notificación, la bandeja de notificación o el centro de actividades del dispositivo. Así es como las notificaciones se descartan universalmente en los dispositivos de un usuario. 
 
 > [!TIP] 
-> Clase UserNotification proporciona actualmente 2 tipos de actualizaciones de estado, puede modificar el UserNotificationReadState o la UserNotificationUserActionState y definir su propia lógica de qué debe ocurrir cuando se actualizan las notificaciones. Por ejemplo, puede marcar UserActionState para ser activado o descartada y descartar la dinamización de ese valor para implementar universal. Como alternativa, o al mismo tiempo puede marcar ReadState como de lectura o no leído y se basa en que determinan qué notificaciones deben mostrarse en la vista de historial de notificación en aplicación. Código siguiente fragmento de código muestra cómo marcar la UserNotificationUserActionState de una notificación como descartada.
+> Actualmente, la clase UserNotification proporciona dos tipos de actualizaciones de estado: puedes modificar UserNotificationReadState o UserNotificationUserActionState y definir tu propia lógica sobre lo que debe ocurrir cuando se actualizan las notificaciones. Por ejemplo, puedes marcar UserActionState para que esté activada o descartada y basarte en ese valor para implementar el descarte universal. Si lo prefieres, o al mismo tiempo, puedes marcar ReadState como leído o no leído y, en función de ello, determinar qué notificaciones deben aparecer en la vista del historial de notificaciones en la aplicación. El fragmento de código siguiente muestra cómo marcar el elemento UserNotificationUserActionState de una notificación como desestimado.
 
 ```C#
 public async void Dismiss(string id)

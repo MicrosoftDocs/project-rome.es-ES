@@ -1,26 +1,26 @@
 ---
-title: Publicar y leer las actividades del usuario (Android)
-description: Esta guía muestra cómo crear, publicar y leer las actividades de usuario basada en Windows en su aplicación Android.
+title: Publicación y lectura de actividades del usuario (Android)
+description: En esta guía se muestra cómo crear, publicar y leer en la aplicación Android actividades del usuario basadas en Windows.
 ms.topic: article
-keywords: proyecto de Microsoft, windows, Roma, las actividades del usuario, android
+keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
 ms.openlocfilehash: 67f793341a108853d5b36e062fd04f441efff473
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801537"
 ---
-# <a name="implementing-user-activities-for-android"></a>Implementación de las actividades del usuario para Android
+# <a name="implementing-user-activities-for-android"></a>Implementación de Actividades del usuario para Android
 
-Las actividades del usuario son construcciones de datos que representan las tareas de un usuario dentro de una aplicación. Hacen posible guardar una instantánea de una tarea que se puede continuar en un momento posterior. El [escala de tiempo de Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) característica presenta a los usuarios de Windows con una lista desplazable de todas sus actividades recientes, representado como tarjetas con texto y gráficos. Para obtener más información acerca de las actividades del usuario en general, vea [continuar con la actividad del usuario, incluso en dispositivos](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Para obtener recomendaciones sobre cuándo crear o actualizar las actividades, vea el [prácticas recomendadas de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guía.
+Las actividades del usuario son construcciones de datos que representan las tareas de un usuario dentro de una aplicación. Permiten guardar una instantánea de una tarea para continuarla más adelante. La característica [Línea de tiempo de Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) muestra a los usuarios de Windows una lista desplazable de todas sus actividades recientes, representadas como tarjetas con texto y gráficos. Para obtener más información sobre las actividades del usuario en general, consulta [Continuar la actividad del usuario, incluso en diferentes dispositivos](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Para obtener recomendaciones sobre cuándo crear o actualizar las actividades, consulta la guía [Procedimientos recomendados de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
 
-Con el SDK de proyecto Roma, la aplicación Android puede no sólo publicar las actividades del usuario para su uso en las características de Windows, como la escala de tiempo, pero puede también actúan como un punto de conexión y leer las actividades al usuario igual escala de tiempo en los dispositivos de Windows. Esto permite que las aplicaciones entre dispositivos trascender sus plataformas y proporcionan experiencias que siguen los usuarios en lugar de los dispositivos.  
+Con el SDK de Project Rome, la aplicación de Android no solo puede publicar las actividades del usuario para su uso en las características de Windows como Línea de tiempo, sino que también puede actuar como punto de conexión y leer las actividades al usuario, al igual que hace la característica Línea de tiempo en dispositivos Windows. Esto permite que las aplicaciones multidispositivo trasciendan las plataformas y presenten experiencias que siguen a los usuarios y no a los dispositivos.  
 
-Consulte la [referencia de API](api-reference-for-android.md) página para obtener vínculos a los documentos de referencia pertinentes para estos escenarios.
+Consulta en la página de [referencia de API](api-reference-for-android.md) los vínculos a los documentos de referencia pertinentes para estos escenarios.
 
-Este pasos hará referencia a código desde el [Roma Android de proyecto aplicación de ejemplo](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
+Los pasos siguientes hacen referencia a código de la [aplicación de ejemplo de Android para Project Rome](https://github.com/Microsoft/project-rome/tree/master/Android/samples).
 
 [!INCLUDE [android/dev-reqs](../includes/android/dev-reqs.md)]
 
@@ -30,16 +30,16 @@ Este pasos hará referencia a código desde el [Roma Android de proyecto aplicac
 
 [!INCLUDE [android/dev-center-onboarding](../includes/android/notifications-dev-center-onboarding.md)]
 
-## <a name="using-the-platform"></a>Con la plataforma
+## <a name="using-the-platform"></a>Uso de la plataforma
 
 [!INCLUDE [android/create-setup-events-start-platform](../includes/android/create-setup-events-start-platform.md)]
 
-### <a name="initialize-a-user-activity-channel"></a>Inicializar un canal de la actividad del usuario
+### <a name="initialize-a-user-activity-channel"></a>Inicialización de un canal de actividad del usuario
 
-Para implementar características de la actividad del usuario en la aplicación, primero deberá inicializar la actividad del usuario mediante la creación de un UserActivityChannel de fuente. Debe tratar como el paso de inicialización de la plataforma anterior: debe ser activada y, posiblemente, puestos al día siempre que la aplicación se pone en primer plano (pero no antes de la inicialización de plataforma).
+Para implementar características de actividad del usuario en la aplicación, primero debes inicializar la fuente de la actividad del usuario mediante la creación de una clase UserActivityChannel. Debes tratar este paso como el paso anterior de inicialización de la plataforma: debe comprobarse y, posiblemente, rehacerse siempre que la aplicación pasa al primer plano (pero no antes de la inicialización de la plataforma).
 
-También necesitará el identificador de aplicación multiplataforma, que se ha recuperado mediante el registro del panel para desarrolladores de Microsoft.
-Los siguientes métodos de inicializan un UserActivityChannel.
+También necesitarás el id. de la aplicación multiplataforma, recuperado a través del registro del Panel de desarrolladores de Microsoft.
+Los siguientes métodos inicializan una clase UserActivityChannel.
 
 ```Java
 private UserActivityChannel mActivityChannel;
@@ -103,12 +103,12 @@ private UserActivityChannel getUserActivityChannel() {
 }
 ```
 
-En este momento, debe tener una referencia UserActivityChannel en mActivityChannel.
+En este punto debes contar con una referencia a UserActivityChannel en el canal mActivityChannel.
 
 
-### <a name="create-and-publish-a-user-activity"></a>Creación y publicación de una actividad de usuario
+### <a name="create-and-publish-a-user-activity"></a>Creación y publicación de una actividad del usuario
 
-A continuación, establezca los datos del identificador, DisplayText y ActivationURI de cuál será un nuevo **UserActivity**. El identificador debe ser una cadena única. Se mostrará el texto para mostrar en otros dispositivos cuando los vean la actividad (en Windows escala de tiempo, por ejemplo), por lo que debe ser una descripción breve de la actividad. El ActivationUri determinará qué acción se realiza cuando el **UserActivity** está activado (cuando está seleccionado en la escala de tiempo, por ejemplo). El código siguiente rellena de datos de ejemplo para estos campos.
+A continuación, establece los datos de ID, DisplayText y ActivationURI de la que será una nueva instancia de **UserActivity**. El valor de ID debe ser una cadena única. El valor de DisplayText se verá en otros dispositivos cuando vean la actividad (en la característica Línea de tiempo de Windows, por ejemplo), por lo que debe ser una descripción concisa de la actividad. El valor de ActivationUri determinará qué acción se realiza cuando se activa la **UserActivity** (por ejemplo, cuando se selecciona en la línea de tiempo). El código siguiente rellena datos de ejemplo para estos campos.
 
 
 ```Java
@@ -124,7 +124,7 @@ mDisplayText = "Created by OneSDK Sample App";
 mActivationUri = "http://contoso.com");
 ```
 
-A continuación, proporcionar un método que crea un nuevo **UserActivity** instancia.
+A continuación, indica un método que cree una nueva instancia de **UserActivity**.
 
 ```Java
 // Create the UserActivity (with unique ID) using a custom method. 
@@ -148,7 +148,7 @@ private UserActivity createUserActivity(UserActivityChannel channel, String acti
     return activity;
 }
 ```
-Una vez que tenga el **UserActivity** de la instancia, rellenarla con los datos definidos anteriormente.
+Cuando tengas la instancia de **UserActivity**, rellénala con los datos definidos antes.
 
 ```Java
 //set the properties of the UserActivity:
@@ -158,7 +158,7 @@ mActivity.getVisualElements().setDisplayText(mDisplayText);
 mActivity.setActivationUri(mActivationUri);
 ```
 
-Por último, puede publicar la actividad en la nube. 
+Por último, publica la actividad en la nube. 
 
 ```Java
 // This code saves and publishes the activity
@@ -177,11 +177,11 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<Void, Throwable>
 ```
 
 > [!TIP] 
-> Además de las propiedades anteriores, hay muchas otras características que se pueden configurar. Para completar las distintas maneras en que se puede personalizar un UserActivity, consulte el  **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)**, y **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** clases. Consulte la [prácticas recomendadas de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices) guía para recomendaciones detalladas sobre cómo al diseño de las actividades del usuario.
+> Además de las propiedades anteriores, hay muchas otras características que se pueden configurar. Para ver todos los modos en los que se puede personalizar la construcción UserActivity, consulta las clases **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)** , **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)** y **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** . Consulta recomendaciones detalladas sobre cómo diseñar actividades del usuario en la guía [Procedimientos recomendados de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
 
-### <a name="update-an-existing-user-activity"></a>Actualización de una actividad de usuario existente
+### <a name="update-an-existing-user-activity"></a>Actualización de una actividad del usuario existente
 
-Si tiene una actividad existente y desea actualizar su información (en el caso de una nueva contratación, página cambiada etc.), puede hacerlo mediante el uso de un **UserActivitySession**.
+Si ya tienes una actividad y deseas actualizar su información (en el caso de una nueva involucración, un cambio de página, etc.), puedes hacerlo con **UserActivitySession**.
 
 ```Java
 private UserActivitySession mActivitySession;
@@ -196,7 +196,7 @@ if (mActivity != null)
 }
 ```
 
-Una vez que ha creado una sesión, la aplicación puede realizar los cambios deseados a las propiedades de la **UserActivity**. Cuando haya terminado de realizar los cambios, cierre la sesión. 
+Una vez que has creado una sesión, la aplicación puede realizar los cambios deseados en las propiedades de la construcción **UserActivity**. Cuando hayas terminado de realizar los cambios, cierra la sesión. 
 
 ```Java
 mActivitySession.close();
@@ -204,11 +204,11 @@ mActivitySession = null;
 Log.d("UserActivityFragment", "Stopping");
 ```
 
-Un **UserActivitySession** puede considerarse como una manera de crear un **UserActivitySessionHistoryItem** (que se describe en la sección siguiente). En lugar de crear un nuevo **UserActivity** cada vez que un usuario se mueve a una página nueva, simplemente puede crear una nueva sesión para cada página. Esto hará que para una actividad más intuitiva y organizada de experiencia de lectura.
+**UserActivitySession** se puede considerar como una manera de crear una clase **UserActivitySessionHistoryItem** (se explica en la sección siguiente). En lugar de crear una nueva clase **UserActivity** cada vez que un usuario se mueve a una página nueva, puedes crear una nueva sesión para cada página. Así se conseguirá que la experiencia de lectura de la actividad sea más intuitiva y organizada.
 
-### <a name="read-user-activities"></a>Leer las actividades del usuario
+### <a name="read-user-activities"></a>Lectura de actividades del usuario
 
-La aplicación puede leer las actividades del usuario y presentarlos al usuario, igual que lo hace la característica de escala de tiempo de Windows. Para configurar la lectura de la actividad del usuario, use el mismo **UserActivityChannel** anteriormente. Esta instancia puede exponer **UserActivitySessionHistoryItem** las instancias que representan la contratación de un usuario en una actividad determinada durante un período de tiempo específico.
+La aplicación puede leer actividades del usuario y presentarlas al usuario, del mismo modo que lo hace la característica Línea de tiempo de Windows. Para configurar la lectura de la actividad del usuario, usa la misma instancia de **UserActivityChannel** que antes. Esta instancia puede exponer instancias de **UserActivitySessionHistoryItem**, que representan la involucración de un usuario en una actividad determinada durante un período de tiempo específico.
 
 ```Java
 private ArrayList<UserActivitySessionHistoryItem> mHistoryItems; 
@@ -238,4 +238,4 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<UserActivitySess
 });
 ```
 
-Ahora la aplicación debe tener una lista rellenada de **UserActivitySessionHistoryItem**s. Cada una de ellas puede entregar subyacente **UserActivity** (consulte **[UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** para obtener más información), que, a continuación, se puede mostrar al usuario.
+Ahora la aplicación debe tener una lista rellenada de instancias de **UserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **UserActivity** subyacente (consulta  **[UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** , para obtener más información), que puedes mostrar al usuario.

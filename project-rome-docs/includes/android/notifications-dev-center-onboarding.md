@@ -1,21 +1,21 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: dc4d7bbd-bc87-42b1-9924-52c7bfcd5b5f
 ms.localizationpriority: medium
 ms.openlocfilehash: f085486eece082366dddc00d86f0c4959d09a5cf
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58907307"
 ---
-### <a name="register-your-app-for-push-notifications"></a>Registrar la aplicación para notificaciones de inserción
+### <a name="register-your-app-for-push-notifications"></a>Registro de la aplicación para notificaciones push
 
-Registrar la aplicación con Google para [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client) admite. No olvide tomar nota del remitente clave de servidor y el identificador que recibe; los necesitará más adelante.
+Registra la aplicación con Google para la compatibilidad con [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client). No olvides anotar el id. del remitente y la clave de servidor que recibas; los necesitarás más adelante.
 
-Una vez registrado, debe asociar la funcionalidad de notificación de inserción con la plataforma de dispositivos conectados en la aplicación.
+Una vez efectuado el registro, debes asociar la funcionalidad de notificaciones push con la plataforma de dispositivos conectados de tu aplicación.
 
 ```Java
 mNotificationRegistration = new ConnectedDevicesNotificationRegistration();
@@ -25,26 +25,26 @@ mNotificationRegistration.setAppId(Secrets.FCM_SENDER_ID);
 mNotificationRegistration.setAppDisplayName("SampleApp");
 ```
 
-### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Registrar la aplicación en Microsoft Windows Dev Center para experiencias multidispositivo
+### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Registro de la aplicación en el Centro de desarrollo de Microsoft Windows para experiencias multidispositivo
 
 > [!IMPORTANT]
-> Este paso sólo es necesario si desea usar características de proyecto Roma para tener acceso a datos desde o realizar solicitudes de dispositivos que no sean Windows. Si solo tiene como destino dispositivos Windows, no es necesario completar este paso.
+> Este paso solo es necesario si deseas usar características de Project Rome para acceder a datos de dispositivos que no sean Windows o realizar solicitudes en ellos. Si solo vas a trabajar con dispositivos Windows, no es necesario que realices este paso.
 
-Ir al panel del centro de desarrollo, vaya a experiencias multidispositivo desde el panel de navegación del lado izquierdo y seleccione Configurar una nueva aplicación entre dispositivos, que se muestra a continuación.
-![Panel del centro de desarrollo: experiencias multidispositivo](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
+Ve al Panel del Centro de desarrollo y allí, a Cross-Device Experiences (Experiencias multidispositivo) en el panel de navegación del lado izquierdo; selecciona la opción de configuración de una nueva aplicación multidispositivo, tal como se muestra a continuación.
+![Panel del Centro de desarrollo: experiencias multidispositivo](../../notifications/media/dev_center_portal/dev_center_portal_1_overview.png)
 
-El proceso de incorporación de centro de desarrollo requiere los siguientes pasos:
-* Seleccione las plataformas admitidas: seleccione las plataformas donde la aplicación tendrá una presencia y habilitarse para experiencias multidispositivo. En el caso de integración de las notificaciones de gráfico, puede seleccionar desde Windows, Android o iOS.
-![Plataformas compatibles con experiencias multidispositivo:](../../notifications/media/dev_center_portal/dev_center_portal_2_supported_platforms.png)
+El proceso de incorporación del Centro de desarrollo requiere los siguientes pasos:
+* Select supported platforms (Seleccionar plataformas compatibles): selecciona las plataformas donde la aplicación estará presente y habilitada para experiencias multidispositivo. En el caso de la integración con las notificaciones de Graph, puedes seleccionar Windows, Android o iOS.
+![Experiencias multidispositivo: plataformas compatibles](../../notifications/media/dev_center_portal/dev_center_portal_2_supported_platforms.png)
 
-* Proporcione los identificadores de aplicación: proporcione los identificadores de aplicación para cada uno de la plataforma donde la aplicación tiene una presencia. Las aplicaciones Android, esto es el nombre de paquete asignada a la aplicación cuando creó el proyecto. El nombre del paquete puede encontrarse en la consola de Firebase en información general del proyecto -> General. Puede agregar distintos identificadores (hasta diez) por plataforma, que es en caso de tener varias versiones de la misma aplicación, o incluso diferentes aplicaciones, lo que quiere que sea capaz de recibir las mismas notificaciones enviadas por el servidor de aplicaciones de destino en el mismo usuario. 
-![Experiencias multidispositivo: identificadores de aplicación](../../notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
+* Provide app IDs (Proporcionar id. de la aplicación): proporciona los id. de la aplicación para cada una de las plataformas donde la aplicación estará presente. En las aplicaciones Android, es el nombre del paquete que asignaste a la aplicación al crear el proyecto. Puedes encontrar el nombre del paquete en la consola de Firebase, en Project Overview (Información general del proyecto) -> General. Puedes agregar varios id. (hasta diez) por plataforma; esto se aplica en el caso de tener varias versiones de la misma aplicación, o incluso diferentes aplicaciones, que quieres que reciban las mismas notificaciones enviadas por el servidor de aplicaciones destinadas al mismo usuario. 
+![Experiencias multidispositivo: id. de la aplicación](../../notifications/media/dev_center_portal/dev_center_portal_3_app_ids.png)
 
-* Proporcione o seleccione la aplicación de los identificadores de MSA o AAD registros de aplicaciones. Estos identificadores de cliente correspondientes al registro de aplicación AAD o de MSA se obtuvieron en los pasos de registro de aplicación AAD/MSA anteriores desde arriba. 
-![Experiencias multidispositivo – MSA y registros de aplicaciones AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
+* Proporciona o selecciona los id. de la aplicación de los registros de la aplicación con MSA o AAD. Estas identificaciones de cliente correspondientes al registro de la aplicación con AAD o MSA se obtuvieron en los pasos de registro de la aplicación con MSA o AAD anteriores, indicados más arriba. 
+![Experiencias multidispositivo: registros de la aplicación con MSA y AAD](../../notifications/media/dev_center_portal/dev_center_portal_4_msa_aad_connections.png)
 
-* Las notificaciones de Graph y otras capacidades de plataforma de dispositivos conectados aprovechan cada una de las plataformas de notificación nativa en las plataformas principales para enviar notificaciones a la aplicación de extremos de cliente, es decir, WNS (para Windows UWP), FCM (para Android) y Apple Push Notification Service (para iOS) . Proporcione sus credenciales para estas plataformas de notificación habilitar las notificaciones de Graph entregar las notificaciones para el servidor de aplicaciones, al publicar las notificaciones de usuario de destino. Para Android, [habilitar el servicio de mensajería de nube](https://firebase.google.com/docs/cloud-messaging/android/client) es un requisito previo para usar notificaciones de Microsoft Graph. Además, tenga en cuenta que el identificador de remitente requerido se corresponde con el identificador del remitente Firebase Cloud Messaging y la clave de API que se corresponde con la clave del servidor heredado. Ambos pueden encontrarse en la consola de Firebase -> proyecto -> configuración, en la pestaña de mensajería en la nube, como se muestra en la captura de pantalla.
-![Experiencias multidispositivo: credenciales de inserción](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
+* Las notificaciones de Graph y otras funcionalidades de la plataforma de dispositivos conectados aprovechan cada una de las plataformas de notificación nativas de las principales plataformas para enviar notificaciones hasta los puntos de conexión cliente de la aplicación, es decir, WNS (para Windows UWP), FCM (para Android) y APNS (para iOS). Proporciona tus credenciales para estas plataformas de notificación para permitir que Notificaciones de Graph entregue las notificaciones para el servidor de aplicaciones al publicar notificaciones destinadas al usuario. En Android, debe [habilitarse el servicio Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/android/client) para usar Notificaciones de Microsoft Graph. Además, ten en cuenta que el id. del remitente requerido se corresponde con el valor de Sender ID (id. del remitente) de Firebase Cloud Messaging y que la clave de API se corresponde con el valor de Legacy Server Key (Clave del servidor heredado). Ambos pueden encontrarse en la consola de Firebase -> Project (Proyecto) -> Settings (Configuración), en la pestaña Cloud Messaging (Mensajería en la nube), tal como se muestra en la captura de pantalla.
+![Experiencias multidispositivo: credenciales de notificaciones push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 
-* El último paso es comprobar el dominio de aplicación entre dispositivos, que actúa como un proceso de comprobación para demostrar que la aplicación tiene que actúa como una identidad de aplicación entre dispositivos de la aplicación que registró la propiedad de este dominio.
-![Experiencias multidispositivo: comprobación de dominio](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)
+* El último paso consiste en comprobar el dominio de la aplicación multidispositivo; sirve como proceso de verificación para confirmar que la aplicación tiene la propiedad de este dominio, que actúa como identidad de aplicación multidispositivo para la aplicación que registraste.
+![Experiencias multidispositivo: verificación del dominio](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png)

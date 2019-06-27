@@ -1,14 +1,14 @@
 ---
 ms.openlocfilehash: 75bed30e890e6fd2b819d1f28effb3b1df153c39
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58908577"
 ---
-# <a name="implementing-user-activities-for-windows"></a>Implementación de las actividades del usuario para Windows
+# <a name="implementing-user-activities-for-windows"></a>Implementación de Actividades del usuario para Windows
 
-Las páginas de API para el proyecto Roma y procedimientos relacionados de Windows se incluyen en la sección UWP de sitio de documentación de Microsoft. Consulte los artículos siguientes para obtener información sobre cómo implementar aplicaciones de las actividades de usuario de Windows:
+En la sección UWP del sitio de documentación de Microsoft se incluyen las páginas relacionadas de Windows de API y de procedimientos para Project Rome. Consulta los siguientes artículos para aprender a implementar Actividades del usuario para aplicaciones de Windows:
 
 [Guía de procedimientos para Windows](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities)
 

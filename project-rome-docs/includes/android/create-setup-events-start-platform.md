@@ -1,26 +1,26 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 0ac6a543cc63be9154e40482e587a8f373f56798
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755791"
 ---
 ### <a name="create-the-platform"></a>Creación de la plataforma
 
 
-Para empezar a crear simplemente una instancia de la plataforma.
+Para empezar, simplemente crea una instancia de la plataforma.
 
 `ConnectedDevicesPlatform sPlatform = new ConnectedDevicesPlatform(context);`
 
-### <a name="subscribe-to-connecteddevicesaccountmanager-events-to-handle-the-user-account"></a>Suscribirse a eventos ConnectedDevicesAccountManager para controlar la cuenta de usuario 
+### <a name="subscribe-to-connecteddevicesaccountmanager-events-to-handle-the-user-account"></a>Suscripción a eventos ConnectedDevicesAccountManager para controlar la cuenta de usuario 
 
-La plataforma requiere que un usuario autenticado tener acceso a la plataforma.  Necesitará suscribirse a **ConnectedDevicesAccountManager** se usa eventos para asegurar una cuenta válida. 
+La plataforma requiere un usuario autenticado para acceder a la plataforma.  Deberás suscribirte a eventos **ConnectedDevicesAccountManager** para garantizar que se usa una cuenta válida. 
 
 ```Java
  ConnectedDevicesPlatform sPlatform.getAccountManager().accessTokenRequested().subscribe((accountManager, args) -> {
@@ -37,9 +37,9 @@ La plataforma requiere que un usuario autenticado tener acceso a la plataforma. 
 ```
 
 
-### <a name="subscribe-to-connecteddevicesnotificationregistrationmanager-events"></a>Suscribirse a eventos ConnectedDevicesNotificationRegistrationManager
+### <a name="subscribe-to-connecteddevicesnotificationregistrationmanager-events"></a>Suscripción a eventos ConnectedDevicesNotificationRegistrationManager
 
-De forma similar, la plataforma utiliza notificaciones para entregar comandos entre dispositivos.  Por lo tanto, debe suscribirse a la **ConnectedDevicesNotificationRegistrationManager** eventos para asegurar los Estados de registro en la nube son válidos para la cuenta utilizada.  Compruebe el uso de estado **ConnectedDevicesNotificationRegistrationState**
+De forma similar, la plataforma utiliza notificaciones para entregar comandos entre dispositivos.  Por lo tanto, debes suscribirte a los eventos **ConnectedDevicesNotificationRegistrationManager** para garantizar que los estados de registro en la nube son válidos para la cuenta utilizada.  Comprueba el estado con **ConnectedDevicesNotificationRegistrationState**.
 
 ```Java
 ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notificationRegistrationStateChanged().subscribe((notificationRegistrationManager, args) -> {
@@ -48,16 +48,16 @@ ConnectedDevicesPlatform sPlatform.getNotificationRegistrationManager().notifica
 
 }
 ```
-### <a name="start-the-platform"></a>Iniciar la plataforma
-Ahora que se inicializa la plataforma y los controladores de eventos están en su lugar, está listo para comenzar a detectar los dispositivos del sistema remoto.  
+### <a name="start-the-platform"></a>Inicio de la plataforma
+Ahora que la plataforma se ha inicializado y ya dispones de los controladores de evento, puedes comenzar a detectar los dispositivos del sistema remoto.  
 
 `ConnectedDevicesPlatform sPlatform.start();`
 
-### <a name="retrieve-user-accounts-known-to-the-app"></a>Recuperar las cuentas de usuario que se sabe que la aplicación
+### <a name="retrieve-user-accounts-known-to-the-app"></a>Recuperación de cuentas de usuario conocidas por la aplicación
 
-Es importante asegurarse de que la lista de cuentas de usuario que se sabe que la aplicación se ha sincronizado correctamente con el **ConnectedDevicesAccountManager**.
+Es importante asegurarse de que la lista de cuentas de usuario conocidas por la aplicación se sincronizan correctamente con la clase **ConnectedDevicesAccountManager**.
 
-Use **ConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva cuenta de usuario.
+Usa **ConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva cuenta de usuario.
 
 ```Java
  public synchronized AsyncOperation<ConnectedDevicesAddAccountResult> addAccountToAccountManagerAsync(ConnectedDevicesAccount account) {
@@ -65,7 +65,7 @@ Use **ConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva cu
     }
 ```
 
-Para quitar una cuenta no válida, puede usar **ConnectedDevicesAccountManager.removeAccountAsync**
+Para quitar una cuenta no válida, puedes usar **ConnectedDevicesAccountManager.removeAccountAsync**.
 
 ```Java
  public synchronized AsyncOperation<ConnectedDevicesAddAccountResult> removeAccountToAccountManagerAsync(ConnectedDevicesAccount account) {

@@ -1,25 +1,25 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 60a4e282fc5446e38a80e72979e12daad51b2026
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59805181"
 ---
-### <a name="create-an-instance-of-the-platform"></a>Cree una instancia de la plataforma
+### <a name="create-an-instance-of-the-platform"></a>Creación de una instancia de la plataforma
 
-Para empezar a crear simplemente una instancia de la plataforma.
+Para empezar, simplemente crea una instancia de la plataforma.
 
 `MCDConnectedDevicesPlatform* platform = [MCDConnectedDevicesPlatform new];`
 
-### <a name="subscribe-to-mcdconnecteddevicesaccountmanager"></a>Suscríbase a MCDConnectedDevicesAccountManager
+### <a name="subscribe-to-mcdconnecteddevicesaccountmanager"></a>Suscripción a MCDConnectedDevicesAccountManager
 
-La plataforma requiere que un usuario autenticado tener acceso a la plataforma.  Necesitará suscribirse a **MCDConnectedDevicesAccountManager** se usa eventos para asegurar una cuenta válida.
+La plataforma requiere un usuario autenticado para acceder a la plataforma.  Deberás suscribirte a eventos **MCDConnectedDevicesAccountManager** para garantizar que se usa una cuenta válida.
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.accountManager.accessTokenRequested
@@ -41,9 +41,9 @@ La plataforma requiere que un usuario autenticado tener acceso a la plataforma. 
                  }
 ```
 
-### <a name="subscribe-to-mcdconnecteddevicesnotificationregistrationmanager"></a>Suscríbase a MCDConnectedDevicesNotificationRegistrationManager
+### <a name="subscribe-to-mcdconnecteddevicesnotificationregistrationmanager"></a>Suscripción a MCDConnectedDevicesNotificationRegistrationManager
 
-De forma similar, la plataforma utiliza notificaciones para entregar comandos entre dispositivos.  Por lo tanto, debe suscribirse a la **MCDConnectedDevicesNotificationRegistrationManager** eventos para asegurar los Estados de registro en la nube son válidos para la cuenta utilizada.  Compruebe el uso de estado **MCDConnectedDevicesNotificationRegistrationState**
+De forma similar, la plataforma utiliza notificaciones para entregar comandos entre dispositivos.  Por lo tanto, debes suscribirte a los eventos **MCDConnectedDevicesNotificationRegistrationManager** para garantizar que los estados de registro en la nube son válidos para la cuenta utilizada.  Comprueba el estado con **MCDConnectedDevicesNotificationRegistrationState**.
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.notificationRegistrationManager.notificationRegistrationStateChanged
@@ -56,16 +56,16 @@ De forma similar, la plataforma utiliza notificaciones para entregar comandos en
 
 ```
 
-### <a name="start-the-platform"></a>Iniciar la plataforma
-Ahora que se inicializa la plataforma y los controladores de eventos están en su lugar, está listo para comenzar a detectar los dispositivos del sistema remoto.  
+### <a name="start-the-platform"></a>Inicio de la plataforma
+Ahora que la plataforma se ha inicializado y ya dispones de los controladores de evento, puedes comenzar a detectar los dispositivos del sistema remoto.  
 
 `[MCDConnectedDevicesPlatform* platform start];`
 
-### <a name="retrieve-user-accounts-known-to-the-app"></a>Recuperar las cuentas de usuario que se sabe que la aplicación
+### <a name="retrieve-user-accounts-known-to-the-app"></a>Recuperación de cuentas de usuario conocidas por la aplicación
 
-Es importante asegurarse de que la lista de cuentas de usuario que se sabe que la aplicación se ha sincronizado correctamente con el **MCDConnectedDevicesAccountManager**.
+Es importante asegurarse de que la lista de cuentas de usuario conocidas por la aplicación se sincronizan correctamente con la clase **MCDConnectedDevicesAccountManager**.
 
-Use **MCDConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva cuenta de usuario.
+Usa **MCDConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva cuenta de usuario.
 
 ```ObjectiveC
 [MCDConnectedDevicesPlatform* platform.accountManager
@@ -77,7 +77,7 @@ Use **MCDConnectedDevicesAccountManager.addAccountAsync** para agregar una nueva
      }
 ```
 
-Para quitar una cuenta no válida, puede usar **MCDConnectedDevicesAccountManager.removeAccountAsync**
+Para quitar una cuenta no válida, puedes usar **MCDConnectedDevicesAccountManager.removeAccountAsync**.
 
 ```ObjectiveC
  [MCDConnectedDevicesPlatform* platform.accountManager

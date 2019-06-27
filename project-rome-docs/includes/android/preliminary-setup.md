@@ -1,34 +1,34 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: b2d1d764c4aae562a1fcafdb490db5a14522cda6
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755805"
 ---
-## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Instalación preliminar para la plataforma de dispositivos conectados y notificaciones
+## <a name="preliminary-setup-for-the-connected-devices-platform-and-notifications"></a>Configuración preliminar para la plataforma de dispositivos conectados y las notificaciones
 
-Antes de implementar conectividad remota, hay unos pasos que deberá tomar para dar la capacidad para conectarse a dispositivos remotos, así como enviar y recibir notificaciones de la aplicación Android.
+Antes de implementar la conectividad remota, debes seguir unos pasos para que la aplicación Android disponga de la funcionalidad para conectarse a dispositivos remotos, así como para enviar y recibir notificaciones.
 
-### <a name="register-your-app"></a>Registrar la aplicación
+### <a name="register-your-app"></a>Registro de la aplicación
 
-Cuenta de Microsoft (MSA) o Azure Active Directory (AAD) se requiere autenticación para casi todas las características del SDK de Roma proyecto (la excepción que se va a las API de uso compartidas cercanas). Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+La mayoría de las características del SDK de Project Rome (a excepción de las API de Uso compartido en proximidad) necesitan la autenticación de la cuenta de Microsoft (MSA) o Azure Active Directory (AAD). Si aún no tienes una cuenta MSA y deseas usarla, regístrate en [account.microsoft.com](https://account.microsoft.com/account).
 
 > [!NOTE]
-> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
+> No se admiten cuentas de Azure Active Directory (AAD) con las API de Retransmisión de dispositivo.
 
-Mediante el método de autenticación seleccionado, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/). Si no tiene una cuenta de desarrollador de Microsoft, deberá crear uno.
+A partir del método de autenticación elegido, debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/). Si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla.
 
-Al registrar una aplicación con una MSA, debería recibir una cadena de identificador de cliente. Guardar esto para su uso posterior. Esto permitirá que la aplicación tener acceso a los recursos de plataforma de dispositivos conectados de Microsoft. Si usa AAD, consulte [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) para obtener instrucciones sobre cómo obtener el cliente de cadena del identificador.
+Al registrar una aplicación con MSA, deberías recibir una cadena de id. de cliente. Guárdala para más adelante. Este dato permitirá que la aplicación acceda a los recursos de la plataforma de dispositivos conectados de Microsoft. Si usas AAD, consulta en [Bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) las instrucciones sobre cómo obtener la cadena de id. de cliente.
 
-### <a name="add-the-sdk"></a>Agregue el SDK
+### <a name="add-the-sdk"></a>Incorporación del SDK
 
-Inserte las siguientes referencias de repositorio en el *build.gradle* archivo en la raíz del proyecto.
+Inserta las siguientes referencias de repositorio en el archivo *build.gradle* situado en la raíz del proyecto.
 
 ```Java
 allprojects {
@@ -37,7 +37,7 @@ allprojects {
     }
 }
 ```
-A continuación, inserte la siguiente dependencia en el _build.gradle_ archivo que se encuentra en la carpeta del proyecto.
+A continuación, inserta la siguiente dependencia en el archivo _build.gradle_ que se encuentra en la carpeta del proyecto.
 
 ```Java
 dependencies { 
@@ -46,9 +46,9 @@ dependencies {
 }
 ```
 
-En el proyecto *AndroidManifest.xml* , agregue los siguientes permisos dentro de la `<manifest>` elemento (si aún no están presentes). Esto da permiso a la aplicación para conectarse a Internet y para habilitar la detección de Bluetooth en el dispositivo.
+En el archivo *AndroidManifest.xml* del proyecto, agrega los siguientes permisos dentro del elemento `<manifest>` (si no están ya incluidos). Esto permite que la aplicación se conecte a Internet y habilite la detección de Bluetooth en el dispositivo.
 
-Tenga en cuenta que los permisos relacionados con el Bluetooth solo son necesarios para usar la detección de Bluetooth; no se necesitan para las demás características de la plataforma de dispositivos conectados. Además, `ACCESS_COARSE_LOCATION` sólo es necesario en 21 de Android SDK y versiones posteriores. 23 de Android SDK y versiones posteriores, el desarrollador también debe pedir al usuario que conceda acceso a la ubicación en tiempo de ejecución.
+Ten en cuenta que los permisos relacionados con Bluetooth solo son necesarios para usar la detección de Bluetooth; no se necesitan para las demás características de la plataforma de dispositivos conectados. Además, `ACCESS_COARSE_LOCATION` solo es necesario en los niveles de Android SDK 21 y posteriores. En los niveles de Android SDK 23 y posteriores, el desarrollador también debe pedir al usuario que conceda acceso a la ubicación en tiempo de ejecución.
 
 
 ```xml
@@ -59,7 +59,7 @@ Tenga en cuenta que los permisos relacionados con el Bluetooth solo son necesari
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 ```
 
-A continuación, vaya a la clase o clases de actividad donde desea que la funcionalidad de dispositivos conectados a live. Importar los paquetes siguientes.
+A continuación, ve a las clases de actividad donde deseas incluir la funcionalidad de dispositivos conectados. Importa los siguientes paquetes.
 
 ```java
 import com.microsoft.connecteddevices;

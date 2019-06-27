@@ -1,34 +1,34 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: 771ceeb1-638f-4fba-8c34-953870b5d855
 ms.localizationpriority: medium
 ms.openlocfilehash: 57a5f2a1e7c40ace95656f9b08994f861b8cc9af
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "66755710"
 ---
-### <a name="msa-and-aad-authentication-registration"></a>MSA y registro de la autenticación de AAD
+### <a name="msa-and-aad-authentication-registration"></a>Registro de autenticación con MSA y AAD
 
 > [!NOTE]
-> No se admiten las cuentas de Azure Active Directory (AAD) con las API de Relay de dispositivo.
+> No se admiten cuentas de Azure Active Directory (AAD) con las API de Retransmisión de dispositivo.
 
-Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+Si aún no tienes una cuenta MSA y deseas usarla, regístrate en [account.microsoft.com](https://account.microsoft.com/account).
 
-A continuación, si utilizas MSA como la autenticación y el marco de identidad para los usuarios, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/) (si no tiene un Microsoft cuenta de desarrollador, debe crear una primera). Debería recibir una cadena de identificador de cliente de la aplicación; Asegúrese de recordar la ubicación o guardar esto. Más adelante se usará durante la incorporación de notificaciones de gráfico. Tenga en cuenta que una aplicación mediante la autenticación de MSA debe estar registrada como una aplicación de SDK de Live.
-![Portal de registro de aplicación](../../notifications/media/msa_app_registration/app_registration_portal.png)
+Si después utilizas MSA como marco de autenticación e identidad para los usuarios, debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/) (si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla). Debes recibir una cadena de id. de cliente para la aplicación; asegúrate de recordar la ubicación o guardarla. La usarás más adelante durante la incorporación a Notificaciones de Graph. Ten en cuenta que una aplicación que utiliza la autenticación con MSA debe estar registrada como aplicación de SDK de Live.
+![Portal de registro de aplicaciones](../../notifications/media/msa_app_registration/app_registration_portal.png)
 
-Si está escribiendo una aplicación que usa AAD como cuenta profesional o educativa autenticación y cuentas marco de identidad, debe registrar la aplicación a través de [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) con el fin de obtener el identificador de cliente. 
- ![Portal de registro de AAD](../../notifications/media/aad_registration_portal/aad_registration_portal.png) al crear un nuevo registro de aplicación, hay algunos permisos necesarios para poder usar las notificaciones de Graph y otras capacidades de plataforma de dispositivo conectado. Consulte a continuación. 
-![AAD Portal: configuración – requiere permisos de registro de](../../notifications/media/aad_registration_portal/aad_registration_portal_permissions.png)
-* Agregue el permiso de inicio de sesión de usuario.
-![Permisos necesarios: perfil de usuario AAD](../../notifications/media/aad_registration_portal/permissions_1_user.png)
-* Agregar permisos de servicio de comandos para obtener información del dispositivo.
-![Permisos necesarios: los dispositivos](../../notifications/media/aad_registration_portal/permissions_2_devices.png)
-* Agregue el permiso de Graph notificaciones en las API de servicios de fuente de actividad.
-![Permisos necesarios: los dispositivos](../../notifications/media/aad_registration_portal/permissions_3_graph_notifications.png)
-* Al final, si está escribiendo aplicaciones multiplataforma incluida una aplicación de UWP que se ejecutan en Windows, asegúrese de agregar permiso de servicio de notificación de Windows.
-![Permisos necesarios: WNS](../../notifications/media/aad_registration_portal/permissions_4_wns_push.png)
+Si escribes una aplicación que usa AAD como marco de autenticación e identidad de cuentas profesionales o educativas, debes registrarla a través de las [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) con el fin de obtener el id. de cliente. 
+ ![Portal de registro de AAD](../../notifications/media/aad_registration_portal/aad_registration_portal.png) Cuando se crea el registro de una nueva aplicación, se necesitan algunos permisos para poder usar las notificaciones de Graph y otras funcionalidades de la plataforma de dispositivos conectados. Consúltalos a continuación. 
+![Portal de registro de AAD: configuración, permisos necesarios](../../notifications/media/aad_registration_portal/aad_registration_portal_permissions.png)
+* Agrega el permiso de inicio de sesión del usuario.
+![Permisos necesarios: perfil de usuario de AAD](../../notifications/media/aad_registration_portal/permissions_1_user.png)
+* Agrega permisos del servicio de comandos para la información de dispositivo.
+![Permisos necesarios: dispositivos](../../notifications/media/aad_registration_portal/permissions_2_devices.png)
+* Agrega el permiso para notificaciones de Graph en las API del servicio de fuente de actividades.
+![Permisos necesarios: dispositivos](../../notifications/media/aad_registration_portal/permissions_3_graph_notifications.png)
+* Al final, si escribes una aplicación multiplataforma que incluye una aplicación para UWP que se ejecuta en Windows, asegúrate de agregar el permiso del Servicio de notificaciones de Windows.
+![Permisos necesarios: servicios de notificaciones de inserción de Windows](../../notifications/media/aad_registration_portal/permissions_4_wns_push.png)

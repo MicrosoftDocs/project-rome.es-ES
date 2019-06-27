@@ -1,14 +1,14 @@
 ---
 ms.openlocfilehash: 8e4a55e5bc537a82ef8b9d4cb5ef6eba0e6262fe
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58907027"
 ---
-# <a name="android-commanding-api-reference"></a>Referencia de comandos API de Android
+# <a name="android-commanding-api-reference"></a>Referencia de API de Comandos de Android
 
-Los siguientes espacios de nombres permiten aplicaciones descubrir y conectarse con dispositivos remotos y aplicaciones a través de inicio de aplicación remota y mensajería remoto.
+Los siguientes espacios de nombres permiten que las aplicaciones detecten dispositivos y aplicaciones remotos y se conecten a ellos a través del inicio de aplicaciones remotas y la mensajería remota.
 
 ## <a name="namespaces"></a>Espacios de nombres
 

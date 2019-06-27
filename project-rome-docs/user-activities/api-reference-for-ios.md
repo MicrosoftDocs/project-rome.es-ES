@@ -1,14 +1,14 @@
 ---
 ms.openlocfilehash: 5cd99bbc88f1d18edcdd78dfc7e36fa8f324e7da
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "58907457"
 ---
-# <a name="ios-user-activities-api-reference"></a>referencia de API de las actividades de usuario de iOS
+# <a name="ios-user-activities-api-reference"></a>Referencia de API de Actividades del usuario de iOS
 
-Las API siguientes permiten una aplicación crear y publicar las actividades de usuario de Windows de estilo.
+Las siguientes API permiten que una aplicación cree y publique actividades del usuario de estilo Windows.
 
 ## <a name="api-groups"></a>Grupos de API
 

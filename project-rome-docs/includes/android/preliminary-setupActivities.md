@@ -1,31 +1,31 @@
 ---
-title: Archivo de inclusión
-description: Archivo de inclusión
+title: include file
+description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
 ms.openlocfilehash: 45aa2364c2b1f7a30e94e2b720a0e4b14d4bff27
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
-ms.translationtype: MT
+ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 06/14/2019
 ms.locfileid: "59801667"
 ---
-## <a name="preliminary-setup-for-the-connected-devices-platform"></a>Instalación preliminar para la plataforma de dispositivos conectados
+## <a name="preliminary-setup-for-the-connected-devices-platform"></a>Configuración preliminar para la plataforma de dispositivos conectados
 
-Antes de implementar conectividad remota, hay unos pasos que deberá tomar para proporcionar la funcionalidad para conectarse a los dispositivos remotos a la aplicación Android.
+Antes de implementar la conectividad remota, debes seguir unos pasos para que la aplicación Android disponga de la funcionalidad para conectarse a dispositivos remotos.
 
 ### <a name="sign-in"></a>Iniciar sesión
 
-Se requiere autenticación de cuenta de Microsoft (MSA) o Azure Active Directory (AAD) para todas las características del SDK, excepto para el uso compartido de Nearby API. 
+Todas las características del SDK necesitan la autenticación de la cuenta de Microsoft (MSA) o Azure Active Directory (AAD), excepto las API de Uso compartido en proximidad. 
 
-Si aún no tiene una MSA y desea usar uno, registrar en [account.microsoft.com](https://account.microsoft.com/account).
+Si aún no tienes una cuenta MSA y deseas usarla, regístrate en [account.microsoft.com](https://account.microsoft.com/account).
 
-A continuación, debe registrar la aplicación con Microsoft, siga las instrucciones de la [Portal de registro de aplicación](https://apps.dev.microsoft.com/) (si no tiene una cuenta de desarrollador de Microsoft, debe crear una primera). Debería recibir una cadena de identificador de cliente de la aplicación; guardar esto para su uso posterior. Esto permitirá que la aplicación tener acceso a los recursos de plataforma de dispositivos conectados de Microsoft. Si usa AAD, consulte [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) para obtener instrucciones sobre cómo obtener el cliente de cadena del identificador.
+A continuación debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/) (si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla). Deberías recibir una cadena de id. de cliente para la aplicación; guárdala para más adelante. Este dato permitirá que la aplicación acceda a los recursos de la plataforma de dispositivos conectados de Microsoft. Si usas AAD, consulta en [Bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) las instrucciones sobre cómo obtener la cadena de id. de cliente.
 
-### <a name="add-the-sdk"></a>Agregue el SDK
+### <a name="add-the-sdk"></a>Incorporación del SDK
 
-Inserte las siguientes referencias de repositorio en el *build.gradle* archivo en la raíz del proyecto.
+Inserta las siguientes referencias de repositorio en el archivo *build.gradle* situado en la raíz del proyecto.
 
 ```Java
 allprojects {
@@ -36,7 +36,7 @@ allprojects {
     }
 }
 ```
-A continuación, inserte la siguiente dependencia en el _build.gradle_ archivo que se encuentra en la carpeta del proyecto.
+A continuación, inserta la siguiente dependencia en el archivo _build.gradle_ que se encuentra en la carpeta del proyecto.
 
 ```Java
 dependencies { 
@@ -45,9 +45,9 @@ dependencies {
 }
 ```
 
-Si desea usar ProGuard en la aplicación, agregue las reglas de ProGuard de estas nuevas API. Cree un archivo llamado *proguard rules.txt* en el *aplicación* carpeta del proyecto y pegue los contenidos de [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
+Si quieres usar ProGuard en la aplicación, agrega las reglas de ProGuard para estas nuevas API. Crea un archivo llamado *proguard-rules.txt* en la carpeta *App* del proyecto y pega en él el contenido del archivo [ProGuard_Rules_for_Android_Rome_SDK.txt](https://github.com/Microsoft/project-rome/blob/master/Android/ProGuard_Rules_for_Android_Rome_SDK.txt).
 
-En el proyecto *AndroidManifest.xml* , agregue los siguientes permisos dentro de la `<manifest>` elemento (si aún no están presentes). Esto da permiso a la aplicación para conectarse a Internet y para habilitar la detección de Bluetooth en el dispositivo.
+En el archivo *AndroidManifest.xml* del proyecto, agrega los siguientes permisos dentro del elemento `<manifest>` (si no están ya incluidos). Esto permite que la aplicación se conecte a Internet y habilite la detección de Bluetooth en el dispositivo.
 
 ```xml
 <uses-permission android:name="android.permission.INTERNET" />
@@ -58,9 +58,9 @@ En el proyecto *AndroidManifest.xml* , agregue los siguientes permisos dentro de
 ```
 
 > [!NOTE]
-> Los permisos relacionados con el Bluetooth solo son necesarios para usar la detección de Bluetooth; no se necesitan para las demás características de la plataforma de dispositivos conectados. Además, `ACCESS_COARSE_LOCATION` sólo es necesario en 21 de Android SDK y versiones posteriores. 23 de Android SDK y versiones posteriores, el desarrollador también debe pedir al usuario que conceda acceso a la ubicación en tiempo de ejecución.
+> Los permisos relacionados con Bluetooth solo son necesarios para usar la detección de Bluetooth; no se necesitan para las demás características de la plataforma de dispositivos conectados. Además, `ACCESS_COARSE_LOCATION` solo es necesario en los niveles de Android SDK 21 y posteriores. En los niveles de Android SDK 23 y posteriores, el desarrollador también debe pedir al usuario que conceda acceso a la ubicación en tiempo de ejecución.
 
-A continuación, vaya a la clase o clases de actividad donde desea que la funcionalidad de dispositivos conectados a live. Importar los espacios de nombres siguientes.
+A continuación, ve a las clases de actividad donde deseas incluir la funcionalidad de dispositivos conectados. Importa los siguientes espacios de nombres.
 
 ```java
 import com.microsoft.connecteddevices;
