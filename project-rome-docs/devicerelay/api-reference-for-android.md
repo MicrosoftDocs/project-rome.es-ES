@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 8e4a55e5bc537a82ef8b9d4cb5ef6eba0e6262fe
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Referencia de API de Comandos de Android
+ms.openlocfilehash: f539c401022a485fcebf2e6a14372c125f5a670c
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "58907027"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207624"
 ---
 # <a name="android-commanding-api-reference"></a>Referencia de API de Comandos de Android
 

@@ -1,10 +1,11 @@
 ---
-ms.openlocfilehash: 3f5ac416eb651ed6d79d53cb864d201dd2f73db7
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+title: Recepción de notificaciones mediante el SDK de Project Rome
+ms.openlocfilehash: ac86a6abb25a46a5f2c758e0bd6caaaaabeae620
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "58907597"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207814"
 ---
 # <a name="receiving-notifications-using-the-project-rome-sdk"></a>Recepción de notificaciones mediante el SDK de Project Rome
 
