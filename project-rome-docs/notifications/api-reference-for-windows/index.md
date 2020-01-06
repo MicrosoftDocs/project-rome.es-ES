@@ -1,19 +1,20 @@
 ---
+title: Referencia de API para Windows
 ms.custom: seodec18
-ms.openlocfilehash: e004326b00387855a4480150967b1747d0a82f4a
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: 62df9765b85e9f266dac64504e2546198cf7b6f8
+ms.sourcegitcommit: 5670ff536ea9bfcd678cfde54f262a1ec5c8add4
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58906727"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207784"
 ---
-# <a name="usernotifications-namespace"></a>Espacio de nombres UserNotifications
+# <a name="api-reference-for-windows"></a>Referencia de API para Windows
 ```
 usernotifications.h
 ```
-El espacio de nombres UserNotifications contiene API que permiten que una aplicación pueda recibir y administrar notificaciones dirigidas a usuarios publicadas por el servidor de aplicaciones mediante notificaciones de Microsoft Graph. 
+El espacio de nombres UserNotifications para Windows contiene API que permiten que una aplicación reciba y administre notificaciones dirigidas a usuarios que publica el servidor de aplicaciones mediante notificaciones de Microsoft Graph. 
 
 ### <a name="api-groups"></a>Grupos de API
 
-#### <a name="graph-notification-apisusernotificationsindexmd"></a>[API de notificación de Graph](usernotifications/index.md)
+[API de notificación de Graph](usernotifications/index.md)
 
