@@ -5,12 +5,12 @@ ms.topic: article
 keywords: microsoft, windows, project rome, commanding, ios
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
-ms.openlocfilehash: c9c3e8bf580884c6f0c3b6ccdf177f163f05c03a
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.openlocfilehash: 09479f0caa232215dfce51628432529d0e322536
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
-ms.locfileid: "66755808"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115557"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implementación de Retransmisión de dispositivo para iOS
 
@@ -182,8 +182,8 @@ Según el uso, es posible que tengas que cubrir casos en los que ninguna aplicac
 
 La aplicación de iOS puede usar el Portal de dispositivos conectados para interactuar con los servicios de aplicación en otros dispositivos. Esto proporciona muchas maneras de comunicarse con otros dispositivos; todas ellas sin necesidad de traer una aplicación al primer plano del dispositivo host.
 
-#### <a name="set-up-the-app-service-on-the-target-device"></a>Configurar el servicio de aplicaciones en el dispositivo de destino
-En esta guía se utiliza [Roman Test App para Windows](http://aka.ms/romeapp) como servicio de aplicación de destino. Por lo tanto, el siguiente código hará que una aplicación de iOS busque ese servicio de aplicación específico en el sistema remoto indicado. Si deseas probar este escenario, descarga la aplicación Roman Test App en un dispositivo Windows y asegúrate de haber iniciado sesión con la misma MSA que en los pasos preliminares anteriores.
+#### <a name="set-up-the-app-service-on-the-target-device"></a>Configuración del servicio de aplicaciones en el dispositivo de destino
+En esta guía se utiliza [Roman Test App para Windows](https://aka.ms/romeapp) como servicio de aplicación de destino. Por lo tanto, el siguiente código hará que una aplicación de iOS busque ese servicio de aplicación específico en el sistema remoto indicado. Si deseas probar este escenario, descarga la aplicación Roman Test App en un dispositivo Windows y asegúrate de haber iniciado sesión con la misma MSA que en los pasos preliminares anteriores.
 
 Para obtener instrucciones sobre cómo escribir tu propio servicio de aplicación para UWP, consulta [Crear y consumir un servicio de aplicación (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Tendrás que hacer algunos cambios para que el servicio sea compatible con los dispositivos conectados. Consulta la [guía UWP para los servicios de aplicaciones remotas](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) para obtener instrucciones sobre cómo hacerlo. 
 

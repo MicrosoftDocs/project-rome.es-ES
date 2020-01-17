@@ -1,18 +1,18 @@
 ---
 title: Creación de aplicaciones multidispositivo
-description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
+description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 28e76debcb8d3d74333827062e2345e078374b46
-ms.sourcegitcommit: a79123257cd2dc7214fcf691849ea6f56b3b2b70
+ms.openlocfilehash: 977d64749544d1991a40eff5d80a1cd6186aba97
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/07/2019
-ms.locfileid: "66755729"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76115549"
 ---
 # <a name="project-rome"></a>Project Rome
 
-[Project Rome](https://developer.microsoft.com/en-us/windows/project-rome) es una plataforma multidispositivo de Microsoft para aplicaciones. 
+[Project Rome](https://developer.microsoft.com/windows/project-rome) es una plataforma multidispositivo de Microsoft para aplicaciones. 
 
 En este sitio, encontrará documentación de Project Rome para desarrolladores y vínculos a otros recursos útiles.
 
@@ -40,7 +40,7 @@ La combinación de las API de Microsoft Graph API y los SDK de cliente habilitan
 
 Project Rome está implementado actualmente para las plataformas siguientes. Siga los vínculos para descargas los SDK y ejemplos.
 
-[windows-sdk]:             https://developer.microsoft.com/en-us/windows/downloads
+[windows-sdk]:             https://developer.microsoft.com/windows/downloads
 [windows-sdk-badge]:       https://img.shields.io/badge/sdk-April%202018%20Update-brightgreen.svg
 [windows-drsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/RemoteSystems
 [windows-afsample]:        https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/UserActivity 
@@ -78,7 +78,7 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 |   Plataforma                        | Características                                                         |           Paquete de SDK                          |   Muestras                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **Windows SDK**                   | Retransmisión de dispositivo, Actividades/Línea de tiempo                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Ejemplo de retransmisión de dispositivo con Project Rome para Windows][windows-drsample] <br> [Ejemplo de actividades con Project Rome para Windows][windows-afsample]
-| **Windows (versión preliminar)**             |                                    Notificaciones de Microsoft Graph | [![NuGet][winredist-sdk-badge]][winredist-sdk] | [Ejemplos de notificaciones de Graph para Windows][winredist-sample] 
+| **Windows (versión preliminar)**             |                                    Notificaciones de Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Ejemplos de notificaciones de Graph para Windows][winredist-sample] 
 | **Android**             | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph (versión preliminar) | [![Maven][android-sdk-badge]][android-sdk]     | [Ejemplo de Project Rome para Android][android-sample]
 | **iOS**                 | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph (versión preliminar) | [![CocoaPod][ios-sdk-badge]][ios-sdk]          | [Ejemplo de Project Rome para iOS][ios-sample]
 | **Xamarin para Android (versión preliminar)** | Retransmisión de dispositivo                                                     | [![NuGet][xamarin-sdk-badge]][xamarin-sdk]     | [Ejemplo de Xamarin para Android][xamarin-sample]
@@ -93,7 +93,7 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 * [Actualización de Project Rome para Android: ahora con compatibilidad para servicios de aplicaciones](https://blogs.windows.com/buildingapps/2017/03/23/project-rome-android-update-now-app-services-support/#DBm1Ic4JX8vXv2h0.97)
 
-* [Creación de una aplicación complementaria de control remoto para Android con Project Rome](https://blog.xamarin.com/building-remote-control-companion-app-android-project-rome/)
+* [Creación de una aplicación complementaria de control remoto para Android con Project Rome](https://devblogs.microsoft.com/xamarin/building-remote-control-companion-app-android-project-rome/)
 
 * [Nueva experiencia de uso compartido en Windows 10 Creators Update](https://blogs.windows.com/buildingapps/2017/04/06/new-share-experience-windows-10-creators-update/#OGskrWcLLlrCTCSH.97)
 
@@ -101,7 +101,7 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 ## <a name="other-resources"></a>Otros recursos
 
-* [Vinculación de Web a aplicaciones](https://docs.microsoft.com/en-us/windows/uwp/launch-resume/web-to-app-linking)
+* [Vinculación de Web a aplicaciones](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
 * [Conferencia en Build 2016](https://channel9.msdn.com/Events/Build/2016/B831)
 
@@ -109,5 +109,5 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 ## <a name="give-feedback"></a>Enviar comentarios
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Centro de opiniones](https://support.microsoft.com/en-us/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Ponte en contacto con nosotros](mailto:projectrometeam@microsoft.com)|
+|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Centro de opiniones](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Ponte en contacto con nosotros](mailto:projectrometeam@microsoft.com)|
 |-----|-----|-----|
