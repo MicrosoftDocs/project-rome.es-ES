@@ -6,10 +6,10 @@ keywords: microsoft, windows, project rome, user activities, ios
 ms.assetid: 445f1dd4-f3c7-46e4-a7cd-42a1fb411172
 ms.localizationpriority: medium
 ms.openlocfilehash: 3cc19463a5e036ab76288760aa70d86f1861675b
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801677"
 ---
 # <a name="implementing-user-activities-for-ios"></a>Implementación de Actividades del usuario para iOS
@@ -215,4 +215,4 @@ La aplicación puede leer actividades del usuario y presentarlas al usuario, del
 }
 ```
 
-Ahora la aplicación debe tener una lista rellenada de instancias de **MCDUserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **MCDUserActivity** subyacente (consulta  **[MCDUserActivitySessionHistoryItem](../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** , para obtener más información), que puedes mostrar al usuario.
+Ahora la aplicación debe tener una lista rellenada de instancias de **MCDUserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **MCDUserActivity** subyacente (consulta **[MCDUserActivitySessionHistoryItem](../objectivec-api/userdata.useractivities/MCDUserActivitySessionHistoryItem.md)** , para obtener más información), que puedes mostrar al usuario.

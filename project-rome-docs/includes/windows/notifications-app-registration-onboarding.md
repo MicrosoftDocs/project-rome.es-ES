@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 8e259cf4bd303a51165868fe0aa6d2a062f52c76
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "58907397"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Registro de autenticación con MSA y AAD

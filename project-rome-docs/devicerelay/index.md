@@ -4,13 +4,13 @@ description: Use un dispositivo local para iniciar una acción en un dispositivo
 ms.topic: overview
 ms.custom: seodec2018
 ms.openlocfilehash: ac8df447549b643207f796e0eeca05012c210897
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801467"
 ---
-# <a name="device-relay"></a>Retransmisión de dispositivo
+# <a name="device-relay"></a>Transmisión de dispositivo
 
 La característica de retransmisión de dispositivo permite ordenar o iniciar acciones de forma remota mediante un dispositivo local.
 

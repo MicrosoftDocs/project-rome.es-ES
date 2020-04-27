@@ -6,10 +6,10 @@ keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
 ms.openlocfilehash: 67f793341a108853d5b36e062fd04f441efff473
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801537"
 ---
 # <a name="implementing-user-activities-for-android"></a>Implementación de Actividades del usuario para Android
@@ -238,4 +238,4 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<UserActivitySess
 });
 ```
 
-Ahora la aplicación debe tener una lista rellenada de instancias de **UserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **UserActivity** subyacente (consulta  **[UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** , para obtener más información), que puedes mostrar al usuario.
+Ahora la aplicación debe tener una lista rellenada de instancias de **UserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **UserActivity** subyacente (consulta **[UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** , para obtener más información), que puedes mostrar al usuario.
