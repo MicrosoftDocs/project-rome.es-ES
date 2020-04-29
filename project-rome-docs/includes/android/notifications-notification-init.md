@@ -5,17 +5,17 @@ ms.topic: include
 ms.assetid: 9fb27596-e9a3-443a-9c12-9e02a893e32c
 ms.localizationpriority: medium
 ms.openlocfilehash: 27ff12ef8b0773f1bd0e1960c285012f7e62fdc9
-ms.sourcegitcommit: e95423df0e4427377ab74dbd12b0056233181d32
+ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 06/14/2019
+ms.lasthandoff: 04/24/2020
 ms.locfileid: "59801805"
 ---
 ### <a name="associate-the-connected-devices-platform-with-the-native-push-notification-for-each-mobile-platform"></a>Asociación de la plataforma de dispositivos conectados a la notificación push nativa para cada plataforma móvil 
 
 Como se mencionó anteriormente, los clientes de la aplicación deben proporcionar el conocimiento acerca de la canalización de las notificaciones push nativas que se usa para cada plataforma móvil en el SDK de cliente y la plataforma de dispositivos conectados durante el proceso de registro, de forma que el servicio de notificaciones de Graph pueda realizar la distribución ramificada de las notificaciones a cada punto de conexión cliente de la aplicación cuando el servidor de aplicaciones publique una notificación destinada al usuario a través de las API de Microsoft Graph.
 
-En los pasos anteriores, inicializaste la plataforma con un parámetro *notificationProvider* `null`. Ahora debes construir y pasar un objeto que implemente **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)** . Lo más importante que debes tener en cuenta es el método `getNotificationRegistrationAsync`, que debe devolver una instancia de **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** . **NotificationRegistration** es responsable de proporcionar a la plataforma de dispositivos conectados un token de acceso (y la información relacionada) para el servicio de notificación.
+En los pasos anteriores, inicializaste la plataforma con un parámetro `null` *notificationProvider*. Ahora debes construir y pasar un objeto que implemente **[NotificationProvider](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_provider)** . Lo más importante que debes tener en cuenta es el método `getNotificationRegistrationAsync`, que debe devolver una instancia de **[NotificationRegistration](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._notification_registration)** . **NotificationRegistration** es responsable de proporcionar a la plataforma de dispositivos conectados un token de acceso (y la información relacionada) para el servicio de notificación.
 
 ```java
 private NotificationRegistration mNotificationRegistration;
