@@ -1,15 +1,15 @@
 ---
 title: MCDUserNotificationChannel
-description: Esta clase administra el ciclo de vida de las notificaciones de usuario.
+description: Obtenga información sobre la clase MCDUserNotificationChannel. Esta clase administra el ciclo de vida de las notificaciones de usuario.
 keywords: Microsoft, Windows, retransmisión de dispositivos, iOS y procedimientos de iPhone
-ms.openlocfilehash: 234e1af807ac816918fe1de37a18dc07f73fca09
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+ms.openlocfilehash: dc7e451494014cdcdebd056b00e57cfdf5f0757f
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801247"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760879"
 ---
-# <a name="class-mcdusernotificationchannel"></a>las`MCDUserNotificationChannel`
+# <a name="class-mcdusernotificationchannel"></a>las `MCDUserNotificationChannel`
 
 ```
 @interface MCDUserNotificationChannel : NSObject

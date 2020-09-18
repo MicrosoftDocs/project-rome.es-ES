@@ -1,15 +1,15 @@
 ---
 title: MCDRemoteLauncherOptions
-description: Una clase que representa las opciones de la característica de inicio remoto.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 628bf1659dfb4ce50e20631622d8a78a322bb2f5
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDRemoteLauncherOptions. Esta clase representa las opciones de la característica de inicio remoto.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 2e698ad71282e44d1447e19085598139b67f9270
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801267"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760739"
 ---
-# <a name="class-mcdremotelauncheroptions"></a>Clase `MCDRemoteLauncherOptions` 
+# <a name="class-mcdremotelauncheroptions"></a>las `MCDRemoteLauncherOptions` 
 
 ```
 @interface MCDRemoteLauncherOptions : NSObject
@@ -22,12 +22,12 @@ Una clase que representa las opciones de la característica de inicio remoto.
 ### <a name="fallbackuri"></a>fallbackUri
 `@property(nonatomic, copy, nullable) NSString* fallbackUri;`
 
-Se produce un error en el URI de reserva para iniciar en la web, en caso de URI de inicio de la aplicación.
+URI de reserva que se va a iniciar en la web en caso de que se produzca un error en el URI de inicio de la aplicación.
 
 ### <a name="preferredpackageids"></a>preferredPackageIds
 `@property(nonatomic, copy, nullable) NSArray<NSString*>* preferredPackageIds;`
 
-Una lista de **NSString** objetos que representan identificadores de las aplicaciones que deben ser capaces de iniciar con este identificador URI. Para las aplicaciones de Windows, el identificador será el nombre de familia del paquete de la aplicación.
+Una lista de objetos **NSString** que representan los identificadores de las aplicaciones que deben poder iniciarse con este URI. En el caso de las aplicaciones de Windows, el identificador será el nombre de la familia de paquetes de la aplicación.
 
 ## <a name="constructors"></a>Constructores
 
@@ -39,14 +39,14 @@ Crea e inicializa una nueva instancia de esta clase.
 #### <a name="parameters"></a>Parámetros
 * `fallbackUri` 
 
-Se produce un error en el URI de reserva para iniciar en la web, en caso de URI de inicio de la aplicación.
+URI de reserva que se va a iniciar en la web en caso de que se produzca un error en el URI de inicio de la aplicación.
 
 * `preferredPackageIds` 
 
-Una lista de **NSString** objetos que representan identificadores de las aplicaciones que deben ser capaces de iniciar con este identificador URI. Para las aplicaciones de Windows, el identificador será el nombre de familia del paquete de la aplicación.
+Una lista de objetos **NSString** que representan los identificadores de las aplicaciones que deben poder iniciarse con este URI. En el caso de las aplicaciones de Windows, el identificador será el nombre de la familia de paquetes de la aplicación.
 
-#### <a name="returns"></a>Devuelve
-Devuelve el inicializado [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) si es correcto, en caso contrario nulo.
+#### <a name="returns"></a>Devoluciones
+Devuelve el [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) inicializado si es correcto; de lo contrario, es nulo.
 
 ### <a name="initwithfallbackuri"></a>initWithFallbackUri
 `- (nullable instancetype)initWithFallbackUri:(nullable NSString*)fallbackUri preferredPackageIds:(nullable NSArray<NSString*>*)preferredPackageIds;`
@@ -56,11 +56,11 @@ Crea e inicializa una nueva instancia de esta clase.
 #### <a name="parameters"></a>Parámetros
 * `fallbackUri` 
 
-Se produce un error en el URI de reserva para iniciar en la web, en caso de URI de inicio de la aplicación.
+URI de reserva que se va a iniciar en la web en caso de que se produzca un error en el URI de inicio de la aplicación.
 
 * `preferredPackageIds` 
 
-Una lista de **NSString** objetos que representan identificadores de las aplicaciones que deben ser capaces de iniciar con este identificador URI. Para las aplicaciones de Windows, el identificador será el nombre de familia del paquete de la aplicación.
+Una lista de objetos **NSString** que representan los identificadores de las aplicaciones que deben poder iniciarse con este URI. En el caso de las aplicaciones de Windows, el identificador será el nombre de la familia de paquetes de la aplicación.
 
-#### <a name="returns"></a>Devuelve
-Devuelve el inicializado [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) si es correcto, en caso contrario nulo.
+#### <a name="returns"></a>Devoluciones
+Devuelve el [MCDRemoteLauncherOptions](MCDRemoteLauncherOptions.md) inicializado si es correcto; de lo contrario, es nulo.

@@ -1,15 +1,15 @@
 ---
 title: MCDLaunchUriProvider
-description: ''
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 4cbfaa9fd1e88345f4ce35987508b061e479854e
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre el protocolo MCDLaunchUriProvider. Este protocolo se utiliza para administrar el control de un URI a través del inicio de una aplicación.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 3339f9b5c8ab14dddf519618795c4150b69dfe3e
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907467"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760759"
 ---
-# <a name="protocol-mcdlaunchuriprovider"></a>Protocolo `MCDLaunchUriProvider`
+# <a name="protocol-mcdlaunchuriprovider"></a>n° `MCDLaunchUriProvider`
 
 ```
 @protocol MCDLaunchUriProvider <NSObject>
@@ -21,7 +21,7 @@ Esta clase administra el control de un identificador URI mediante el inicio de u
 ### <a name="supportedurischemes"></a>supportedUriSchemes
 `@property(nonatomic, readonly, strong, nullable) NSArray<NSString*>* supportedUriSchemes;`
 
-Una matriz de cadenas que representan admite esquemas de URI.
+Matriz de cadenas que representan los esquemas de URI admitidos.
 
 ## <a name="methods"></a>Métodos
 
@@ -32,9 +32,9 @@ Una matriz de cadenas que representan admite esquemas de URI.
               completion:(nonnull void (^)(BOOL, NSError* _Nullable))completionBlock;
 ```
 
-Este método se llama cuando un dispositivo remoto intenta iniciar un URI de este dispositivo.
+Se llama a este método cuando un dispositivo remoto intenta iniciar un URI en este dispositivo.
 
 #### <a name="parameters"></a>Parámetros 
-* `uri` El URI para iniciar.
-* `options` Un conjunto de opciones para iniciar el URI. URI de la reserva es sólo una de las opciones posibles que se pueden establecer.
-* `completionBlock` El bloque de código para ejecutar la finalización.
+* `uri` URI que se va a iniciar.
+* `options` Conjunto de opciones para iniciar el URI. El URI de reserva es solo una de las opciones posibles que se pueden establecer.
+* `completionBlock` Bloque de código que se va a ejecutar cuando se complete.

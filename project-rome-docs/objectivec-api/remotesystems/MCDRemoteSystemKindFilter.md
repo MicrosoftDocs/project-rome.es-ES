@@ -1,53 +1,53 @@
 ---
 title: MCDRemoteSystemKindFilter
-description: Una clase utilizada para filtrar según el tipo de dispositivo de sistemas remotos.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 162e8f881b532fae50f6d301149b50c5ddf344b5
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDRemoteSystemKindFilter. Esta clase se usa para filtrar los sistemas remotos en función del tipo de dispositivo.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: eb0799fe3c2c9831c7963d2d062f39fbf458689e
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801337"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760679"
 ---
-# <a name="class-mcdremotesystemkindfilter"></a>Clase `MCDRemoteSystemKindFilter` 
+# <a name="class-mcdremotesystemkindfilter"></a>las `MCDRemoteSystemKindFilter` 
 
 ```
 @interface MCDRemoteSystemKindFilter : NSObject <MCDRemoteSystemFilter>
 ```  
 
-Una clase utilizada para filtrar según el tipo de dispositivo de sistemas remotos.
+Una clase que se usa para filtrar sistemas remotos en función del tipo de dispositivo.
 
 ## <a name="properties"></a>Propiedades
 
-### <a name="kinds"></a>tipos
+### <a name="kinds"></a>categorías
 `@property(nonatomic, readonly, copy, nonnull) NSArray<NSString*>* kinds;`
 
-Una matriz de cadenas que indica los tipos de dispositivo para filtrar.
+Matriz de cadenas que indica los tipos de dispositivo que se van a filtrar.
 
 ## <a name="constructors"></a>Constructores
 
 ### <a name="filterwithkinds"></a>filterWithKinds
 `+ (nullable instancetype)filterWithKinds:(nonnull NSArray<NSString*>*)kinds;`
 
-Una nueva instancia de esta clase filtrada por tipos.
+Nueva instancia de esta clase filtrada en tipos.
 
 #### <a name="parameters"></a>Parámetros 
 * `kinds`
 
- Una matriz de cadenas que indica los tipos de dispositivo para filtrar.
+ Matriz de cadenas que indica los tipos de dispositivos que se van a filtrar.
 
-#### <a name="returns"></a>Devuelve
+#### <a name="returns"></a>Devoluciones
 Devuelve un objeto MCDRemoteSystemKindFilter filtrado con tipos.
 
 ### <a name="initwithkinds"></a>initWithKinds
 `- (nullable instancetype)initWithKinds:(nonnull NSArray<NSString*>*)kinds;`
 
-Una nueva instancia de esta clase filtrada por tipos.
+Nueva instancia de esta clase filtrada en tipos.
 
 #### <a name="parameters"></a>Parámetros 
 * `kinds` 
 
-Una matriz de cadenas que indica los tipos de dispositivo para filtrar.
+Matriz de cadenas que indica los tipos de dispositivos que se van a filtrar.
 
-#### <a name="returns"></a>Devuelve
-Devuelve un objeto MCDRemoteSystemKindFilter inicializado con los tipos.
+#### <a name="returns"></a>Devoluciones
+Devuelve un objeto MCDRemoteSystemKindFilter inicializado con tipos.

@@ -1,102 +1,102 @@
 ---
 title: MCDAppServiceConnection
-description: Esta clase administra una conexión a un servicio de aplicación remota determinada.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 22e253f137642ad609a22af33aa62e2ef9543503
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDAppServiceConnection. Esta clase administra una conexión a un servicio de aplicación remoto determinado.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 2d9153eeddb9010ac40ab37d9adb433edd11b0ca
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58908547"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761059"
 ---
-# <a name="class-mcdappserviceconnection"></a>Clase `MCDAppServiceConnection`
+# <a name="class-mcdappserviceconnection"></a>las `MCDAppServiceConnection`
 
 ```
 @interface MCDAppServiceConnection : NSObject
 ```
-Esta clase administra una conexión a un servicio de aplicación remota determinada.
+Esta clase administra una conexión a un servicio de aplicación remoto determinado.
 
 ## <a name="properties"></a>Propiedades
 
 ### <a name="appserviceinfo"></a>appServiceInfo
 `@property(nonatomic, retain, nonnull) MCDAppServiceInfo* appServiceInfo;`
 
-Proporciona detalles sobre el servicio de aplicación de destino al que conectarse.
+Proporciona detalles sobre el servicio de aplicaciones de destino al que se va a conectar.
 
 ### <a name="requestreceived"></a>requestReceived 
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDAppServiceConnection*, MCDAppServiceRequestReceivedEventArgs*>* requestReceived;`
 
-Evento para cuando se recibe una solicitud de servicio desde una aplicación remota.
+Evento para cuando se recibe una solicitud de servicio de una aplicación remota.
 
 ### <a name="serviceclosed"></a>serviceClosed 
 `@property(nonatomic, readonly, nonnull) MCDEvent<MCDAppServiceConnection*, MCDAppServiceClosedEventArgs*>* serviceClosed;`
 
-Evento para cuando se cierra la conexión con el servicio de aplicación.
+Evento para el momento en que se cierra la conexión a App Service.
 
 ## <a name="constructors"></a>Constructores
 
-### <a name="init"></a>Init
+### <a name="init"></a>init
 `- (nullable instancetype)init;`
 
 Crea e inicializa una nueva instancia de esta clase.
 
-#### <a name="returns"></a>Devuelve
-El inicializado [MCDAppServiceConnection](MCDAppServiceConnection.md) si es correcto, en caso contrario nulo.
+#### <a name="returns"></a>Devoluciones
+[MCDAppServiceConnection](MCDAppServiceConnection.md) inicializado si es correcto, de lo contrario, Nil.
 
 ### <a name="initwithappserviceinfo"></a>initWithAppServiceInfo
-- (instancetype que acepta valores NULL) initWithAppServiceInfo:(nonnull MCDAppServiceInfo*) appServiceInfo;
+- (Nullable instanceType) initWithAppServiceInfo: (nonnull MCDAppServiceInfo *) appServiceInfo;
 
 #### <a name="parameters"></a>Parámetros
-* `appServiceInfo` La descripción del servicio de aplicación.
+* `appServiceInfo` La descripción de App Service.
 
-#### <a name="returns"></a>Devuelve
-Devuelve el inicializado [MCDAppServiceConnection](MCDAppServiceConnection.md) si es correcto, en caso contrario nulo.
+#### <a name="returns"></a>Devoluciones
+Devuelve el [MCDAppServiceConnection](MCDAppServiceConnection.md) inicializado si es correcto; de lo contrario, es nulo.
 
 ### <a name="appserviceconnectionwithappserviceinfo"></a>appServiceConnectionWithAppServiceInfo
 `+ (nullable instancetype)appServiceConnectionWithAppServiceInfo:(nonnull MCDAppServiceInfo*) appServiceInfo;`
 
-Crea e inicializa una nueva instancia de esta clase con información de servicio de aplicación.
+Crea e inicializa una nueva instancia de esta clase con información de App Service.
 
 #### <a name="parameters"></a>Parámetros
 * `appServiceInfo` 
 
-La descripción del servicio de aplicación.
+La descripción de App Service.
 
-#### <a name="returns"></a>Devuelve
-Devuelve el inicializado [MCDAppServiceConnection](MCDAppServiceConnection.md) si es correcto, en caso contrario nulo.
+#### <a name="returns"></a>Devoluciones
+Devuelve el [MCDAppServiceConnection](MCDAppServiceConnection.md) inicializado si es correcto; de lo contrario, es nulo.
 
 ## <a name="methods"></a>Métodos
 
 ### <a name="openremoteasync"></a>openRemoteAsync
 `- (void)openRemoteAsync:(nonnull MCDRemoteSystemConnectionRequest*)connectionRequest completion:(nonnull void (^)(MCDAppServiceConnectionStatus, NSError* _Nullable))completion;`
 
-Se abre la conexión de servicio de aplicación en el dispositivo remoto especificado o la aplicación. Si no se puede abrir la conexión, se produce una excepción.
+Abre la conexión de App Service en la aplicación o el dispositivo remoto especificado. Si no se puede abrir la conexión, se produce una excepción.
 
->**Nota:** Este método hará que se produce una excepción si se cumple alguna de las siguientes acciones:
+>**Nota:** Este método producirá una excepción si se cumple alguna de las siguientes condiciones:
 > * La conexión ya está abierta o está en proceso de apertura.
-> * La descripción del servicio de aplicación no se ha establecido o se ha borrado.
-> * No se ha inicializado la plataforma.
-> * La aplicación se ha suscrito un método de evento de "solicitud de recibido" de la conexión, pero no ha proporcionado un **MCDNotificationProvider** al inicializar la plataforma. Todos los escenarios de hospedaje requieren un **MCDNotificationProvider**.
+> * La descripción de App Service no se ha establecido o se ha borrado.
+> * La plataforma no se ha inicializado.
+> * La aplicación ha suscrito un método al evento "solicitud recibida" de la conexión, pero no ha proporcionado un **MCDNotificationProvider** al inicializar la plataforma. Todos los escenarios de hospedaje requieren un **MCDNotificationProvider**.
 
 #### <a name="parameters"></a>Parámetros
 * `connectionRequest` 
 
-La solicitud de conexión que indica qué sistema remoto o RemoteApp al destino.
+Solicitud de conexión que indica el sistema remoto o la aplicación remota a la que se va a dirigir.
 
 ### <a name="sendmessageasync"></a>sendMessageAsync
 `- (void)sendMessageAsync:(nonnull NSDictionary*)message completion:(nonnull void (^)(MCDAppServiceResponse* _Nonnull, NSError* _Nullable))completion;`
 
-Envía un mensaje al servicio de RemoteApp y comienza a realizar escuchas para una respuesta.  Este método realiza un único mensaje de solicitud-respuesta y no establecerá una conexión persistente.  Solo debe llamarse después de la conexión se abrió correctamente.
+Envía un mensaje al servicio de la aplicación remota y comienza a realizar escuchas para obtener una respuesta.  Este método realiza un único mensaje/respuesta y no establece una conexión persistente.  Solo se debe llamar después de que la conexión se haya abierto correctamente.
 
 #### <a name="parameters"></a>Parámetros
 * `message` 
 
-El conjunto de pares clave-valor de datos se envíen a app service.
+Conjunto de datos de clave-valor que se va a enviar a App Service.
 
 ### <a name="close"></a>cerrar
 `- (void)close;`
 
-Cierra la conexión con el servicio de aplicación remota. La aplicación cliente debe llamar a este método cada vez que se cierra o se ha detenido por el usuario o del sistema.
+Cierra la conexión con el servicio de aplicaciones remotas. La aplicación cliente debe llamar a este método siempre que sea cerrado o detenido por el usuario o el sistema.
 
 ### <a name="sendstatelessmessageasync"></a>sendStatelessMessageAsync
 ```
@@ -106,10 +106,10 @@ Cierra la conexión con el servicio de aplicación remota. La aplicación client
                        completion:(nonnull void (^)(MCDStatelessAppServiceResponse* _Nonnull, NSError* _Nullable))completion;
 ```
 
-Envía un mensaje a un servicio de aplicación remota especificada y comienza a realizar escuchas para una respuesta.
+Envía un mensaje a un servicio de aplicación remoto especificado y comienza a realizar escuchas para obtener una respuesta.
 
 #### <a name="parameters"></a>Parámetros
-* `message` El conjunto de pares clave-valor de datos se envíen a app service.
-* `appServiceInfo` La información descriptiva para el servicio de aplicación de destino.
-* `connectionRequest` La solicitud de conexión especifica el servicio de aplicación para conectarse a.
-* `completion` La devolución de llamada de finalización asincrónico.
+* `message` Conjunto de datos de clave-valor que se va a enviar a App Service.
+* `appServiceInfo` Información descriptiva para el servicio de aplicaciones de destino.
+* `connectionRequest` La solicitud de conexión que especifica la instancia de App Service a la que se va a conectar.
+* `completion` Devolución de llamada de finalización asincrónica.

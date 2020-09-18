@@ -1,45 +1,45 @@
 ---
 title: MCDUserActivity
-description: Esta clase representa una instancia de la actividad de usuario único.
-keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: f01889f5e41c761fe359ed1fa90befee4a8aca46
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDUserActivity y sus propiedades. Esta clase representa una instancia de actividad de un solo usuario.
+keywords: Microsoft, Windows, actividades de usuario, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 8bdaf553611e868a5c37a9e033e2ba3126151967
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907427"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760149"
 ---
-# <a name="class-mcduseractivity"></a>Clase `MCDUserActivity`
+# <a name="class-mcduseractivity"></a>las `MCDUserActivity`
 
 ```
 @interface MCDUserActivity : NSObject
 ```
 
-Esta clase representa una instancia de la actividad de usuario único. Se crea una actividad de usuario por una aplicación durante su ejecución para notificar al sistema de un flujo de trabajo de usuario que se puede continuar en otro dispositivo o en otro momento en el mismo dispositivo. Proporciona información acerca de una tarea que el usuario está ocupado en.
+Esta clase representa una instancia de actividad de un solo usuario. Una aplicación crea una actividad de usuario durante su ejecución para notificar al sistema de un flujo de trabajo de usuario que puede continuar en otro dispositivo o en otro momento en el mismo dispositivo. Proporciona información sobre una tarea en la que está trabajando el usuario.
 
->**Nota:** Las instancias de MCDUserActivity tienen un límite de tamaño de 100KB, por encima del cual no se pueden publicar.
+>**Nota:** Las instancias de MCDUserActivity tienen un límite de tamaño de 100 KB, por encima de las cuales no se pueden publicar.
 
 ## <a name="properties"></a>Propiedades
 
 ### <a name="activityid"></a>activityId
 `@property(nonatomic, readonly, nonnull) NSString* activityId;`
 
-El identificador único para esta actividad.
+IDENTIFICADOR único de esta actividad.
 
-### <a name="state"></a>Estado
+### <a name="state"></a>state
 `@property(nonatomic, readonly) MCDUserActivityState state;`
 
-El estado de esta actividad.
+Estado de esta actividad.
 
 ### <a name="activationuri"></a>activationUri
 `@property(nonatomic, copy, nonnull) NSString* activationUri;`
 
-El URI que seguir cuando se activa esta actividad de usuario.
+URI que se va a seguir cuando se active esta actividad de usuario.
 
 ### <a name="fallbackuri"></a>fallbackUri
 `@property(nonatomic, copy, nullable) NSString* fallbackUri;`
 
-El URI de aptos para la web mantenido por esta actividad, que se utilizará si se produce un error en el URI de la principal.
+El URI descriptivo de la Web mantenido por esta actividad que se usará si se produce un error en el URI principal.
 
 ### <a name="contenturi"></a>contentUri
 `@property(nonatomic, copy, nullable) NSString* contentUri;`
@@ -49,54 +49,54 @@ El URI de contenido para esta actividad (el URI de la imagen que se usará para 
 ### <a name="contenttype"></a>contentType
 `@property(nonatomic, copy, nullable) NSString* contentType;`
 
-el tipo MIME (Multipurpose Internet Mail Extensions) del contenido almacenado en **contentUri**. Por ejemplo, "text/plain".
+el tipo MIME (Extensiones multipropósito de correo Internet) del contenido almacenado en **contentUri**. Por ejemplo, "text/plain".
 
 ### <a name="contentinfojson"></a>contentInfoJson
 `@property(nonatomic, copy, nullable) NSString* contentInfoJson;`
 
-La información básica de contenido para esta actividad. Por ejemplo, si su actividad estaba leyendo una fuente RSS, la cadena de contenido puede incluir el nombre del artículo y su autor.
+Información básica de contenido de esta actividad. Por ejemplo, si la actividad estaba leyendo una fuente RSS, la cadena de contenido podría incluir el nombre del artículo y su autor.
 
 ### <a name="appdisplayname"></a>appDisplayName
 `@property(nonatomic, readonly, nullable) NSString* appDisplayName;`
 
-El nombre para mostrar aplicaciones para esta actividad.
+El nombre para mostrar de la aplicación para esta actividad.
 
 ### <a name="visualelements"></a>visualElements
 `@property(nonatomic, retain, nonnull) MCDUserActivityVisualElements* visualElements`
 
-Los elementos visuales de esta actividad (información que se puede usar para el icono "Detalles" de la actividad).
+Los elementos visuales de esta actividad (información que se puede usar para el icono de "detalles" de la actividad).
 
 ### <a name="roamable"></a>apto
 `@property(nonatomic, assign, getter = isRoamable) BOOL roamable;`
 
-Obtiene o establece si esta actividad se ha movido a otros puntos de conexión.
+Obtiene o establece si esta actividad se va a desplazar a otros puntos de conexión.
 
 ## <a name="constructors"></a>Constructores
 
 ### <a name="activitywithactivityid"></a>activityWithActivityId
 `+ (nullable instancetype)activityWithActivityId:(nonnull NSString*)activityId;`
 
-Crea una instancia de esta clase con un identificador especificado.
+Crea una instancia de esta clase con un identificador determinado.
 
 #### <a name="parameters"></a>Parámetros
 * `activityId` 
 
-El identificador para esta actividad (debe ser una cadena única).
+Identificador de esta actividad (debe ser una cadena única).
 
-#### <a name="returns"></a>Devuelve
+#### <a name="returns"></a>Devoluciones
 Devuelve una instancia de esta clase.
 
 ### <a name="initwithactivityid"></a>initWithActivityId
 `- (nullable instancetype)initWithActivityId:(nonnull NSString*)activityId;`
 
-Crea una instancia de esta clase con un identificador especificado.
+Crea una instancia de esta clase con un identificador determinado.
 
 #### <a name="parameters"></a>Parámetros
 * `activityId`
 
-El identificador para esta actividad (debe ser una cadena única).
+Identificador de esta actividad (debe ser una cadena única).
 
-#### <a name="returns"></a>Devuelve
+#### <a name="returns"></a>Devoluciones
 Devuelve una instancia de esta clase.
 
 ## <a name="methods"></a>Métodos
@@ -104,15 +104,15 @@ Devuelve una instancia de esta clase.
 ### <a name="createsession"></a>createSession
 `- (nonnull MCDUserActivitySession*)createSession;`
 
-Crea una sesión de la actividad de usuario que se asociará este MCDUserActivity. Un asociado MCDUserActivitySession indica que el usuario esté implicado actualmente en la actividad.
+Crea una sesión de actividad de usuario a la que se asociará este MCDUserActivity. Un MCDUserActivitySession asociado indica que el usuario está ocupado actualmente en la actividad.
 
-#### <a name="returns"></a>Devuelve
+#### <a name="returns"></a>Devoluciones
 La sesión creada.
 
 ### <a name="saveasync"></a>saveAsync
 `- (void)saveAsync:(nonnull void (^)(NSError* _Nullable))completionBlock;`
 
-Publica la actividad del usuario. El MCDUserActivity debe tener una identificador URI de la activación y un miembro VisualElements con conjunto de texto para mostrar antes de llama a este método. Este método debe llamarse siempre que la aplicación modifica una propiedad de la MCDUserActivity (con el fin de publicar la actualización).
+Publica la actividad del usuario. El MCDUserActivity debe tener un URI de activación y un miembro de VisualElements con el texto para mostrar establecido antes de llamar a este método. Se debe llamar a este método siempre que la aplicación modifique una propiedad de MCDUserActivity (para publicar la actualización).
 
 #### <a name="parameters"></a>Parámetros
-* `completionBlock` El bloque de código para ejecutar la finalización.
+* `completionBlock` Bloque de código que se va a ejecutar cuando se complete.

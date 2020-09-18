@@ -1,28 +1,28 @@
 ---
 title: MCDConnectedDevicesAccountAddedStatus
-description: Contiene los valores que describen el estado de operación de agregar la cuenta.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: d7fadec0c3e69eedab23df18d803ee85fd37644b
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la enumeración MCDConnectedDevicesAccountAddedStatus. Esta enumeración contiene valores que describen el estado de la operación de agregar cuenta.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: f7ea80735a8df2138f2557ff2e7ab4db0b4a9800
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801567"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761039"
 ---
-# <a name="enum-mcdconnecteddevicesaccountaddedstatus"></a>Enum `MCDConnectedDevicesAccountAddedStatus`
+# <a name="enum-mcdconnecteddevicesaccountaddedstatus"></a>enumeración `MCDConnectedDevicesAccountAddedStatus`
 
 ```
 typedef NS_ENUM(NSInteger, MCDConnectedDevicesAccountAddedStatus)
 ```  
-Contiene los valores que describen el estado de operación de agregar la cuenta.
+Contiene los valores que describen el estado de la operación de agregar cuenta.
 
 ## <a name="fields"></a>Campos
 
-| Nombre                              |   Valor     | Descripción |
+| NOMBRE                              |   Valor     | Descripción |
 |:----------------------------------|:------|:-------------------------------|
-| MCDConnectedDevicesAccountAddedStatusSuccess | 0 | La cuenta se agregó correctamente a la plataforma. |
-| MCDConnectedDevicesAccountAddedStatusErrorNoNetwork | 1 | Error en la operación de cuenta desde que Roma no detectó ningún acceso a la red. |
-| MCDConnectedDevicesAccountAddedStatusErrorServiceFailed | 2 | Error en la operación de cuenta como Roma no pudo ponerse en contacto con los servicios web. |
-| MCDConnectedDevicesAccountAddedStatusErrorNoTokenRequestSubscriber | 3 | Error en la operación de cuenta dado que la aplicación no suscribirse al evento AccessTokenRequested. |
-| MCDConnectedDevicesAccountAddedStatusErrorTokenRequestFailed | 4 | Error en la operación de cuenta dado que la aplicación no pudo devolver un token cuando se solicita. |
-| MCDConnectedDevicesAccountAddedStatusErrorUnknown | 5 | Error en la operación de cuenta por razones desconocidas. |
+| MCDConnectedDevicesAccountAddedStatusSuccess | 0 | La cuenta se ha agregado correctamente a la plataforma. |
+| MCDConnectedDevicesAccountAddedStatusErrorNoNetwork | 1 | No se pudo realizar la operación de cuenta porque Roma no detectó acceso a la red. |
+| MCDConnectedDevicesAccountAddedStatusErrorServiceFailed | 2 | No se pudo realizar la operación de cuenta porque Roma no pudo ponerse en contacto con los servicios Web. |
+| MCDConnectedDevicesAccountAddedStatusErrorNoTokenRequestSubscriber | 3 | No se pudo realizar la operación de cuenta porque la aplicación no se suscribió al evento AccessTokenRequested. |
+| MCDConnectedDevicesAccountAddedStatusErrorTokenRequestFailed | 4 | No se pudo realizar la operación de cuenta porque la aplicación no pudo devolver un token cuando se solicitó. |
+| MCDConnectedDevicesAccountAddedStatusErrorUnknown | 5 | No se pudo realizar la operación de cuenta por motivos desconocidos. |

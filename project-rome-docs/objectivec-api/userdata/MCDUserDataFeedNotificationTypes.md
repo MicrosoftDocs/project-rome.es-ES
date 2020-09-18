@@ -1,21 +1,21 @@
 ---
 title: MCDUserDataFeedNotificationTypes
-description: Esta clase es responsable de proporcionar los tipos de notificación
-keywords: Microsoft, windows, las actividades del usuario, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 49f13fd2dbb13c439993f79a2b7275d4a705826a
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDUserDataFeedNotificationTypes. Esta clase es responsable de proporcionar los tipos de notificación.
+keywords: Microsoft, Windows, actividades de usuario, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: a9bb9b41309e32a429926c52769da9bc767ef5bc
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801149"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760989"
 ---
-# <a name="class-mcduserdatafeednotificationtypes"></a>Clase `MCDUserDataFeedNotificationTypes`
+# <a name="class-mcduserdatafeednotificationtypes"></a>las `MCDUserDataFeedNotificationTypes`
 
 ```
 @interface MCDUserDataFeedNotificationTypes : NSObject
 ```
 
-Esta clase proporciona los tipos de notificación válidas para MCDUserDataFeedSyncScope.notificationType.
+Esta clase proporciona los tipos de notificación válidos para MCDUserDataFeedSyncScope. notificationType.
 
 
 ## <a name="properties"></a>Propiedades
@@ -23,15 +23,15 @@ Esta clase proporciona los tipos de notificación válidas para MCDUserDataFeedS
 ### <a name="notificationwithpayload"></a>notificationWithPayload
 `@property(class, nonatomic, readonly, nonnull) NSString* notificationWithPayload;`
 
-Representa las notificaciones push entrante.  No hay ningún rescrictions para enviar notificaciones push que no sea de restricciones de dominio o servidor.
+Representa las notificaciones de envío entrantes.  No hay ninguna rescrictions para las notificaciones de envío que no sean restricciones de dominio o servidor.
 
 ### <a name="notificationonly"></a>notificationOnly
 `@property(class, nonatomic, readonly, nonnull) NSString* notificationOnly;`
 
-Disminuir el nivel de todas las notificaciones de inserción a una notificación solo indica al sistema para sincronizar para recibir los datos, incluso si los datos podrían incluirse en la notificación de inserción.
+Disminuir de nivel todas las notificaciones de envío a una notificación que solo indique al sistema que se sincronice para recibir los datos, incluso si los datos se pueden incluir en la notificación de extracción.
 
 
-### <a name="nonotification"></a>noNotification
+### <a name="nonotification"></a>nonotification
 `@property(class, nonatomic, readonly, nonnull) NSString* noNotification;`
 
-Impedir que las notificaciones para los nuevos datos de usuario, sólo recibirá datos nuevos cuando se llama a UserDataFeed.startSync, o al interactuar con el servidor de otras maneras
+Impedir las notificaciones para los nuevos datos de usuario, recibir solo datos nuevos cuando se llama a UserDataFeed. startSync o al interactuar con el servidor de otras maneras

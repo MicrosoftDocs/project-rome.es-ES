@@ -3,12 +3,12 @@ title: Creación de aplicaciones multidispositivo
 description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 977d64749544d1991a40eff5d80a1cd6186aba97
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 0c00816de9111790bf20c98e48293d653490de3c
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76115549"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760929"
 ---
 # <a name="project-rome"></a>Project Rome
 
@@ -75,7 +75,7 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 
 
-|   Plataforma                        | Características                                                         |           Paquete de SDK                          |   Muestras                                       |
+|   Plataforma                        | Características                                                         |           Paquete de SDK                          |   Ejemplos                                       |
 | :-------------------------------- | :--------------------------------------------------------------- |:---------------------------------------------- | :---------------------------------------------- |
 | **Windows SDK**                   | Retransmisión de dispositivo, Actividades/Línea de tiempo                                | [![SDK][windows-sdk-badge]][windows-sdk]       | [Ejemplo de retransmisión de dispositivo con Project Rome para Windows][windows-drsample] <br> [Ejemplo de actividades con Project Rome para Windows][windows-afsample]
 | **Windows (versión preliminar)**             |                                    Notificaciones de Microsoft Graph | [![Nuget][winredist-sdk-badge]][winredist-sdk] | [Ejemplos de notificaciones de Graph para Windows][winredist-sample] 
@@ -105,9 +105,10 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 * [Conferencia en Build 2016](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [Podcast de MS Dev Show](http://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [Podcast de MS Dev Show](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
-## <a name="give-feedback"></a>Enviar comentarios
+## <a name="give-feedback"></a>Proporcionar comentarios
 
-|[UserVoice](https://wpdev.uservoice.com/forums/110705-universal-windows-platform/category/183208-connected-apps-and-devices-project-rome)|[Centro de opiniones](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Ponte en contacto con nosotros](mailto:projectrometeam@microsoft.com)|
-|-----|-----|-----|
+|[Centro de opiniones](https://support.microsoft.com/help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub-app)|[Póngase en contacto con nosotros](mailto:projectrometeam@microsoft.com)|
+|-----|-----|
+

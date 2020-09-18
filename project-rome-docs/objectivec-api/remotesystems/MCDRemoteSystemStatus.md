@@ -1,26 +1,26 @@
 ---
 title: MCDRemoteSystemStatus
-description: Contiene valores que describen la disponibilidad de un sistema remoto.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: 4a69961b12def736733e1b6a78d376d57b2fa33f
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la enumeración MCDRemoteSystemStatus. Esta enumeración contiene valores que describen la disponibilidad de un sistema remoto.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 71e4216c949506f45f26a7c035ff043a55168b23
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801377"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760659"
 ---
-# <a name="enum-mcdremotesystemstatus"></a>Enum `MCDRemoteSystemStatus` 
+# <a name="enum-mcdremotesystemstatus"></a>enumeración `MCDRemoteSystemStatus` 
 
 ```
 typedef NS_ENUM(NSInteger, MCDRemoteSystemStatus)
 ```  
-Contiene valores que describen la disponibilidad de un sistema remoto. En las aplicaciones de iOS, un valor de **MCDRemoteSystemStatusUnknown** siempre se encuentre; otros valores solo están disponibles en sistemas Windows.
+Contiene valores que describen la disponibilidad de un sistema remoto. En las aplicaciones iOS, siempre se encontrará un valor de **MCDRemoteSystemStatusUnknown** . otros valores solo están disponibles en los sistemas Windows.
 
 ## <a name="fields"></a>Campos
 
-| Name                              | Valor | Descripción                    |
+| NOMBRE                              | Valor | Descripción                    |
 |:----------------------------------|:------|:-------------------------------|
-| MCDRemoteSystemStatusUnavailable | 0 | El sistema remoto se notifica como no disponible. |
-| MCDRemoteSystemStatusDiscoveringAvailablilty | 1 | Se está determinando el estado del sistema remoto (que se produce durante el proceso de detección). |
-| MCDRemoteSystemStatusAvailable | 2 | El sistema remoto se notifica como disponibles. |
+| MCDRemoteSystemStatusUnavailable | 0 | El sistema remoto se muestra como no disponible. |
+| MCDRemoteSystemStatusDiscoveringAvailablilty | 1 | Se está determinando el estado del sistema remoto (se produce durante el proceso de detección). |
+| MCDRemoteSystemStatusAvailable | 2 | El sistema remoto se muestra como disponible. |
 | MCDRemoteSystemStatusUnknown | 3 | El estado es desconocido. |

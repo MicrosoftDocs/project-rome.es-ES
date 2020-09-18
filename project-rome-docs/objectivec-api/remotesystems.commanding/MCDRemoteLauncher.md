@@ -1,21 +1,21 @@
 ---
 title: MCDRemoteLauncher
-description: Una clase que se utiliza para iniciar una aplicación en un dispositivo remoto mediante un URI.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: aa0211c1edc33e8a277c4954d94fbcbb6565c923
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDRemoteLauncher. Esta clase se usa para iniciar una aplicación en un dispositivo remoto mediante un URI.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: e5231897241e54c44b4f3fb299adf68af396cac9
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "58907387"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760749"
 ---
-# <a name="class-mcdremotelauncher"></a>Clase `MCDRemoteLauncher` 
+# <a name="class-mcdremotelauncher"></a>las `MCDRemoteLauncher` 
 
 ```
 @interface MCDRemoteLauncher : NSObject
 ```  
 
-Una clase que se utiliza para iniciar una aplicación en un dispositivo remoto mediante un URI.
+Una clase que se usa para iniciar una aplicación en un dispositivo remoto mediante un URI.
 
 
 ## <a name="methods"></a>Métodos
@@ -27,13 +27,13 @@ Una clase que se utiliza para iniciar una aplicación en un dispositivo remoto m
             completion:(nullable void (^)(MCDRemoteLaunchUriStatus result, NSError* _Nullable error))completionBlock;
 ```
 
-Inicia un URI con el sistema remoto especificado en un [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md).
+Inicia un URI en el sistema remoto especificado en un [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md).
 
 #### <a name="parameters"></a>Parámetros
-* `uri` El URI que hará que el inicio de una aplicación.  Si el destino es Windows, se elegirá la aplicación de destino en función de esquema. Si el destino es que no son de Windows, la aplicación de destino se elegirá según la MCDRemoteSystemConnectionRequest.
+* `uri` El URI que hará que se inicie una aplicación.  Si el destino es Windows, la aplicación de destino se elegirá según el esquema. Si el destino no es Windows, la aplicación de destino se elegirá en función de MCDRemoteSystemConnectionRequest.
 
-* `connection` Especifica qué sistema remoto o una aplicación para conectarse a.
-* `completionBlock` El bloque para invocar la finalización.
+* `connection` Especifica a qué sistema o aplicación remoto se va a conectar.
+* `completionBlock` Bloque que se va a invocar al finalizar.
 
 ### <a name="launchuriasync"></a>launchUriAsync
 ```
@@ -43,10 +43,10 @@ Inicia un URI con el sistema remoto especificado en un [MCDRemoteSystemConnectio
             completion:(nullable void (^)(MCDRemoteLaunchUriStatus result, NSError* _Nullable error))completionBlock;
 ```
 
-Inicia un URI con las opciones en el sistema remoto especificado en un [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md).
+Inicia un URI con opciones en el sistema remoto especificado en un [MCDRemoteSystemConnectionRequest](MCDRemoteSystemConnectionRequest.md).
 
 #### <a name="parameters"></a>Parámetros
-* `uri` El URI que hará que el inicio de una aplicación, según su esquema.
-* `connection` Especifica qué sistema remoto o una aplicación para conectarse a.
-* `options` Las especificaciones de inicio de la aplicación.
-* `completionBlock` El bloque para invocar la finalización.
+* `uri` El URI que hará que se inicie una aplicación, según su esquema.
+* `connection` Especifica a qué sistema o aplicación remoto se va a conectar.
+* `options` Especificaciones de inicio de la aplicación.
+* `completionBlock` Bloque que se va a invocar al finalizar.

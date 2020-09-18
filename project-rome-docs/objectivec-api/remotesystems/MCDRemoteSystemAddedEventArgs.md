@@ -1,15 +1,15 @@
 ---
 title: MCDRemoteSystemAddedEventArgs
-description: Argumentos de evento para el evento RemoteSystemWatcher RemoteSystemAdded.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: ab06602f3d8073700632857de0b315dba62d00a7
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDRemoteSystemAddedEventArgs. Esta clase es para los argumentos de evento para el evento RemoteSystemWatcher RemoteSystemAdded.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: 3b9058cba0f4469fbbf60e89586c08b27f34eb4b
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59800547"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760719"
 ---
-# <a name="class-mcdremotesystemaddedeventargs"></a>Clase `MCDRemoteSystemAddedEventArgs` 
+# <a name="class-mcdremotesystemaddedeventargs"></a>las `MCDRemoteSystemAddedEventArgs` 
 
 ```
 @interface MCDRemoteSystemAddedEventArgs : NSObject
@@ -21,4 +21,4 @@ Argumentos de evento para el evento RemoteSystemWatcher RemoteSystemAdded.
 ### <a name="remotesystem"></a>remoteSystem
 `@property(nonatomic, readonly, nonnull) MCDRemoteSystem* remoteSystem;`
 
-El sistema remoto que se ha agregado.
+Sistema remoto que se ha agregado.

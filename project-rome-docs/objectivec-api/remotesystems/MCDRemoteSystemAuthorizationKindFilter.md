@@ -1,53 +1,53 @@
 ---
 title: MCDRemoteSystemAuthorizationKindFilter
-description: Una clase utilizada para filtrar según el tipo de autorización de sistemas remotos.
-keywords: Microsoft, windows, iOS, iPhone, objectiveC, conectado los dispositivos, proyecto Roma
-ms.openlocfilehash: da68c7a0eacd2018332d5e2fe5c8e3c906f473f8
-ms.sourcegitcommit: 945a0f4bda02e3b4eb9a665379c2af9bd5285a53
+description: Obtenga información sobre la clase MCDRemoteSystemAuthorizationKindFilter. Esta clase se usa para filtrar los sistemas remotos según el tipo de autorización.
+keywords: Microsoft, Windows, iOS, iPhone, objectiveC, dispositivos conectados, proyecto Roma
+ms.openlocfilehash: a48c9aeacf262146a12da6fd691e853cb7dde199
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: MT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/18/2019
-ms.locfileid: "59801257"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760709"
 ---
-# <a name="class-mcdremotesystemauthorizationkindfilter"></a>Clase `MCDRemoteSystemAuthorizationKindFilter` 
+# <a name="class-mcdremotesystemauthorizationkindfilter"></a>las `MCDRemoteSystemAuthorizationKindFilter` 
 
 ```
 @interface MCDRemoteSystemAuthorizationKindFilter : NSObject<MCDRemoteSystemFilter>
 ```  
 
-Una clase utilizada para filtrar según el tipo de autorización de sistemas remotos.
+Clase utilizada para filtrar los sistemas remotos según el tipo de autorización.
 
 ## <a name="properties"></a>Propiedades
 
-### <a name="kind"></a>Tipo
+### <a name="kind"></a>kind
 `@property(nonatomic, readonly) MCDRemoteSystemAuthorizationKind kind;`
 
-El tipo de autorización para filtrar.
+Tipo de autorización para filtrar.
 
 ## <a name="constructors"></a>Constructores
 
 ### <a name="filterwithkind"></a>filterWithKind
 `+ (nullable instancetype)filterWithKind:(MCDRemoteSystemAuthorizationKind)authorizationKind;`
 
-Una nueva instancia de esta clase MCDRemoteSystemAuthorizationKind a filtrar.
+Nueva instancia de esta clase filtrada en MCDRemoteSystemAuthorizationKind.
 
 #### <a name="parameters"></a>Parámetros 
 * `authorizationKind` 
 
-El tipo de autorización para filtrar.
+Tipo de autorización para filtrar.
 
-#### <a name="returns"></a>Devuelve
+#### <a name="returns"></a>Devoluciones
 Devuelve un objeto MCDRemoteSystemAuthorizationKindFilter con el filtro de autorización proporcionado.
 
 ### <a name="initwithkind"></a>initWithKind
 `- (nullable instancetype)initWithKind:(MCDRemoteSystemAuthorizationKind)authorizationKind;`
 
-Una nueva instancia de esta clase con MCDRemoteSystemAuthorizationKind.
+Nueva instancia de esta clase con MCDRemoteSystemAuthorizationKind.
 
 #### <a name="parameters"></a>Parámetros 
 * `authorizationKind` 
 
-El tipo de autorización para filtrar.
+Tipo de autorización para filtrar.
 
-#### <a name="returns"></a>Devuelve
-Devuelve un objeto MCDRemoteSystemAuthorizationKindFilter inicializado con el authorizationKind.
+#### <a name="returns"></a>Devoluciones
+Devuelve un objeto MCDRemoteSystemAuthorizationKindFilter inicializado con authorizationKind.
