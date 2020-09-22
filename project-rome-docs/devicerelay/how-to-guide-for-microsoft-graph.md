@@ -1,11 +1,12 @@
 ---
 title: Uso de las API de REST de Retransmisión de dispositivo de Microsoft Graph
-ms.openlocfilehash: 887ebff8788ac4300036512761df80c6b8e5e97f
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Aprenda a usar las API REST de retransmisión de dispositivos de Microsoft Graph para detectar sus dispositivos, iniciar aplicaciones e interactuar con App Services.
+ms.openlocfilehash: a2433e5a16f36edb9e8283d885f9ebf3d05b64d1
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207824"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760809"
 ---
 # <a name="using-microsoft-graphs-device-relay-rest-apis"></a>Uso de las API de REST de Retransmisión de dispositivo de Microsoft Graph
 

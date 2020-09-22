@@ -1,15 +1,15 @@
 ---
 title: 'Envío de archivos a dispositivos cercanos: uso compartido en proximidad'
-description: Envíe archivos o sitios web a dispositivos cercanos mediante Wi-Fi o Bluetooth.
+description: Más información sobre el uso compartido en proximidad. El uso compartido en proximidad se utiliza para enviar archivos o sitios web a dispositivos cercanos mediante Wi-Fi o Bluetooth.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: ab9692f6992d8d5c8d6ee4998f93473b6b13f5c4
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 675e30b24474e34755833cef564fd56311bbaef4
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59801477"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760909"
 ---
 # <a name="nearby-sharing"></a>Uso compartido en proximidad
 

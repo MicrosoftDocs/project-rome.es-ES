@@ -1,18 +1,19 @@
 ---
 title: Espacio de nombres RemoteSystems.Commanding
-ms.openlocfilehash: b881297d32b66f60f882a866c7e775a08cc55f00
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API del espacio de nombres RemoteSystems para enviar comandos a un dispositivo remoto, iniciar aplicaciones de forma remota y realizar mensajería remota.
+ms.openlocfilehash: 7e7cf3a089178121beb72ab81494fa1209d1d677
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207764"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90761009"
 ---
 # <a name="remotesystemscommanding-namespace"></a>Espacio de nombres RemoteSystems.Commanding
 ```
 ConnectedDevicesRemoteSystemsCommanding.h
 ```
 
-El espacio de nombres RemoteSystems contiene API que permiten a una aplicación cliente enviar comandos a un dispositivo remoto.  Las acciones pueden incluir el inicio remoto de aplicaciones y mensajería remota.
+El espacio de nombres RemoteSystems contiene API que permiten a una aplicación cliente enviar comandos a un dispositivo remoto. Las acciones pueden incluir la mensajería y el inicio de aplicaciones remotos.
 
 #### <a name="mcdappserviceclosedeventargs"></a>[MCDAppServiceClosedEventArgs](MCDAppServiceClosedEventArgs.md)
 #### <a name="mcdappserviceclosedstatus"></a>[MCDAppServiceClosedStatus](MCDAppServiceClosedStatus.md)

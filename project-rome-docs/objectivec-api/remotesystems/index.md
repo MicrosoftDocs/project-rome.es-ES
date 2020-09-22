@@ -1,11 +1,12 @@
 ---
 title: Espacio de nombres RemoteSystems
-ms.openlocfilehash: d8ffcf1456bc717a9758c105932b6fc26553905f
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API del espacio de nombres RemoteSystems para permitir a una aplicación cliente detectar información sobre aplicaciones y dispositivos remotos.
+ms.openlocfilehash: d0bbaec35181856b0acbbeb12893bac3f6f611e4
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207694"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760639"
 ---
 # <a name="remotesystems-namespace"></a>Espacio de nombres RemoteSystems
 ```

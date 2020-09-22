@@ -1,11 +1,12 @@
 ---
 title: Referencia de API de Actividades del usuario de iOS
-ms.openlocfilehash: add35bfa2fc79f668f0db352c76935e22613920c
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use API de actividades del usuario de iOS para permitir a la aplicación crear y publicar actividades de usuario con el estilo de Windows.
+ms.openlocfilehash: b632c71d98fdac7f05bd2aee102cec5d2c8ef59a
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207874"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760099"
 ---
 # <a name="ios-user-activities-api-reference"></a>Referencia de API de Actividades del usuario de iOS
 

@@ -1,16 +1,19 @@
 ---
 title: Espacio de nombres UserNotifications para iOS
-ms.openlocfilehash: a7512d66887abc64f757311c928eb57cd21b65e4
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API del espacio de nombres UserNotifications para iOS para recibir y administrar las notificaciones dirigidas a usuarios que publica el servidor de aplicaciones mediante notificaciones de Microsoft Graph.
+ms.openlocfilehash: 5b66d370d503c0eaa6fb74c92ff10f4f03224f50
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207804"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760839"
 ---
 # <a name="usernotifications-namespace-for-ios"></a>Espacio de nombres UserNotifications para iOS
+
 ```
 ConnectedDevicesUserDataUserNotifications.h
 ```
+
 El espacio de nombres UserNotifications para iOS contiene API que permiten que una aplicación reciba y administre notificaciones dirigidas a usuarios que publica el servidor de aplicaciones mediante notificaciones de Microsoft Graph, a fin de habilitar experiencias de notificación entre dispositivos centradas en el usuario. 
 
 ### <a name="graph-notifications-apis"></a>API de notificación de Graph

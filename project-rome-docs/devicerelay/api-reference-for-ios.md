@@ -1,11 +1,12 @@
 ---
 title: Referencia de API de Retransmisión de dispositivo de iOS
-ms.openlocfilehash: 45ab0473a5e95fcc210bce72f342b3bd29949ac5
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API de retransmisión de dispositivos para iOS para detectar dispositivos y aplicaciones remotos y conectarse a ellos mediante la mensajería y el inicio de aplicaciones remotos.
+ms.openlocfilehash: 63e231003d23e5d97134b94a43bf0c2dd82475b0
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207854"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760819"
 ---
 # <a name="ios-device-relay-api-reference"></a>Referencia de API de Retransmisión de dispositivo de iOS
 

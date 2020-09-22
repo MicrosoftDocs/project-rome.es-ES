@@ -1,11 +1,12 @@
 ---
 title: Referencia de API de Comandos de Android
-ms.openlocfilehash: f539c401022a485fcebf2e6a14372c125f5a670c
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API de comandos de Android para detectar dispositivos y aplicaciones remotos y conectarse a ellos mediante la mensajería y el inicio de aplicaciones remotos.
+ms.openlocfilehash: d051009911493660967e3d1a350231ac1a311070
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207624"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760829"
 ---
 # <a name="android-commanding-api-reference"></a>Referencia de API de Comandos de Android
 

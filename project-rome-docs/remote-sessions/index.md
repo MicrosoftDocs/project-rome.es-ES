@@ -1,15 +1,15 @@
 ---
 title: Conexión a otro dispositivo mediante sesión remota
-description: Utilice una sesión para conectar la aplicación local a un dispositivo remoto.
+description: Aprenda a usar una sesión para conectar la aplicación local con un dispositivo remoto. Las sesiones remotas se pueden usar para la mensajería de aplicación a aplicación explícita.
 ms.localizationpriority: medium
 ms.topic: overview
 ms.custom: seodec2018
-ms.openlocfilehash: 47a2a6caea457c1c552817f219899d2805b52eb4
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 74c4bcf1aadbf39b18ba8cd1d682e7e6c9696b28
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59800827"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760169"
 ---
 # <a name="remote-sessions"></a>Sesiones remotas
 

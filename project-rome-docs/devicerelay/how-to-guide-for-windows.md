@@ -1,11 +1,12 @@
 ---
 title: Implementación de Retransmisión de dispositivo para Windows
-ms.openlocfilehash: 365a21301bee17feac34522667e7ba6a3497ed77
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Aprenda a implementar la retransmisión de dispositivos para aplicaciones de Windows.
+ms.openlocfilehash: 03d18904c30e6e867e375a8da8e6f5e020b8989f
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207594"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760799"
 ---
 # <a name="implementing-device-relay-for-windows"></a>Implementación de Retransmisión de dispositivo para Windows
 

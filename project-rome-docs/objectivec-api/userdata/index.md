@@ -1,11 +1,12 @@
 ---
 title: Espacio de nombres UserData
-ms.openlocfilehash: 90605ce75896b649b8c9e690d114747f3a85301f
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API del espacio de nombres UserData para sincronizar los datos de usuario de la aplicación con el back-end de la plataforma de los dispositivos conectados.
+ms.openlocfilehash: 851c1020b33352ad3fb61822eb9514d26db5b9c0
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207664"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760959"
 ---
 # <a name="userdata-namespace"></a>Espacio de nombres UserData
 

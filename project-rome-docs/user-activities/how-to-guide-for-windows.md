@@ -1,11 +1,12 @@
 ---
 title: Implementación de Actividades del usuario para Windows
-ms.openlocfilehash: 1f164e42fed00f8d738711a04b91ef2209acfab1
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Aprenda a implementar actividades de usuario para aplicaciones de Windows.
+ms.openlocfilehash: 6d866313408cb26289aaa14082a0303d0eefa604
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207914"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760089"
 ---
 # <a name="implementing-user-activities-for-windows"></a>Implementación de Actividades del usuario para Windows
 

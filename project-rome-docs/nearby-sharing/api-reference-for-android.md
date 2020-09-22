@@ -1,11 +1,12 @@
 ---
 title: Referencia de API de Uso compartido en proximidad de Android
-ms.openlocfilehash: 2cca8c282fe89bea3911a8496556b246933e562a
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use las API de uso compartido en proximidad de Android para permitir que la aplicación para Android implemente la característica de uso compartido en proximidad basada en Windows.
+ms.openlocfilehash: 5cbb0abb6e1e84ce70ae8ea57629e5859cab4629
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207794"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760919"
 ---
 # <a name="android-nearby-sharing-api-reference"></a>Referencia de API de Uso compartido en proximidad de Android
 

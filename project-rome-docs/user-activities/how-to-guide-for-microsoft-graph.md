@@ -1,11 +1,12 @@
 ---
 title: Uso de API de REST de Actividades del usuario de Microsoft Graph
-ms.openlocfilehash: efb5b591ca4c1f3024e1fb19dceee783dc75dc8c
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+description: Use API REST de actividades de usuario de Microsoft Graph para crear, publicar, actualizar y leer las actividades de usuario con el estilo de Windows.
+ms.openlocfilehash: 7ec7a2f285ed0b1875bf8d945534b8b89de566f3
+ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "75207904"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90760079"
 ---
 # <a name="using-microsoft-graphs-user-activities-rest-apis"></a>Uso de API de REST de Actividades del usuario de Microsoft Graph
 
