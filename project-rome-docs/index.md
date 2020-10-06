@@ -3,12 +3,12 @@ title: Creación de aplicaciones multidispositivo
 description: Obtenga información sobre las características multiplataforma y multidispositivo disponibles para las aplicaciones de Windows 10 con Project Rome.
 ms.topic: overview
 ms.custom: seodec2018, RS5
-ms.openlocfilehash: 0c00816de9111790bf20c98e48293d653490de3c
-ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
+ms.openlocfilehash: 13dcef5e158cf0cfd122afaef5f376ed06267790
+ms.sourcegitcommit: 5bf261d8d6ebe89d6d075d851f9255c806f5a649
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90760929"
+ms.lasthandoff: 10/05/2020
+ms.locfileid: "91716699"
 ---
 # <a name="project-rome"></a>Project Rome
 
@@ -85,6 +85,8 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 | **MSGraph**                       | Retransmisión de dispositivo, Actividades/Línea de tiempo, Notificaciones de Microsoft Graph | [![REST][graph-relay-badge]][graph-relay]<br> [![REST][graph-activities-badge]][graph-activities]<br>[![REST][graph-notification-badge]][graph-notification]          | [Retransmisión de dispositivo][graph-relay-sample]<br>[Actividades/Línea de tiempo][graph-activities-sample]<br>[Notificaciones de Graph][graph-notification-sample]
 
 ## <a name="project-rome-blog-posts"></a>Entradas de blog sobre Project Rome
+* [Presentación del SDK de Project Rome para la versión 1.0 de Android e iOS](https://blogs.windows.com/windowsdeveloper/2019/01/29/announcing-project-rome-sdk-for-android-and-ios-version-1-0/)
+
 * [Experiencias entre dispositivos con Project Rome](https://blogs.windows.com/buildingapps/2016/10/11/cross-device-experience-with-project-rome/#iQTseFlAMJRopU9k.97)
 
 * [Hacia un mundo social: integración de Project Rome, mapas y redes sociales](https://blogs.windows.com/buildingapps/2016/10/27/going-social-project-rome-maps-social-network-integration-app-dev-on-xbox-series/#SCfoEZ1q8c1yBMei.97)
@@ -99,13 +101,31 @@ Project Rome está implementado actualmente para las plataformas siguientes. Si
 
 * [Vinculación entre web y aplicación con AppUriHandlers](https://blogs.windows.com/buildingapps/2016/10/14/web-to-app-linking-with-appurihandlers/#fIh7USaxBYS8JqfT.97)
 
-## <a name="other-resources"></a>Otros recursos
+* [Project Rome: cómo impulsar la interacción del usuario en dispositivos, aplicaciones y plataformas
+
+* [Creación de aplicaciones conectadas con UWP y Proyecto Roma](https://docs.microsoft.com/archive/msdn-magazine/2018/may/universal-windows-platform-building-connected-apps-with-uwp-and-project-rome)
+
+* [Proyecto Roma: Cómo impulsar la interacción del usuario en dispositivos, aplicaciones y plataformas](https://blogs.windows.com/windowsdeveloper/2017/05/16/project-rome-driving-user-engagement-across-devices-apps-platforms/#hZYfcfYVCFfBv0pS.97)
+
+* [Habilitación de experiencias de notificación centradas en el usuario mediante notificaciones de Microsoft Graph](https://docs.microsoft.com/graph/notifications-concept-overview)
+
+## <a name="podcasts-and-recordings"></a>Podcasts y grabaciones
+
+* [Proyecto Roma en Microsoft/Compilación 2018](https://channel9.msdn.com/Events/Build/2018/BRK2417)
+
+* [Compilación 2017: Channel 9 en directo: preguntas y respuestas sobre el Proyecto Roma](https://channel9.msdn.com/Events/Build/2017/C9R11)
+
+* [Compilación 2017: MS Dev Show: Proyecto Roma](https://channel9.msdn.com/Shows/msdevshow/Episode-153-Project-Rome-with-Vikas-Bhatia-and-Shawn-Henry)
+
+* [Podcast de MS Dev Show: Proyecto Roma con Shawn Henry (8 de noviembre de 2016)](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
 
 * [Vinculación de Web a aplicaciones](https://docs.microsoft.com/windows/uwp/launch-resume/web-to-app-linking)
 
-* [Conferencia en Build 2016](https://channel9.msdn.com/Events/Build/2016/B831)
+* [Compilación 2016: Cómo impulsar la interacción del usuario con aplicaciones y dispositivos conectados](https://channel9.msdn.com/Events/Build/2016/B831)
 
-* [Podcast de MS Dev Show](https://msdevshow.com/2016/11/project-rome-with-shawn-henry/)
+* [One Dev Minute: Creación de aplicaciones para todos los dispositivos con Project Rome](https://www.youtube.com/watch?v=7jn-kooKE8U)
+
+* [Introducción a Microsoft Graph y las notificaciones](https://www.youtube.com/watch?v=cmpPFhrS8ZA)
 
 ## <a name="give-feedback"></a>Proporcionar comentarios
 
