@@ -3,18 +3,18 @@ title: include file
 description: include file
 ms.assetid: 93f45482-14e4-4aec-8185-ee05b592215f
 ms.localizationpriority: medium
-ms.openlocfilehash: a6e92df6114443827b22dc85cf877d631e5fcfdf
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: b81da462f97569d322b76ebff36f800c970c06cc
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "66755775"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901582"
 ---
 ### <a name="set-up-authentication-and-account-management"></a>Configuración de la autenticación y la administración de cuentas
 
 La plataforma de dispositivos conectados requiere que se utilice un token OAuth válido en el proceso de registro.  Puedes usar el método preferido para generar y administrar los tokens OAuth.  Sin embargo, para ayudar a los desarrolladores a empezar a usar la plataforma, hemos incluido un proveedor de autenticación como parte de la [aplicación de ejemplo de Android](https://github.com/Microsoft/project-rome/tree/master/Android/samples) que se encarga de generar y administrar los tokens de actualización.
 
-Si deseas implementar tú mismo la interfaz **[ConnectedDevicesAccountManager](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.core._user_account_provider)** , tome nota de la siguiente información: 
+Si deseas implementar tú mismo la interfaz **[ConnectedDevicesAccountManager](/java/api/com.microsoft.connecteddevices.core._user_account_provider)** , tome nota de la siguiente información: 
 
 Si usas una cuenta MSA, debes incluir los siguientes ámbitos en la solicitud de inicio de sesión: `"wl.offline_access"`, `"ccs.ReadWrite"`, `"dds.read"`, `"dds.register"`, `"wns.connect"`, `"asimovrome.telemetry"` y `"https://activity.windows.com/UserActivity.ReadWrite.CreatedByApp"`. 
 

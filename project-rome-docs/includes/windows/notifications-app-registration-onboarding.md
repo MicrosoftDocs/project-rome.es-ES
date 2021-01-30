@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 8e259cf4bd303a51165868fe0aa6d2a062f52c76
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 3d9119369f538c6d3d3bb7c49058d394d75c8bc2
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "58907397"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98948244"
 ---
 ### <a name="msa-and-aad-authentication-registration"></a>Registro de autenticación con MSA y AAD
 
@@ -15,7 +15,7 @@ Si aún no tienes una cuenta MSA y deseas usarla, regístrate en [account.micros
 Si después utilizas MSA como marco de autenticación e identidad para los usuarios, debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/) (si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla). Debes recibir una cadena de id. de cliente para la aplicación; asegúrate de recordar la ubicación o guardarla. La usarás más adelante durante la incorporación a Notificaciones de Graph. Ten en cuenta que una aplicación que utiliza la autenticación de MSA debe estar registrada como aplicación de SDK de Live, como se muestra a continuación.
 ![Portal de registro de aplicaciones](../../notifications/media/msa_app_registration/app_registration_portal.png)
 
-Si escribes una aplicación que usa AAD como marco de autenticación e identidad de cuentas profesionales o educativas, debes registrarla a través de las [bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) con el fin de obtener el id. de cliente, como se muestra a continuación. 
+Si escribes una aplicación que usa AAD como marco de autenticación e identidad de cuentas profesionales o educativas, debes registrarla a través de las [bibliotecas de autenticación de Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) con el fin de obtener el id. de cliente, como se muestra a continuación. 
  ![Portal de registro de AAD](../../notifications/media/aad_registration_portal/aad_registration_portal.png) Cuando se crea el registro de una nueva aplicación, se necesitan algunos permisos para poder usar las notificaciones de Graph y otras funcionalidades de la plataforma de dispositivos conectados. Consúltalos a continuación. 
 ![Portal de registro de AAD: configuración, permisos necesarios](../../notifications/media/aad_registration_portal/aad_registration_portal_permissions.png)
 * Agrega el permiso de inicio de sesión del usuario tal como se muestra a continuación.

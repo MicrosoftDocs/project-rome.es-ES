@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 325f0d041408b301c61648bd5c030ae0c7c4f59c
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: b7ef1272e292e5f6bdc2ffebe85609703c00bbd9
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76118120"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98947675"
 ---
 ### <a name="register-your-app-in-microsoft-windows-dev-center-for-cross-device-experiences"></a>Registro de la aplicación en el Centro de desarrollo de Microsoft Windows para experiencias multidispositivo
 A continuación, debes registrar la aplicación para acceder a la [característica de experiencias multidispositivo del Panel de desarrolladores de Microsoft](https://developer.microsoft.com/dashboard/crossplatform/web). Se sigue un procedimiento diferente al registro de la aplicación con MSA y AAD, que se explicó en los pasos anteriores. El objetivo principal de este proceso consiste en asignar las identidades de la aplicación específicas de la plataforma a una identidad de aplicación multiplataforma que se reconozca en la plataforma de dispositivos conectados y, al mismo tiempo, autorizar a la característica Notificaciones de Microsoft Graph para que envíe notificaciones con los servicios de notificación push nativos correspondiente a cada plataforma de sistema operativo. En este caso, permite que la característica Notificaciones de Graph envíe notificaciones a los puntos de conexión de la aplicación para UWP de Windows a través de WNS (Servicio de notificaciones de Windows). Ve al Panel del Centro de desarrollo y allí, a Cross-Device Experiences (Experiencias multidispositivo) en el panel de navegación del lado izquierdo; selecciona la opción de configuración de una nueva aplicación multidispositivo, tal como se muestra a continuación.
@@ -24,8 +24,6 @@ El proceso de incorporación del Centro de desarrollo requiere los siguientes pa
 * Las notificaciones de Graph y otras funcionalidades de la plataforma de dispositivos conectados aprovechan cada una de las plataformas de notificación nativas de las principales plataformas para enviar notificaciones hasta los puntos de conexión cliente de la aplicación, es decir, WNS (para Windows UWP), GCM (para Android) y APNS (para iOS). Proporciona tus credenciales para estas plataformas de notificación para permitir que Notificaciones de Graph entregue las notificaciones para el servidor de aplicaciones al publicar notificaciones destinadas al usuario. Se muestra a continuación. 
 ![Experiencias multidispositivo: credenciales de notificaciones push](../../notifications/media/dev_center_portal/dev_center_portal_5_push_credentials.png)
 > [!NOTE] 
-> En las aplicaciones para UWP de Windows, la habilitación de la notificación push de WNS es un requisito necesario para usar la característica Notificaciones de Microsoft Graph. Consulta [Introducción a los Servicios de notificaciones de inserción de Windows (WNS)](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview) para obtener más información. Cuando hayas completado la incorporación, puedes proporcionar las credenciales de notificaciones push para la plataforma de dispositivos conectados a través del Centro de desarrollo de Windows. 
+> En las aplicaciones para UWP de Windows, la habilitación de la notificación push de WNS es un requisito necesario para usar la característica Notificaciones de Microsoft Graph. Consulta [Introducción a los Servicios de notificaciones de inserción de Windows (WNS)](/windows/uwp/design/shell/tiles-and-notifications/windows-push-notification-services--wns--overview) para obtener más información. Cuando hayas completado la incorporación, puedes proporcionar las credenciales de notificaciones push para la plataforma de dispositivos conectados a través del Centro de desarrollo de Windows. 
 * El último paso consiste en comprobar el dominio de la aplicación multidispositivo; sirve como proceso de verificación para confirmar que la aplicación tiene la propiedad de este dominio, que actúa como identidad de aplicación multidispositivo para la aplicación que registraste. Se muestra a continuación.  
-![Experiencias multidispositivo: verificación del dominio](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png) Ya has terminado con la incorporación. Continúa en la sección siguiente. 
-
-
+![Experiencias multidispositivo: verificación del dominio](../../notifications/media/dev_center_portal/dev_center_portal_6_domain_verification.png) Ya has terminado con la incorporación. Continúa en la sección siguiente.

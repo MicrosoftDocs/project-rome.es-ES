@@ -1,12 +1,12 @@
 ---
 title: Referencia de API de Uso compartido en proximidad de Android
 description: Use las API de uso compartido en proximidad de Android para permitir que la aplicación para Android implemente la característica de uso compartido en proximidad basada en Windows.
-ms.openlocfilehash: 5cbb0abb6e1e84ce70ae8ea57629e5859cab4629
-ms.sourcegitcommit: 14b4f362bc0c924dff6493490c80624273d49d23
+ms.openlocfilehash: b9770cea9e01194b4a0b550947a0638a31b7d318
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90760919"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901403"
 ---
 # <a name="android-nearby-sharing-api-reference"></a>Referencia de API de Uso compartido en proximidad de Android
 
@@ -14,5 +14,5 @@ Los siguientes espacios de nombres contienen API que permiten que una aplicació
 
 ## <a name="namespaces"></a>Espacios de nombres
 
-#### <a name="connecteddevices"></a>[ConnectedDevices](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices)
-#### <a name="nearshare"></a>[NearShare](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.remotesystems.commanding.nearshare)
+#### <a name="connecteddevices"></a>[ConnectedDevices](/java/api/com.microsoft.connecteddevices)
+#### <a name="nearshare"></a>[NearShare](/java/api/com.microsoft.connecteddevices.remotesystems.commanding.nearshare)

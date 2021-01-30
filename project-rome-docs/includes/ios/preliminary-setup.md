@@ -4,12 +4,12 @@ description: include file
 ms.topic: include
 ms.assetid: ''
 ms.localizationpriority: medium
-ms.openlocfilehash: b979c0b7891aaa6ce5c422d8349809b429a47201
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: d0a91c583bda39cdef57adfdcab185e26e08195e
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "66755764"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901572"
 ---
 ### <a name="register-your-app"></a>Registro de la aplicación
 
@@ -20,7 +20,7 @@ La mayoría de las características del SDK de Project Rome (a excepción de las
 
 A partir del método de autenticación elegido, debes registrar la aplicación con Microsoft; para ello, sigue las instrucciones del [Portal de registro de aplicaciones](https://apps.dev.microsoft.com/). Si no tienes una cuenta de desarrollador de Microsoft, antes debes crearla.
 
-Al registrar una aplicación con MSA, deberías recibir una cadena de id. de cliente. Guárdala para más adelante. Este dato permitirá que la aplicación acceda a los recursos de la plataforma de dispositivos conectados de Microsoft. Si usas AAD, consulta en [Bibliotecas de autenticación de Azure Active Directory](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) las instrucciones sobre cómo obtener la cadena de id. de cliente.
+Al registrar una aplicación con MSA, deberías recibir una cadena de id. de cliente. Guárdala para más adelante. Este dato permitirá que la aplicación acceda a los recursos de la plataforma de dispositivos conectados de Microsoft. Si usas AAD, consulta en [Bibliotecas de autenticación de Azure Active Directory](/azure/active-directory/develop/active-directory-authentication-libraries) las instrucciones sobre cómo obtener la cadena de id. de cliente.
 
 ### <a name="add-the-sdk"></a>Incorporación del SDK
 

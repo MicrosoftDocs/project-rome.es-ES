@@ -5,16 +5,16 @@ ms.topic: article
 keywords: microsoft, windows, project rome, user activities, android
 ms.assetid: 8cfb7544-913c-48c0-8528-52b93ba8b0c6
 ms.localizationpriority: medium
-ms.openlocfilehash: 67f793341a108853d5b36e062fd04f441efff473
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: ab9cd29451ca9af511b2bd5f94e423f1ba01b46e
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "59801537"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901673"
 ---
 # <a name="implementing-user-activities-for-android"></a>Implementación de Actividades del usuario para Android
 
-Las actividades del usuario son construcciones de datos que representan las tareas de un usuario dentro de una aplicación. Permiten guardar una instantánea de una tarea para continuarla más adelante. La característica [Línea de tiempo de Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) muestra a los usuarios de Windows una lista desplazable de todas sus actividades recientes, representadas como tarjetas con texto y gráficos. Para obtener más información sobre las actividades del usuario en general, consulta [Continuar la actividad del usuario, incluso en diferentes dispositivos](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities). Para obtener recomendaciones sobre cuándo crear o actualizar las actividades, consulta la guía [Procedimientos recomendados de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
+Las actividades del usuario son construcciones de datos que representan las tareas de un usuario dentro de una aplicación. Permiten guardar una instantánea de una tarea para continuarla más adelante. La característica [Línea de tiempo de Windows](https://blogs.windows.com/windowsexperience/2018/04/27/make-the-most-of-your-time-with-the-new-windows-10-update/) muestra a los usuarios de Windows una lista desplazable de todas sus actividades recientes, representadas como tarjetas con texto y gráficos. Para obtener más información sobre las actividades del usuario en general, consulta [Continuar la actividad del usuario, incluso en diferentes dispositivos](/windows/uwp/launch-resume/useractivities). Para obtener recomendaciones sobre cuándo crear o actualizar las actividades, consulta la guía [Procedimientos recomendados de las actividades del usuario](/windows/uwp/launch-resume/useractivities-best-practices).
 
 Con el SDK de Project Rome, la aplicación de Android no solo puede publicar las actividades del usuario para su uso en las características de Windows como Línea de tiempo, sino que también puede actuar como punto de conexión y leer las actividades al usuario, al igual que hace la característica Línea de tiempo en dispositivos Windows. Esto permite que las aplicaciones multidispositivo trasciendan las plataformas y presenten experiencias que siguen a los usuarios y no a los dispositivos.  
 
@@ -177,7 +177,7 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<Void, Throwable>
 ```
 
 > [!TIP] 
-> Además de las propiedades anteriores, hay muchas otras características que se pueden configurar. Para ver todos los modos en los que se puede personalizar la construcción UserActivity, consulta las clases **[UserActivity](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity)** , **[UserActivityVisualElements](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)** y **[UserActivityAttribution](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)** . Consulta recomendaciones detalladas sobre cómo diseñar actividades del usuario en la guía [Procedimientos recomendados de las actividades del usuario](https://docs.microsoft.com/windows/uwp/launch-resume/useractivities-best-practices).
+> Además de las propiedades anteriores, hay muchas otras características que se pueden configurar. Para ver todos los modos en los que se puede personalizar la construcción UserActivity, consulta las clases **[UserActivity](/java/api/com.microsoft.connecteddevices.useractivities._user_activity)**, **[UserActivityVisualElements](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_visual_elements)** y **[UserActivityAttribution](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_attribution)**. Consulta recomendaciones detalladas sobre cómo diseñar actividades del usuario en la guía [Procedimientos recomendados de las actividades del usuario](/windows/uwp/launch-resume/useractivities-best-practices).
 
 ### <a name="update-an-existing-user-activity"></a>Actualización de una actividad del usuario existente
 
@@ -238,4 +238,4 @@ operation.whenCompleteAsync(new AsyncOperation.ResultBiConsumer<UserActivitySess
 });
 ```
 
-Ahora la aplicación debe tener una lista rellenada de instancias de **UserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **UserActivity** subyacente (consulta **[UserActivitySessionHistoryItem](https://docs.microsoft.com/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)** , para obtener más información), que puedes mostrar al usuario.
+Ahora la aplicación debe tener una lista rellenada de instancias de **UserActivitySessionHistoryItem**. Cada una de ellas puede ofrecer la actividad **UserActivity** subyacente (consulta **[UserActivitySessionHistoryItem](/java/api/com.microsoft.connecteddevices.useractivities._user_activity_session_history_item)**, para obtener más información), que puedes mostrar al usuario.
