@@ -5,12 +5,12 @@ ms.topic: article
 keywords: microsoft, windows, project rome, commanding, ios
 ms.assetid: b5d426db-a0ca-4888-b2cb-cb7fdb1c6c0d
 ms.localizationpriority: medium
-ms.openlocfilehash: 09479f0caa232215dfce51628432529d0e322536
-ms.sourcegitcommit: 7e022438d0414d8f24ee2c048bb018c80b1ea921
+ms.openlocfilehash: 33dd7e0148c5c7e4ff9d254b4039b95129ac6c69
+ms.sourcegitcommit: 79c254e48c00d7a050864b90ddb2b727f67b0e8a
 ms.translationtype: HT
 ms.contentlocale: es-ES
-ms.lasthandoff: 04/24/2020
-ms.locfileid: "76115557"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98901575"
 ---
 # <a name="implementing-device-relay-for-ios"></a>Implementación de Retransmisión de dispositivo para iOS
 
@@ -141,7 +141,7 @@ El código siguiente muestra cómo seleccionar uno de los objetos **MCDRemoteSys
 
 Es importante tener en cuenta que un inicio remoto puede tener como destino un dispositivo remoto (en cuyo caso el dispositivo host iniciará el URI especificado con su aplicación de forma predeterminada para ese esquema de URI) _o_ una aplicación remota específica en ese dispositivo.
 
-Como se demostró en la sección anterior, la detección ocurre primero a nivel de dispositivo (una instancia de **MCDRemoteSystem** representa un dispositivo), pero puedes llamar al método `getApplications` en una instancia de **MCDRemoteSystem** para obtener una matriz de objetos **MCDRemoteSystemApp**, que representan aplicaciones en el dispositivo remoto que han sido registradas para usar la plataforma de dispositivos conectados (de la misma manera que registró su propia aplicación en los pasos preliminares anteriores). Tanto **MCDRemoteSystem**como **MCDRemoteSystemApp** pueden utilizarse para construir una instancia de **MCDRemoteSystemConnectionRequest**, que es lo que se necesita para lanzar un URI.
+Como se demostró en la sección anterior, la detección ocurre primero a nivel de dispositivo (una instancia de **MCDRemoteSystem** representa un dispositivo), pero puedes llamar al método `getApplications` en una instancia de **MCDRemoteSystem** para obtener una matriz de objetos **MCDRemoteSystemApp**, que representan aplicaciones en el dispositivo remoto que han sido registradas para usar la plataforma de dispositivos conectados (de la misma manera que registró su propia aplicación en los pasos preliminares anteriores). Tanto **MCDRemoteSystem** como **MCDRemoteSystemApp** pueden utilizarse para construir una instancia de **MCDRemoteSystemConnectionRequest**, que es lo que se necesita para lanzar un URI.
 
 El código del ejemplo siguiente muestra el inicio remoto de un URI a través de una solicitud de conexión.
 
@@ -185,12 +185,12 @@ La aplicación de iOS puede usar el Portal de dispositivos conectados para inter
 #### <a name="set-up-the-app-service-on-the-target-device"></a>Configuración del servicio de aplicaciones en el dispositivo de destino
 En esta guía se utiliza [Roman Test App para Windows](https://aka.ms/romeapp) como servicio de aplicación de destino. Por lo tanto, el siguiente código hará que una aplicación de iOS busque ese servicio de aplicación específico en el sistema remoto indicado. Si deseas probar este escenario, descarga la aplicación Roman Test App en un dispositivo Windows y asegúrate de haber iniciado sesión con la misma MSA que en los pasos preliminares anteriores.
 
-Para obtener instrucciones sobre cómo escribir tu propio servicio de aplicación para UWP, consulta [Crear y consumir un servicio de aplicación (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Tendrás que hacer algunos cambios para que el servicio sea compatible con los dispositivos conectados. Consulta la [guía UWP para los servicios de aplicaciones remotas](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service) para obtener instrucciones sobre cómo hacerlo. 
+Para obtener instrucciones sobre cómo escribir tu propio servicio de aplicación para UWP, consulta [Crear y consumir un servicio de aplicación (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service). Tendrás que hacer algunos cambios para que el servicio sea compatible con los dispositivos conectados. Consulta la [guía UWP para los servicios de aplicaciones remotas](/windows/uwp/launch-resume/communicate-with-a-remote-app-service) para obtener instrucciones sobre cómo hacerlo. 
 
 #### <a name="open-an-app-service-connection-on-the-client-device"></a>Apertura de una conexión del servicio de aplicación en el dispositivo cliente
 La aplicación de iOS debe adquirir una referencia a una aplicación o dispositivo remoto. Al igual que la sección de inicio, este escenario requiere el uso de una instancia de **MCDRemoteSystemConnectionRequest**, que puede construirse a partir de instancia de **MCDRemoteSystem** o de **MCDRemoteSystemApp** que represente una aplicación disponible en el sistema.
 
-Además, tu aplicación necesitará identificar su servicio de aplicación de destino mediante dos cadenas: el *nombre del servicio de aplicación* y el *identificador del paquete*. Estas cadenas se encuentran en el código fuente del proveedor de servicios de aplicaciones; consulta [Crear y consumir un servicio de aplicación (UWP)](https://msdn.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) para ver más detalles. Juntas, estas cadenas construyen **MCDAppServiceDescription**, que se introduce en una instancia de **MCDAppServiceConnection**.
+Además, tu aplicación necesitará identificar su servicio de aplicación de destino mediante dos cadenas: el *nombre del servicio de aplicación* y el *identificador del paquete*. Estas cadenas se encuentran en el código fuente del proveedor de servicios de aplicaciones; consulta [Crear y consumir un servicio de aplicación (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service) para ver más detalles. Juntas, estas cadenas construyen **MCDAppServiceDescription**, que se introduce en una instancia de **MCDAppServiceConnection**.
 
 ```ObjectiveC
 // Step #1:  Establish an app service connection
@@ -244,7 +244,7 @@ Además, tu aplicación necesitará identificar su servicio de aplicación de de
 Declara una variable para almacenar el mensaje que se va a enviar. En iOS, los mensajes que se envían a los servicios de aplicación remota serán del tipo **NSDictionary**.
 
 > [!NOTE]
-> Cuando la aplicación se comunica con servicios de aplicación en otras plataformas, la plataforma de dispositivos conectados convierte **NSDictionary** a la construcción equivalente en la plataforma de recepción. Por ejemplo, un objeto **[NSDictionary](https://developer.apple.com/documentation/foundation/nsdictionary)** enviada desde esta aplicación a un servicio de aplicación de Windows se convierte en un objeto [**ValueSet**](https://msdn.microsoft.com/library/windows/apps/windows.foundation.collections.valueset) (de .NET Framework), que luego el servicio de aplicación puede interpretar. La información pasada en la otra dirección sufre una conversión inversa.
+> Cuando la aplicación se comunica con servicios de aplicación en otras plataformas, la plataforma de dispositivos conectados convierte **NSDictionary** a la construcción equivalente en la plataforma de recepción. Por ejemplo, un objeto **[NSDictionary](https://developer.apple.com/documentation/foundation/nsdictionary)** enviada desde esta aplicación a un servicio de aplicación de Windows se convierte en un objeto [**ValueSet**](/uwp/api/Windows.Foundation.Collections.ValueSet) (de .NET Framework), que luego el servicio de aplicación puede interpretar. La información pasada en la otra dirección sufre una conversión inversa.
 
 El siguiente método compone un mensaje que puede ser interpretado por el servicio de aplicación de Roman Test App para Windows.
 
@@ -335,5 +335,5 @@ Cuando la aplicación termine de interactuar con el servicio de aplicación del 
 ## <a name="related-topics"></a>Temas relacionados
 * [Página de referencia de API](api-reference-for-ios.md) 
 * [Aplicación de ejemplo de iOS](https://github.com/Microsoft/project-rome/tree/master/iOS/samples) 
-* [Comunicación con un servicio de aplicación remota (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
-* [Crear y consumir un servicio de aplicación (UWP)](https://docs.microsoft.com/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
+* [Comunicación con un servicio de aplicación remota (UWP)](/windows/uwp/launch-resume/communicate-with-a-remote-app-service)
+* [Crear y consumir un servicio de aplicación (UWP)](/windows/uwp/launch-resume/how-to-create-and-consume-an-app-service).
